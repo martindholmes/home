@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head xmlns="http://www.w3.org/1999/xhtml">
+        <title>Martin Holmes</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="js/script.js"> </script>
+        <link rel="icon" href="images/favicon.ico" sizes="48x48" />
+        <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml" />
+
+    </head>
+    <body>
+        <header>
+            <h1>Martin Holmes</h1>
+        </header>
+        
+        <nav id="mainMenu">
+            <ul>
+                <!-- This first item is the burger menu that shows up on small-format devices. -->
+                <!-- <li id="menuBurger"><a href="#mainMenu">☰</a></li> -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hcmc.html">DH work at UVic</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="software.html">Software / projects</a></li>
+                <li><a href="site.html">About this site</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+        
+            <!-- The main element will be emptied and its content replaced
+                by what is in the document. What is here is for testing only. -->
+            <h2>Page title</h2>
+            
+            <p>This is paragraph content.</p>
+            
+        </main>
+        
+        <footer>
+            <div id="buildInfo"></div>
+            <div id="credits">
+                <a href="https://endings.uvic.ca/"><img id="endingsLogo" src="images/endings_logo_badge_dark.svg" alt="Endings-compliant: see endings.uvic.ca"/></a>
+            </div>
+        </footer>
+        
+        <dialog id="infoPopup">
+            <button class="popupCloser" onclick="document.querySelector('#infoPopup').close();">Close</button>
+            <div id="infoContent"></div>
+        </dialog>
+        
+        
+    </body>
+    
+</html>
