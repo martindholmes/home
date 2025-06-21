@@ -1,0 +1,19 @@
+# Rules file for VNU validation of the generated website. This suppresses errors and warnings
+# which we know to be erroneous or irrelevant.
+
+#Current stable release of validator is not yet aware of wdt language subtag.
+.*Bad value “wdt” for attribute “lang”.*
+
+#Validator seems unaware of usage of namespace prefix in CSS content setting based on attribute.
+.*cognates\.css.*
+
+#Validator does not know about recent accessibility recommendations.
+.*Attribute “aria-hidden” not allowed.*
+.*Attribute “aria-label” not allowed.*
+
+#Validator does not know about recent CSS features.
+.*Property “container-type” doesn't exist.*
+.*Property “shape-margin” doesn't exist.*
+.*Property “transition-behavior” doesn't exist.*
+.*Unrecognized at-rule “@starting-style”.*
+.*Unrecognized at-rule “@view-transition”.*

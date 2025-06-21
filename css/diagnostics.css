@@ -1,0 +1,159 @@
+/* Stylesheets for project diagnostics output HTML. */
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: Georgia, sans-serif;
+}
+
+h1{
+  margin-bottom: 2rem;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+section, details{
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  min-width: 60rem;
+  max-width: 80rem;
+}
+
+section, details details{
+  border: solid 1pt black;
+}
+
+/* section>div{
+  display: none;
+} */
+
+
+details:target>div{
+  display: block;
+}
+
+section>h2, details>summary{
+  padding: 0.5rem;
+  border-width: 1pt;
+  border-color: #e0e0e0 #d0d0d0 #d0d0d0 #e0e0e0;
+  border-style: solid;
+  background-color: #e0e0ff;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+section>h2.stuffToFix, details>summary.stuffToFix{
+  background-color: #ff6666;
+  border-color: #ffe0e0 #ffd0d0 #ffd0d0 #ffe0e0;
+}
+
+section>h2.allOk, details>summary.allOk{
+  background-color: #66ff66;
+  border-color: #e0ffe0 #d0ffd0 #d0ffd0 #e0ffe0;
+}
+
+section>h2.todo, details>summary.todo{
+  background-color:  #ffc300;
+  border-color: #ff5733 #ff4723 #ff4723 #ff5733;
+}
+
+
+h2>a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+h2>a:after{
+  content: " ⏵";
+}
+
+section:target>h2>a:after{
+  content: " ⏷";
+}
+
+details:target{
+  border: solid 5pt black;
+}
+
+h2>a:hover{
+  text-decoration: underline;
+}
+
+h3{
+  text-align: center;
+  font-size: 1.8rem;
+
+}
+
+p, ol, ul{
+  margin: 0.5rem;
+}
+
+li{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+li.warning{
+  background-color: #ffdddd;
+}
+
+table{
+  margin: 1rem auto;
+  max-width: 90%;
+  min-width: 20em;
+  border: solid 1pt gray;
+  border-collapse: collapse;
+}
+
+table caption{
+  margin: 0.5em auto;
+  font-size: 120%;
+}
+
+td, th{
+  padding: 0.5rem;
+  border: solid 1pt gray;
+}
+
+th{
+  font-weight: bold;
+}
+
+td.num{
+  text-align: right;
+}
+
+canvas{
+  margin: 2rem 2%;
+  border: solid 1pt black;
+  width: 96% !important;
+}
+
+span.persName{
+    font-weight: bold;
+}
+
+span.note{
+    font-style: italic;
+}
+
+span.organTitle{
+  font-style: italic;
+}
+
+span.poemTitle::before{
+  content: "“";
+}
+
+span.poemTitle::after{
+  content: "”";
+}
