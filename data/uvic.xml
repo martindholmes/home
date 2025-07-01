@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main xmlns="http://www.w3.org/1999/xhtml" id="uvic">
+    
+    <h2>My job</h2>
+       
+    <div>   
+        <p>I work at the University of Victoria <a href="https://hcmc.uvic.ca/">Humanities Computing and Media Centre</a>
+        as a Programmer/Analyst. I work primarily on digital editions of literary and historical texts, indigenous language
+        dictionaries, and other humanities websites and publications, mostly using <a href="https://www.w3.org/TR/xml/">XML</a> 
+            technologies (<a href="https://www.tei-c,org/">TEI</a> XML, <a href="https://www.w3.org/TR/xslt-30/">XSLT</a>, 
+            <a href="https://www.w3.org/TR/xquery-30/">XQuery</a>,
+            <a href="https://en.wikipedia.org/wiki/XHTML#XHTML5">XHTML5</a>, 
+            <a href="https://www.w3.org/TR/xsl/">XSL:FO</a>) as well as 
+            <a href="https://www.latex-project.org/">LaTeX</a>, JavaScript, and CSS. I am particularly focused on creating sustainable, resilient
+            websites which require no maintenance because they are 
+            <a href="https://endings.uvic.ca/compliance.html">Endings-compliant</a>. Iʼve worked as a programmer and 
+        collaborator on many projects, including:</p>
+        
+        <ul>
+            <li><a href="https://endings.uvic.ca/">The Endings Project</a></li>
+            <li><a href="https://majw.uvic.ca/">Medieval Anglo-Jewish Women</a></li>
+            <li><a href="https://mapoflondon.uvic.ca/">The Map of Early Modern London</a></li>
+            <li><a href="https://dvpp.uvic.ca/">Digital Victorian Periodical Poetry</a></li>
+            <li><a href="https://lemdo.uvic.ca/">Linked Early Modern Drama Online</a></li>
+            <li><a href="https://mariage.uvic.ca/">Le Mariage sous l’Ancien Régime</a></li>
+            <li><a href="https://graves.uvic.ca/">The Robert Graves Diary</a></li>
+            <li><a href="https://bcgenesis.uvic.ca/">The Colonial Despatches of Vancouver Island and British Columbia</a></li>
+            <li><a href="https://johnkeats.uvic.ca/">Mapping Keat’s Progress</a></li>
+            <li><a href="https://myndir.uvic.ca/">My Norse Digital Image Repository</a></li>
+            <li><a href="https://eb11.uvic.ca/">THEN &amp; NOW: Romantic-Era Poets in the ENCYCLOPÆDIA BRITANNICA ELEVENTH EDITION 1910-1911 </a></li>
+            <li><a href="http://hcmc.uvic.ca/project/bbti">The British Book Trade Index</a></li>
+            <li><a href="https://hcmc.uvic.ca/wendat/dictionary/en/index.html">Onkwendahchondiahkwa’ Wendat Dictionary </a></li>
+        </ul>
+        
+    </div>
+    
+</main>

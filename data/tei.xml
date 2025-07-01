@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main xmlns="http://www.w3.org/1999/xhtml" id="tei">
+    
+    <h2>My work with the Text Encoding Initiative</h2>
+       
+    <div>   
+        <p>I have been a user of TEI encoding since the early 2000s. I was Managing Editor editor of the 
+            <span data-nametype="periodicalTitle">Journal 
+        of the Text Encoding Initiative</span> 2013–2015, and served as an elected member of the TEI Technical Council 2010–2015;
+        I am currently serving another three-year term on the Council starting in January 2025.</p>
+        
+        <p>You can see much of my TEI-related work on the TEIʼs <a href="https://github.com/TEIC">GitHub repositories</a>.
+            I have focused on various topics in the 
+            <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html">TEI Guidelines</a>, including 
+            <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/WD.html">Characters, Glyphs, and Writing Modes</a>,
+            <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/CO.html#COHTGRB">Ruby Annotations</a>, generation
+            of schemas from TEI ODD files (the <a href="https://github.com/TEIC/atop">ATOP</a> project), and GIS encoding.
+        </p>
+    </div>
+    
+</main>

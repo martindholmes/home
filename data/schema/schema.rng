@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:teix="http://www.tei-c.org/ns/Examples"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         ns="http://www.w3.org/1999/xhtml"><!--
+Schema generated from ODD source 2025-07-01T21:08:42Z. 2025. 
+TEI Edition: P5 Version 4.10.0a. Last updated on 24th June 2025, revision e255f3b0e 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/ 
+  
+--><!---->
+   <define name="xh_macro.mhParaContent">
+      <zeroOrMore>
+         <choice>
+            <text/>
+            <ref name="xh_model.mhPhrase"/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="xh_macro.mhBlockContent">
+      <group>
+         <zeroOrMore>
+            <ref name="xh_model.mhBlockBody"/>
+         </zeroOrMore>
+      </group>
+   </define>
+   <define name="xh_model.nameLike.agent">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.nameLike.agent_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.nameLike.agent_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.nameLike.agent_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.nameLike.agent_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.nameLike.agent_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.segLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.segLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.segLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.segLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.segLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.segLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.hiLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.hiLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.hiLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.hiLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.hiLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.hiLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.emphLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.emphLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.emphLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.emphLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.emphLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.emphLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.highlighted">
+      <choice>
+         <ref name="xh_model.hiLike"/>
+         <ref name="xh_model.emphLike"/>
+      </choice>
+   </define>
+   <define name="xh_model.highlighted_alternation">
+      <choice>
+         <ref name="xh_model.hiLike_alternation"/>
+         <ref name="xh_model.emphLike_alternation"/>
+      </choice>
+   </define>
+   <define name="xh_model.highlighted_sequence">
+      <ref name="xh_model.hiLike_sequence"/>
+      <ref name="xh_model.emphLike_sequence"/>
+   </define>
+   <define name="xh_model.highlighted_sequenceOptional">
+      <optional>
+         <ref name="xh_model.hiLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.emphLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="xh_model.highlighted_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="xh_model.hiLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.emphLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="xh_model.highlighted_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="xh_model.hiLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.emphLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="xh_model.dateLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.dateLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.dateLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.dateLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.dateLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.dateLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.measureLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.measureLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.measureLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.measureLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.measureLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.measureLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.egLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.egLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.egLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.egLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.egLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.egLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.graphicLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.graphicLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.graphicLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.graphicLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.graphicLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.graphicLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.offsetLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.offsetLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.offsetLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.offsetLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.offsetLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.offsetLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.msdesc">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.msdesc_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.msdesc_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.msdesc_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.msdesc_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.msdesc_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.editorial">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.editorial_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.editorial_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.editorial_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.editorial_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.editorial_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.transcriptional">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.transcriptional_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.transcriptional_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.transcriptional_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.transcriptional_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.pPart.transcriptional_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.pPart.edit">
+      <choice>
+         <ref name="xh_model.pPart.editorial"/>
+         <ref name="xh_model.pPart.transcriptional"/>
+      </choice>
+   </define>
+   <define name="xh_model.pPart.edit_alternation">
+      <choice>
+         <ref name="xh_model.pPart.editorial_alternation"/>
+         <ref name="xh_model.pPart.transcriptional_alternation"/>
+      </choice>
+   </define>
+   <define name="xh_model.pPart.edit_sequence">
+      <ref name="xh_model.pPart.editorial_sequence"/>
+      <ref name="xh_model.pPart.transcriptional_sequence"/>
+   </define>
+   <define name="xh_model.pPart.edit_sequenceOptional">
+      <optional>
+         <ref name="xh_model.pPart.editorial_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.pPart.transcriptional_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="xh_model.pPart.edit_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="xh_model.pPart.editorial_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.pPart.transcriptional_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="xh_model.pPart.edit_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="xh_model.pPart.editorial_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.pPart.transcriptional_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="xh_model.ptrLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.ptrLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.ptrLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.ptrLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.ptrLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.ptrLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.lPart">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.lPart_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.lPart_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.lPart_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.lPart_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.lPart_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.global.meta">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.global.meta_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.global.meta_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.global.meta_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.global.meta_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.global.meta_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.milestoneLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.milestoneLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.milestoneLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.milestoneLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.milestoneLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.milestoneLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.oddDecl">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.oddDecl_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.oddDecl_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.oddDecl_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.oddDecl_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.oddDecl_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.phrase.xml">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.phrase.xml_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.phrase.xml_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.phrase.xml_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.phrase.xml_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.phrase.xml_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.specDescLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.specDescLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.specDescLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.specDescLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.specDescLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.specDescLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.biblLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.biblLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.biblLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.biblLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.biblLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.biblLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.labelLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.labelLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.labelLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.labelLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.labelLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.labelLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.listLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.listLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.listLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.listLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.listLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.listLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.noteLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.noteLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.noteLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.noteLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.noteLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.noteLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.stageLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.stageLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.stageLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.stageLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.stageLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.stageLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.global.edit">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.global.edit_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.global.edit_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.global.edit_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.global.edit_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.global.edit_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.placeNamePart">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.placeNamePart_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.placeNamePart_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.placeNamePart_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.placeNamePart_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.placeNamePart_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.placeStateLike">
+      <choice>
+         <ref name="xh_model.placeNamePart"/>
+      </choice>
+   </define>
+   <define name="xh_model.placeStateLike_alternation">
+      <choice>
+         <ref name="xh_model.placeNamePart_alternation"/>
+      </choice>
+   </define>
+   <define name="xh_model.placeStateLike_sequence">
+      <ref name="xh_model.placeNamePart_sequence"/>
+   </define>
+   <define name="xh_model.placeStateLike_sequenceOptional">
+      <optional>
+         <ref name="xh_model.placeNamePart_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="xh_model.placeStateLike_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="xh_model.placeNamePart_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="xh_model.placeStateLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="xh_model.placeNamePart_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="xh_model.quoteLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.quoteLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.quoteLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.quoteLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.quoteLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.quoteLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.attributable">
+      <choice>
+         <ref name="xh_model.quoteLike"/>
+      </choice>
+   </define>
+   <define name="xh_model.attributable_alternation">
+      <choice>
+         <ref name="xh_model.quoteLike_alternation"/>
+      </choice>
+   </define>
+   <define name="xh_model.attributable_sequence">
+      <ref name="xh_model.quoteLike_sequence"/>
+   </define>
+   <define name="xh_model.attributable_sequenceOptional">
+      <optional>
+         <ref name="xh_model.quoteLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="xh_model.attributable_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="xh_model.quoteLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="xh_model.attributable_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="xh_model.quoteLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="xh_model.addressLike">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.addressLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.addressLike_sequence">
+      <empty/>
+   </define>
+   <define name="xh_model.addressLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="xh_model.addressLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="xh_model.addressLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="xh_model.nameLike">
+      <choice>
+         <ref name="xh_model.nameLike.agent"/>
+         <ref name="xh_model.offsetLike"/>
+         <ref name="xh_model.placeStateLike"/>
+      </choice>
+   </define>
+   <define name="xh_model.nameLike_alternation">
+      <choice>
+         <ref name="xh_model.nameLike.agent_alternation"/>
+         <ref name="xh_model.offsetLike_alternation"/>
+         <ref name="xh_model.placeStateLike_alternation"/>
+      </choice>
+   </define>
+   <define name="xh_model.nameLike_sequence">
+      <ref name="xh_model.nameLike.agent_sequence"/>
+      <ref name="xh_model.offsetLike_sequence"/>
+      <ref name="xh_model.placeStateLike_sequence"/>
+   </define>
+   <define name="xh_model.nameLike_sequenceOptional">
+      <optional>
+         <ref name="xh_model.nameLike.agent_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.offsetLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.placeStateLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="xh_model.nameLike_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="xh_model.nameLike.agent_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.offsetLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.placeStateLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="xh_model.nameLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="xh_model.nameLike.agent_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.offsetLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.placeStateLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="xh_model.pPart.data">
+      <choice>
+         <ref name="xh_model.dateLike"/>
+         <ref name="xh_model.measureLike"/>
+         <ref name="xh_model.addressLike"/>
+         <ref name="xh_model.nameLike"/>
+      </choice>
+   </define>
+   <define name="xh_model.pPart.data_alternation">
+      <choice>
+         <ref name="xh_model.dateLike_alternation"/>
+         <ref name="xh_model.measureLike_alternation"/>
+         <ref name="xh_model.addressLike_alternation"/>
+         <ref name="xh_model.nameLike_alternation"/>
+      </choice>
+   </define>
+   <define name="xh_model.pPart.data_sequence">
+      <ref name="xh_model.dateLike_sequence"/>
+      <ref name="xh_model.measureLike_sequence"/>
+      <ref name="xh_model.addressLike_sequence"/>
+      <ref name="xh_model.nameLike_sequence"/>
+   </define>
+   <define name="xh_model.pPart.data_sequenceOptional">
+      <optional>
+         <ref name="xh_model.dateLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.measureLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.addressLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="xh_model.nameLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="xh_model.pPart.data_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="xh_model.dateLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.measureLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.addressLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="xh_model.nameLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="xh_model.pPart.data_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="xh_model.dateLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.measureLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.addressLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="xh_model.nameLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="xh_html">
+      <element name="html" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The root html element for normal complete documents) The html element is only root element allowed for conventional HTML5 documents, but we also allow other block elements to serve as root for pragmatic reasons.</a:documentation>
+         <group>
+            <ref name="xh_head"/>
+            <ref name="xh_body"/>
+         </group>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasLang.attributes"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_head">
+      <element name="head" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The HTML head element) The head element contains links to (external-only) CSS and JS, as well as a title element and meta tags. We impose an order here which is not enforced by the HTML5 standard, placing the single title element first, followed by meta tags, CSS, and script. One of the meta tags must be a charset specification.</a:documentation>
+         <group>
+            <ref name="xh_title"/>
+            <optional>
+               <ref name="xh_base"/>
+            </optional>
+            <oneOrMore>
+               <ref name="xh_meta"/>
+            </oneOrMore>
+         </group>
+      </element>
+   </define>
+   <define name="xh_title">
+      <element name="title" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Page title.) The plain-text title of the page, as shown in browser title bars.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="xh_meta">
+      <element name="meta" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Header meta tag) Used for specifying character set, metadata, etc.</a:documentation>
+         <empty/>
+         <optional>
+            <attribute name="charset">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Character set (use only UTF-8)) </a:documentation>
+               <choice>
+                  <value>UTF-8</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The only value we use is UTF-8.) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_base">
+      <element name="base" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Provides the base URL from which relative URLs are resolved.) The base element allows authors to specify the document base URL for the purposes of parsing URLs, and the name of the default navigable for the purposes of following hyperlinks. The element does not represent any content beyond this information.</a:documentation>
+         <empty/>
+         <ref name="xh_att.hasHref.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_body">
+      <element name="body" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The principal container for page content as shown in the browser) In HTML5, the body element allows all flow content, but we are much more constrained here, allowing only block-level elements.</a:documentation>
+         <group>
+            <optional>
+               <choice>
+                  <ref name="xh_h1"/>
+               </choice>
+            </optional>
+            <optional>
+               <ref name="xh_aside"/>
+            </optional>
+            <choice>
+               <oneOrMore>
+                  <ref name="xh_div"/>
+               </oneOrMore>
+               <oneOrMore>
+                  <ref name="xh_section"/>
+               </oneOrMore>
+               <ref name="xh_main"/>
+               <ref name="xh_article"/>
+            </choice>
+            <optional>
+               <ref name="xh_aside"/>
+            </optional>
+         </group>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_main">
+      <element name="main" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The main element, containing block content) This is used as the root element for some content documents. This allows divs, dialogs, or articles in alternation.</a:documentation>
+         <group>
+            <ref name="xh_h2"/>
+            <oneOrMore>
+               <choice>
+                  <ref name="xh_div"/>
+                  <ref name="xh_dialog"/>
+                  <oneOrMore>
+                     <ref name="xh_article"/>
+                  </oneOrMore>
+               </choice>
+            </oneOrMore>
+         </group>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_article">
+      <element name="article" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The principal container element, containing block content) This is the root element for article documents.</a:documentation>
+         <group>
+            <ref name="xh_h2"/>
+            <oneOrMore>
+               <choice>
+                  <ref name="xh_macro.mhBlockContent"/>
+                  <oneOrMore>
+                     <ref name="xh_section"/>
+                  </oneOrMore>
+               </choice>
+            </oneOrMore>
+         </group>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <optional>
+            <attribute name="data-shortname">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(This is a simplified name of the poet used in the case of very long poet names.) </a:documentation>
+               <data type="string"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_aside">
+      <element name="aside" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A portion of a document whose content is only indirectly related to the document's main content) The aside element encloses content which is tangentially related to the content around it. It is used for callouts, footnotes/endnotes, and similar content.</a:documentation>
+         <group>
+            <zeroOrMore>
+               <ref name="xh_h4"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="xh_model.mhBlockBody"/>
+            </zeroOrMore>
+         </group>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_section">
+      <element name="section" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A subsection of a page) If using sections, there must be at least two.</a:documentation>
+         <group>
+            <optional>
+               <ref name="xh_h3"/>
+            </optional>
+            <ref name="xh_macro.mhBlockContent"/>
+         </group>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_div">
+      <element name="div" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A division of the footer element or the search page.) The div may be the main child of the main element.</a:documentation>
+         <group>
+            <optional>
+               <ref name="xh_h3"/>
+            </optional>
+            <choice>
+               <ref name="xh_p"/>
+               <ref name="xh_div"/>
+               <ref name="xh_macro.mhBlockContent"/>
+            </choice>
+         </group>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_h1">
+      <element name="h1" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Level 1 heading) The h1(level 2 heading) element provides the heading for an entire page.</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_h2">
+      <element name="h2" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Level 2 heading) The h2 (level 2 heading) element provides the heading for a major subsection of a page.</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_h3">
+      <element name="h3" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Level 3 heading) The h3 (level 3 heading) element provides the heading for a secondary subsection of a page.</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_h4">
+      <element name="h4" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Level 4 heading) The h4 (level 4 heading) element provides the heading for a sub-sub-subsection of a page.</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasTitle.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_p">
+      <element name="p" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Prose paragraph.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_details">
+      <element name="details" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Expandable details element with summary child.</a:documentation>
+         <group>
+            <ref name="xh_summary"/>
+            <ref name="xh_macro.mhBlockContent"/>
+         </group>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_summary">
+      <element name="summary" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Single-line summary for details element.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_blockquote">
+      <element name="blockquote" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Block quotation.</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_p"/>
+               <ref name="xh_ul"/>
+               <ref name="xh_br"/>
+               <ref name="xh_macro.mhParaContent"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_q">
+      <element name="q" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Inline quotation. In rendering, quotation marks will be supplied, so do not include them.</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_br"/>
+               <ref name="xh_macro.mhParaContent"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_ul">
+      <element name="ul" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Unordered list, usually bulleted.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_li"/>
+         </oneOrMore>
+         <ref name="xh_att.classable.attribute.style"/>
+         <optional>
+            <attribute name="class">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS stylesheet.) </a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_ol">
+      <element name="ol" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Ordered list, usually numbered.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_li"/>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_li">
+      <element name="li" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Item in a list or a menu.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="xh_ul"/>
+               <ref name="xh_ol"/>
+               <ref name="xh_p"/>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_pre">
+      <element name="pre" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Preformatted text which is to be presented exactly as written in the HTML file.</a:documentation>
+         <text/>
+      </element>
+   </define>
+   <define name="xh_span">
+      <element name="span" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">General-purpose phrase-level element. Use only if there is no more specific alternative for what you want.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </zeroOrMore>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="mholmes.com-span-spansMustHaveNametypeStyleOrClass-constraint-rule-1">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xh="http://www.w3.org/1999/xhtml"
+                      context="xh:span">
+               <sch:assert test="@class or @style or @data-nametype"> 
+                           A span element must have a class attribute, a data-nametype attribute, or a style attribute.
+                        </sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasLang.attributes"/>
+         <ref name="xh_att.hasnametype.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_abbr">
+      <element name="abbr" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Abbreviation) Any abbreviation, acronym, or similar term can be tagged with this element, and the <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@title</code> attribute can be used to provide an expansion.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_address">
+      <element name="address" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Address) Contains contact information for a person or organization related to the nearest ancestor <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;article&gt;</code> or <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;body&gt;</code> element.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_strong">
+      <element name="strong" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Strong text) Text that needs to be highlighted because it is important; will be rendered by default in bold.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_code">
+      <element name="code" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Inline computer code, filenames etc.) Inline text which is computer code or similar text such as identifiers.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_colgroup">
+      <element name="colgroup" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Column group.) Defines a group of columns within a table.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_col"/>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasSpan.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_col">
+      <element name="col" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A table column.) Specifies a table column within a <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;colgroup&gt;</code> element.</a:documentation>
+         <empty/>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasSpan.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_img">
+      <element name="img" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Image element. May be rendered inline or as a block, depending on where it appears in the document structure.</a:documentation>
+         <empty/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="mholmes.com-img-imgWithoutCaptionNeedsAlt-constraint-rule-2">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xh="http://www.w3.org/1999/xhtml"
+                      context="xh:img">
+               <sch:assert test="@alt or following-sibling::xh:figcaption"> 
+                              If your img element is not inside a figure element with a figcaption, 
+                              then it requires the @alt attribute to provide help for visually-impaired users.
+                           </sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasWidthAndHeight.attributes"/>
+         <attribute name="src">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(path to the image (usually a relative path)) </a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+         <optional>
+            <attribute name="alt">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of the image for visually-impaired users. If not supplied, then figcaption will be used instead.) </a:documentation>
+               <data type="string"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="title">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of the image which will pop up on mouseover. If not supplied, then figcaption will be used instead.) </a:documentation>
+               <data type="string"/>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_source">
+      <element name="source" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;source&gt;</code> HTML element specifies one or more media resources for the, <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;audio&gt;</code> and <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;video&gt;</code> elements.</a:documentation>
+         <empty/>
+         <attribute name="src">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pointer to the source media file.) </a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The mime type specifies the applicable multimedia internet mail extension (MIME) media type) </a:documentation>
+            <data type="token">
+               <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+         </attribute>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_audio">
+      <element name="audio" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;audio&gt;</code> element provides an audio player to play an audio file specified in the child <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;source&gt;</code> element.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_source"/>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <optional>
+            <attribute name="controls">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>controls</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Specifies that default audio controls should be provided for the player.) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_video">
+      <element name="video" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;video&gt;</code> element provides a video player to play a video file specified in the child <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;source&gt;</code> element.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_source"/>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasWidthAndHeight.attributes"/>
+         <optional>
+            <attribute name="controls">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>controls</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Specifies that default video controls should be provided for the player.) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_canvas">
+      <element name="canvas" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(An area for drawing graphics and animations) The canvas element is a locus for drawing operations. Alternative content may be provided in the form of a limited number of phrase-level elements. If <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@width</code> and <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@height</code> are not provided, they default to 300 and 150 respectively.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasWidthAndHeight.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_em">
+      <element name="em" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Emphasized text; will be rendered by default in italics.</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_u">
+      <element name="u" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Underlined text, in a context where we do not wish to conjecture why the underline is there (in an original article, or a quotation of an external source).</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="xh_macro.mhParaContent"/>
+               <ref name="xh_br"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_a">
+      <element name="a" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.hasHref.attributes"/>
+         <ref name="xh_att.hasnametype.attributes"/>
+         <optional>
+            <attribute name="title">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(explanation of what is being linked to. Will pop up when mousing over the link.) </a:documentation>
+               <data type="string"/>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="target">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>_blank</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Open this link in a new window or tab.) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_dialog">
+      <element name="dialog" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An HTML dialog element</a:documentation>
+         <oneOrMore>
+            <choice>
+               <ref name="xh_p"/>
+               <ref name="xh_figure"/>
+               <ref name="xh_div"/>
+            </choice>
+         </oneOrMore>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_cite">
+      <element name="cite" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An HTML cite element</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_figure">
+      <element name="figure" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A figure consists of an image and a caption.</a:documentation>
+         <choice>
+            <oneOrMore>
+               <ref name="xh_p"/>
+            </oneOrMore>
+            <group>
+               <ref name="xh_img"/>
+               <optional>
+                  <ref name="xh_figcaption"/>
+               </optional>
+            </group>
+         </choice>
+         <ref name="xh_att.classable.attribute.style"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasTabindex.attributes"/>
+         <optional>
+            <attribute name="class">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS stylesheet.) </a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <value>leftFloat</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Float this figure to the left and flow the text around it.) </a:documentation>
+                        <value>center</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Centre this figure and do not float text around it.) </a:documentation>
+                        <value>rightFloat</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Float this figure to the right and flow the text around it.) </a:documentation>
+                        <value>lightbox-figure</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Used for a figure which appears in the ad gallery.) </a:documentation>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_br">
+      <element name="br" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A hard-coded linebreak. Avoid unless you absolutely need it. Use it at the end of lines in poems.</a:documentation>
+         <empty/>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_figcaption">
+      <element name="figcaption" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Caption for an image in a figure element.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasTabindex.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_td">
+      <element name="td" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table data cell.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+      </element>
+   </define>
+   <define name="xh_button">
+      <element name="button" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">An HTML button element.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.classable.attributes"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <ref name="xh_att.hasTabindex.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_th">
+      <element name="th" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table label or heading cell.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+         <optional>
+            <attribute name="scope">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               <choice>
+                  <value>col</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Scope of this heading is the column below it.) </a:documentation>
+                  <value>row</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Scope of this heading is the row to the right of it.) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_tr">
+      <element name="tr" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table row.</a:documentation>
+         <oneOrMore>
+            <zeroOrMore>
+               <ref name="xh_th"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="xh_td"/>
+            </zeroOrMore>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="xh_caption">
+      <element name="caption" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table caption.</a:documentation>
+         <ref name="xh_macro.mhParaContent"/>
+      </element>
+   </define>
+   <define name="xh_table">
+      <element name="table" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table.</a:documentation>
+         <group>
+            <optional>
+               <ref name="xh_caption"/>
+            </optional>
+            <zeroOrMore>
+               <ref name="xh_colgroup"/>
+            </zeroOrMore>
+            <oneOrMore>
+               <ref name="xh_tr"/>
+            </oneOrMore>
+         </group>
+         <ref name="xh_att.classable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_model.mhPhrase">
+      <choice>
+         <ref name="xh_summary"/>
+         <ref name="xh_q"/>
+         <ref name="xh_span"/>
+         <ref name="xh_abbr"/>
+         <ref name="xh_address"/>
+         <ref name="xh_strong"/>
+         <ref name="xh_code"/>
+         <ref name="xh_img"/>
+         <ref name="xh_audio"/>
+         <ref name="xh_video"/>
+         <ref name="xh_canvas"/>
+         <ref name="xh_em"/>
+         <ref name="xh_u"/>
+         <ref name="xh_a"/>
+         <ref name="xh_cite"/>
+         <ref name="xh_figcaption"/>
+      </choice>
+   </define>
+   <define name="xh_model.mhBlockBody">
+      <choice>
+         <ref name="xh_p"/>
+         <ref name="xh_details"/>
+         <ref name="xh_blockquote"/>
+         <ref name="xh_ul"/>
+         <ref name="xh_ol"/>
+         <ref name="xh_pre"/>
+         <ref name="xh_img"/>
+         <ref name="xh_audio"/>
+         <ref name="xh_video"/>
+         <ref name="xh_dialog"/>
+         <ref name="xh_cite"/>
+         <ref name="xh_figure"/>
+         <ref name="xh_button"/>
+         <ref name="xh_table"/>
+      </choice>
+   </define>
+   <define name="xh_att.hasLang.attributes">
+      <ref name="xh_att.hasLang.attribute.lang"/>
+   </define>
+   <define name="xh_att.hasLang.attribute.lang">
+      <optional>
+         <attribute name="lang">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Specifies the language of the content of the element.) 
+Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] jp (Japanese); 5] zh (Chinese); 6] de (German); 7] la (Latin); 8] es (Spanish)</a:documentation>
+            <choice>
+               <value>en</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(English) </a:documentation>
+               <value>fr</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(French) </a:documentation>
+               <value>it</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Italian) </a:documentation>
+               <value>jp</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Japanese) </a:documentation>
+               <value>zh</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Chinese) </a:documentation>
+               <value>de</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(German) </a:documentation>
+               <value>la</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Latin) </a:documentation>
+               <value>es</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Spanish) </a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.classable.attributes">
+      <ref name="xh_att.classable.attribute.class"/>
+      <ref name="xh_att.classable.attribute.style"/>
+   </define>
+   <define name="xh_att.classable.attribute.class">
+      <optional>
+         <attribute name="class">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS stylesheet.) </a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.classable.attribute.style">
+      <optional>
+         <attribute name="style">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The style attribute provides one-off style options for specific and unusual cases. Do not use this unless you know that the element you're styling is unlike any other element in the project.) </a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.identifiable.attributes">
+      <ref name="xh_att.identifiable.attribute.id"/>
+   </define>
+   <define name="xh_att.identifiable.attribute.id">
+      <optional>
+         <attribute name="id">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="ID"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.hasnametype.attributes">
+      <ref name="xh_att.hasnametype.attribute.data-nametype"/>
+   </define>
+   <define name="xh_att.hasnametype.attribute.data-nametype">
+      <optional>
+         <attribute name="data-nametype">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>monographTitle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Book or play title (will be italicized)) </a:documentation>
+               <value>periodicalTitle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Title of newspaper, magazine, or journal (will be italicized)) </a:documentation>
+               <value>poemTitle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Poem title (will be surrounded with quotes)) </a:documentation>
+               <value>songTitle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Song title (will be surrounded with quotes)) </a:documentation>
+               <value>articleTitle</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Article title (will be surrounded with quotes)) </a:documentation>
+               <value>persName</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The name of a person) </a:documentation>
+               <value>forename</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The forename of a person, usually inside a persName.) </a:documentation>
+               <value>surname</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The surname of a person, usually inside a persName.) </a:documentation>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.hasHref.attributes">
+      <ref name="xh_att.hasHref.attribute.href"/>
+   </define>
+   <define name="xh_att.hasHref.attribute.href">
+      <attribute name="href">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <data type="anyURI">
+            <param name="pattern">\S+</param>
+         </data>
+      </attribute>
+   </define>
+   <define name="xh_att.hasTitle.attributes">
+      <ref name="xh_att.hasTitle.attribute.title"/>
+   </define>
+   <define name="xh_att.hasTitle.attribute.title">
+      <optional>
+         <attribute name="title">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.hasTabindex.attributes">
+      <ref name="xh_att.hasTabindex.attribute.tabindex"/>
+   </define>
+   <define name="xh_att.hasTabindex.attribute.tabindex">
+      <optional>
+         <attribute name="tabindex">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.hasWidthAndHeight.attributes">
+      <ref name="xh_att.hasWidthAndHeight.attribute.width"/>
+      <ref name="xh_att.hasWidthAndHeight.attribute.height"/>
+   </define>
+   <define name="xh_att.hasWidthAndHeight.attribute.width">
+      <optional>
+         <attribute name="width">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Width in pixels of the image.</a:documentation>
+            <choice>
+               <data type="double"/>
+               <data type="token">
+                  <param name="pattern">(\-?[\d]+/\-?[\d]+)</param>
+               </data>
+               <data type="decimal"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.hasWidthAndHeight.attribute.height">
+      <optional>
+         <attribute name="height">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Height in pixels of the image</a:documentation>
+            <choice>
+               <data type="double"/>
+               <data type="token">
+                  <param name="pattern">(\-?[\d]+/\-?[\d]+)</param>
+               </data>
+               <data type="decimal"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="xh_att.hasSpan.attributes">
+      <ref name="xh_att.hasSpan.attribute.span"/>
+   </define>
+   <define name="xh_att.hasSpan.attribute.span">
+      <optional>
+         <attribute name="span">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Number of items such as columns spanned by the element bearing this attribute.</a:documentation>
+            <choice>
+               <data type="double"/>
+               <data type="token">
+                  <param name="pattern">(\-?[\d]+/\-?[\d]+)</param>
+               </data>
+               <data type="decimal"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <start>
+      <choice>
+         <ref name="xh_html"/>
+         <ref name="xh_body"/>
+         <ref name="xh_main"/>
+         <ref name="xh_article"/>
+      </choice>
+   </start>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           prefix="tei"
+           uri="http://www.tei-c.org/ns/1.0"/>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           prefix="xs"
+           uri="http://www.w3.org/2001/XMLSchema"/>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           prefix="rng"
+           uri="http://relaxng.org/ns/structure/1.0"/>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           prefix="rna"
+           uri="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           prefix="sch"
+           uri="http://purl.oclc.org/dsdl/schematron"/>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           prefix="sch1x"
+           uri="http://www.ascc.net/xml/schematron"/>
+   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           xmlns:xh="http://www.w3.org/1999/xhtml"
+           uri="http://www.w3.org/1999/xhtml"
+           prefix="xh"/>
+   <sch:pattern xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml">
+      <sch:let name="smartDouble" value="'[“”]'"/>
+      <sch:let name="smartSingle" value="'[‘’]'"/>
+      <sch:let name="straightDouble" value="'&#34;'"/>
+      <sch:let name="straightApos" value="''''"/>
+      <sch:let name="straightQuotes"
+               value="concat('[', $straightDouble, $straightApos, ']')"/>
+   </sch:pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-noQuotesInText-constraint-rule-3">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:*[text()][not(ancestor-or-self::xh:script or ancestor-or-self::xh:style or ancestor-or-self::xh:code or ancestor-or-self::xh:pre)]">
+         <sch:assert test="not(text()[matches(., $straightQuotes)])">
+                           Do not use straight quotes in text. Use the q or 
+                           span elements wherever possible; for apostrophes, 
+                           use the smart version (’).
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-noBadImageFilenames-constraint-rule-4">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:img">
+         <sch:assert test="matches(@src, '^[a-zA-Z0-9/\._\-]+$')">
+                           Image file paths must be well-formed (no spaces or punctuation).
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-spacesAfterPeriods-constraint-rule-5">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:*[not(self::xh:code or self::xh:pre)][text()]">
+         <sch:assert test="not(text()[matches(., '[^\.A-Z]\.[A-Z]')])">
+                           Don't forget to put a space after every period.
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-noSpacedPeriodEllipses-constraint-rule-6">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:*[not(self::xh:code or self::xh:pre)][text()]">
+         <sch:assert test="not(text()[matches(., '\.\s*\.\s*\.')])">
+                           Don't use literal periods to create an ellipsis. Use the 
+                           ellipsis character (…, Control + Shift + period) instead.
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-noSpacesInHrefs-constraint-rule-7">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:a">
+         <sch:assert test="not(matches(@href, '\s+'))">
+                           There should be no spaces in href attributes (links).
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-noLinksInLinks-constraint-rule-8">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:a">
+         <sch:assert test="not(descendant::xh:a[@href])">
+                           Don't place links inside other links.
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-periodsAndCommasOutsideLinks-constraint-rule-9">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:a[@href]">
+         <sch:assert test="not(matches(., '[\.,:;]\s*$')) or matches(., '((Esq\.)|(A\.\s*W\.)|(\.\s*\.\s*\.))$')">
+                           Don't include trailing periods and commas inside link text.
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-useProperEllipsis-constraint-rule-10">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:*[not(self::xh:code or self::xh:pre)][text()]">
+         <sch:assert test="not(text()[matches(., '\.\.\.')])">
+                           Use an ellipsis (…) rather than three periods.
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="mholmes.com-mh-idShouldMatchFilename-constraint-rule-11">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xh="http://www.w3.org/1999/xhtml"
+                context="xh:article | xh:main | xh:html">
+         <sch:let name="fname" value="concat(@id, '.xml')"/>
+         <sch:assert test="ends-with(document-uri(/), $fname)">
+                           ERROR: The @id of your document (<sch:value-of select="@id"/>) 
+                           does not match the document file name (<sch:value-of select="document-uri(/)"/>).
+                        </sch:assert>
+      </sch:rule>
+   </pattern>
+</grammar>

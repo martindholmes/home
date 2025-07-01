@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main xmlns="http://www.w3.org/1999/xhtml" id="simple_page">
+    <h2>Title</h2>
+    
+    <div>
+        <p>Simple page with not much content.</p>
+    </div>
+    
+</main>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main xmlns="http://www.w3.org/1999/xhtml" id="complex_page">
+    <h2>Title</h2>
+    
+    <section id="sec1">
+        <h3>Subsection 1</h3>
+    </section>
+    
+    <section id="sec2">
+        <h3>Subsection 2</h3>
+    </section>
+    
+</main>

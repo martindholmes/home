@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main xmlns="http://www.w3.org/1999/xhtml" id="contact">
+    
+    <h2>Contact me</h2>
+       
+    <div>   
+        <p>You can contact me in the following ways:</p>
+        
+        <ul>
+            <li><a href="mailto:martin@mholmes.com">martin@mholmes.com</a> (personal email)</li>
+            <li><a href="mailto:mholmes@uvic.ca">mholmes@uvic.ca</a> (work email at the University of Victoria)</li>
+            <li>Via <a href="https://github.com/martindholmes">Github</a></li>
+        </ul>
+        
+        <p>I also have various social media accounts but I donʼt use them very much. </p>
+    </div>
+    
+</main>
