@@ -5,11 +5,14 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.w3.org/1999/xhtml"><!--
-Schema generated from ODD source 2025-07-01T21:08:42Z. 2025. 
-TEI Edition: P5 Version 4.10.0a. Last updated on 24th June 2025, revision e255f3b0e 
-TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/ 
+Schema generated from ODD source 2025-10-04T21:13:30Z. 2025. 
+TEI Edition: P5 Version 4.8.1. Last updated on 1st November 2024, revision 0a2bff95a 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/ 
   
 --><!---->
+   <sch:ns xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+           prefix="tei"
+           uri="http://www.tei-c.org/ns/1.0"/>
    <define name="xh_macro.mhParaContent">
       <zeroOrMore>
          <choice>
@@ -1090,7 +1093,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
          <ref name="xh_att.classable.attribute.style"/>
          <optional>
             <attribute name="class">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS stylesheet.) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS
+                        stylesheet. ) </a:documentation>
                <list>
                   <oneOrMore>
                      <data type="token">
@@ -1247,13 +1251,15 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
          </attribute>
          <optional>
             <attribute name="alt">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of the image for visually-impaired users. If not supplied, then figcaption will be used instead.) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of the image for visually-impaired users. If not supplied,
+                        then figcaption will be used instead.) </a:documentation>
                <data type="string"/>
             </attribute>
          </optional>
          <optional>
             <attribute name="title">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of the image which will pop up on mouseover. If not supplied, then figcaption will be used instead.) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(description of the image which will pop up on mouseover. If not supplied,
+                           then figcaption will be used instead.) </a:documentation>
                <data type="string"/>
             </attribute>
          </optional>
@@ -1373,7 +1379,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
          <ref name="xh_att.hasnametype.attributes"/>
          <optional>
             <attribute name="title">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(explanation of what is being linked to. Will pop up when mousing over the link.) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(explanation of what is being linked to. Will pop up when
+                        mousing over the link.) </a:documentation>
                <data type="string"/>
             </attribute>
          </optional>
@@ -1432,7 +1439,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
          <ref name="xh_att.hasTabindex.attributes"/>
          <optional>
             <attribute name="class">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS stylesheet.) </a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS
+                        stylesheet. ) </a:documentation>
                <list>
                   <oneOrMore>
                      <choice>
@@ -1486,6 +1494,22 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
          <empty/>
       </element>
    </define>
+   <define name="xh_thead">
+      <element name="thead" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table heading, containing one or more rows.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_tr"/>
+         </oneOrMore>
+      </element>
+   </define>
+   <define name="xh_tbody">
+      <element name="tbody" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table body, containing one or more rows.</a:documentation>
+         <oneOrMore>
+            <ref name="xh_tr"/>
+         </oneOrMore>
+      </element>
+   </define>
    <define name="xh_th">
       <element name="th" ns="http://www.w3.org/1999/xhtml">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table label or heading cell.</a:documentation>
@@ -1508,12 +1532,14 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
       <element name="tr" ns="http://www.w3.org/1999/xhtml">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table row.</a:documentation>
          <oneOrMore>
-            <zeroOrMore>
-               <ref name="xh_th"/>
-            </zeroOrMore>
-            <zeroOrMore>
-               <ref name="xh_td"/>
-            </zeroOrMore>
+            <choice>
+               <oneOrMore>
+                  <ref name="xh_th"/>
+               </oneOrMore>
+               <oneOrMore>
+                  <ref name="xh_td"/>
+               </oneOrMore>
+            </choice>
          </oneOrMore>
       </element>
    </define>
@@ -1533,9 +1559,15 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0a/
             <zeroOrMore>
                <ref name="xh_colgroup"/>
             </zeroOrMore>
-            <oneOrMore>
-               <ref name="xh_tr"/>
-            </oneOrMore>
+            <choice>
+               <oneOrMore>
+                  <ref name="xh_tr"/>
+               </oneOrMore>
+               <group>
+                  <ref name="xh_thead"/>
+                  <ref name="xh_tbody"/>
+               </group>
+            </choice>
          </group>
          <ref name="xh_att.classable.attributes"/>
          <empty/>
@@ -1618,7 +1650,8 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
    <define name="xh_att.classable.attribute.class">
       <optional>
          <attribute name="class">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS stylesheet.) </a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The class attribute provides styles through rules in the CSS
+                        stylesheet. ) </a:documentation>
             <list>
                <oneOrMore>
                   <data type="token">
@@ -1632,7 +1665,9 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
    <define name="xh_att.classable.attribute.style">
       <optional>
          <attribute name="style">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The style attribute provides one-off style options for specific and unusual cases. Do not use this unless you know that the element you're styling is unlike any other element in the project.) </a:documentation>
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(The style attribute provides one-off style options for specific
+                        and unusual cases. Do not use this unless you know that the element
+                        you're styling is unlike any other element in the project.) </a:documentation>
             <data type="string"/>
          </attribute>
       </optional>
@@ -1765,42 +1800,6 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
          <ref name="xh_article"/>
       </choice>
    </start>
-   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns:xh="http://www.w3.org/1999/xhtml"
-           prefix="tei"
-           uri="http://www.tei-c.org/ns/1.0"/>
-   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns:xh="http://www.w3.org/1999/xhtml"
-           prefix="xs"
-           uri="http://www.w3.org/2001/XMLSchema"/>
-   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns:xh="http://www.w3.org/1999/xhtml"
-           prefix="rng"
-           uri="http://relaxng.org/ns/structure/1.0"/>
-   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns:xh="http://www.w3.org/1999/xhtml"
-           prefix="rna"
-           uri="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns:xh="http://www.w3.org/1999/xhtml"
-           prefix="sch"
-           uri="http://purl.oclc.org/dsdl/schematron"/>
-   <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
-           xmlns:rng="http://relaxng.org/ns/structure/1.0"
-           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-           xmlns:xh="http://www.w3.org/1999/xhtml"
-           prefix="sch1x"
-           uri="http://www.ascc.net/xml/schematron"/>
    <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
            xmlns:sch="http://purl.oclc.org/dsdl/schematron"
            xmlns:xh="http://www.w3.org/1999/xhtml"

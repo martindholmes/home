@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<main xmlns="http://www.w3.org/1999/xhtml" id="software">
+   
+   <h2>My software</h2>
+   
+   <div> 
+      <p>Over the years, Iʼve written quite a lot of software in various languages and
+      for various platforms. In the early years, I was writing desktop software mostly
+      for Windows (although it all runs on Linux under Wine), but in the last few years
+      Iʼve been working more on web applications in the realm of digital humanities. 
+      These are some of the software projects Iʼve worked on, along with information 
+      on their current status.</p>
+      
+      <table>
+         <thead>
+            <tr>
+               <td>Software</td>
+               <td>Description</td>
+               <td>Status</td>
+            </tr>
+         </thead>
+         <tbody>
+            
+            <tr>
+               <td><a href="https://github.com/projectEndings/staticSearch">staticSearch</a></td>
+               <td>A codebase to support a pure JSON search engine requiring no backend for any XHTML5 document collection.</td>
+               <td>Co-authored with <a href="https://github.com/joeytakeda">Joey Takeda</a>. Actively maintained, used, and developed.</td>
+            </tr>
+            <tr>
+               <td><a href="https://github.com/martindholmes.BreezeMap">BreezeMap</a></td>
+               <td>A toolset for building interactive maps using <a href="https://www.tei-c.org/">TEI</a> and <a href="https://openlayers.org">OpenLayers</a>.</td>
+               <td>Actively maintained, used, and developed.</td>
+            </tr>
+            <tr>
+               <td><a href="https://github.com/UVicHCMC/BBTI">The British Book Trade Index</a></td>
+               <td>A rescue project, taking the data from a defunct but very valuable database and turning it into a resilient static site.</td>
+               <td><a href="https://hcmc.uvic.ca/project/bbti/">The site is live</a> at the University of Victoria; negotiations on the future of the project are ongoing.</td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </div>
+   
+</main>
