@@ -127,6 +127,79 @@
                   </remarks>
                </elementSpec>
                
+               <elementSpec ident="link" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <gloss>A link to a CSS file</gloss>
+                  <desc>On the mholmes.com site, all CSS should be in external CSS files.</desc>
+                  <classes>
+                     <memberOf key="att.hasHref"/>
+                  </classes>
+                  <content>
+                     <empty/>
+                  </content>
+                  <constraintSpec ident="linkAttCombos1" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="xh:link">
+                           <sch:assert test="if (@type) then @sizes and (@sizes eq 'any')"> 
+                              If the @type attribute is used, then the @sizes attribute must
+                              be set to "any".
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>   
+                  </constraintSpec>
+                  <constraintSpec ident="linkAttCombos2" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="xh:link">
+                           <sch:assert test="if (@rel eq 'stylesheet') then not(@sizes) and not(@type)"> 
+                              When linking to a stylesheet, you should not use the @sizes or @type attributes.
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>   
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="rel" usage="req">
+                        <gloss>Specifies what kind of item is being pointed to</gloss>
+                        <valList type="closed">
+                           <valItem ident="stylesheet">
+                              <gloss>Signifies that the link points to a CSS stylesheet</gloss>
+                           </valItem>
+                           <valItem ident="icon">
+                              <gloss>Signifies that the link points to a favicon</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="sizes" usage="opt">
+                        <gloss>Specifies the sizes of favicons</gloss>
+                        <datatype>
+                           <dataRef name="string" restriction="((\d+x\d+)( \d+x\d+)*)|(any)"/>
+                        </datatype>
+                     </attDef>
+                     <attDef ident="type" usage="opt">
+                        <gloss>Specifies the type of image used in the case of a favicon</gloss>
+                        <valList type="closed">
+                           <valItem ident="image/svg+xml">
+                              <gloss>Only SVGs are used for favicons with @type.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               
+               <elementSpec ident="script" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <gloss>A link to a JavaScript file</gloss>
+                  <desc>On the mholmes.com site, all JS should be in external JS files.</desc>
+                  <content>
+                     <empty/>
+                  </content>
+                  <attList>
+                     <attDef ident="src" usage="req">
+                        <gloss>Pointer to the source script file.</gloss>
+                        <datatype>
+                           <dataRef key="teidata.pointer"/>
+                        </datatype>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               
                <elementSpec ident="body" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
                   <gloss>The principal container for page content as shown in the browser</gloss>
                   <desc>In HTML5, the body element allows all flow content, but we are much more

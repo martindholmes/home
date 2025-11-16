@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.w3.org/1999/xhtml"><!--
-Schema generated from ODD source 2025-11-16T00:32:37Z. 2025. 
+Schema generated from ODD source 2025-11-16T01:19:32Z. 2025. 
 TEI Edition: P5 Version 4.8.1. Last updated on 1st November 2024, revision 0a2bff95a 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/ 
   
@@ -808,6 +808,12 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
             <oneOrMore>
                <ref name="xh_meta"/>
             </oneOrMore>
+            <zeroOrMore>
+               <ref name="xh_link"/>
+            </zeroOrMore>
+            <zeroOrMore>
+               <ref name="xh_script"/>
+            </zeroOrMore>
          </group>
       </element>
    </define>
@@ -838,6 +844,78 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Provides the base URL from which relative URLs are resolved.) The base element allows authors to specify the document base URL for the purposes of parsing URLs, and the name of the default navigable for the purposes of following hyperlinks. The element does not represent any content beyond this information.</a:documentation>
          <empty/>
          <ref name="xh_att.hasHref.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_link">
+      <element name="link" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A link to a CSS file) On the mholmes.com site, all CSS should be in external CSS files.</a:documentation>
+         <empty/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="mholmes.com-link-linkAttCombos1-constraint-rule-1">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xh="http://www.w3.org/1999/xhtml"
+                      context="xh:link">
+               <sch:assert test="if (@type) then @sizes and (@sizes eq 'any')"> 
+                              If the @type attribute is used, then the @sizes attribute must
+                              be set to "any".
+                           </sch:assert>
+            </sch:rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="mholmes.com-link-linkAttCombos2-constraint-rule-2">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      xmlns:xh="http://www.w3.org/1999/xhtml"
+                      context="xh:link">
+               <sch:assert test="if (@rel eq 'stylesheet') then not(@sizes) and not(@type)"> 
+                              When linking to a stylesheet, you should not use the @sizes or @type attributes.
+                           </sch:assert>
+            </sch:rule>
+         </pattern>
+         <ref name="xh_att.hasHref.attributes"/>
+         <attribute name="rel">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Specifies what kind of item is being pointed to) </a:documentation>
+            <choice>
+               <value>stylesheet</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Signifies that the link points to a CSS stylesheet) </a:documentation>
+               <value>icon</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Signifies that the link points to a favicon) </a:documentation>
+            </choice>
+         </attribute>
+         <optional>
+            <attribute name="sizes">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Specifies the sizes of favicons) </a:documentation>
+               <data type="string">
+                  <param name="pattern">((\d+x\d+)( \d+x\d+)*)|(any)</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Specifies the type of image used in the case of a favicon) </a:documentation>
+               <choice>
+                  <value>image/svg+xml</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Only SVGs are used for favicons with @type.) </a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="xh_script">
+      <element name="script" ns="http://www.w3.org/1999/xhtml">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(A link to a JavaScript file) On the mholmes.com site, all JS should be in external JS files.</a:documentation>
+         <empty/>
+         <attribute name="src">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Pointer to the source script file.) </a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
          <empty/>
       </element>
    </define>
@@ -886,6 +964,9 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
                   </oneOrMore>
                </choice>
             </oneOrMore>
+            <zeroOrMore>
+               <ref name="xh_script"/>
+            </zeroOrMore>
          </group>
          <ref name="xh_att.identifiable.attributes"/>
          <ref name="xh_att.hasTitle.attributes"/>
@@ -1151,7 +1232,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="mholmes.com-span-spansMustHaveNametypeStyleOrClass-constraint-rule-1">
+                  id="mholmes.com-span-spansMustHaveNametypeStyleOrClass-constraint-rule-3">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1229,7 +1310,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="mholmes.com-img-imgWithoutCaptionNeedsAlt-constraint-rule-2">
+                  id="mholmes.com-img-imgWithoutCaptionNeedsAlt-constraint-rule-4">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1818,7 +1899,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
                value="concat('[', $straightDouble, $straightApos, ']')"/>
    </sch:pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-noQuotesInText-constraint-rule-3">
+            id="mholmes.com-mh-noQuotesInText-constraint-rule-5">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1831,7 +1912,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-noBadImageFilenames-constraint-rule-4">
+            id="mholmes.com-mh-noBadImageFilenames-constraint-rule-6">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1842,7 +1923,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-spacesAfterPeriods-constraint-rule-5">
+            id="mholmes.com-mh-spacesAfterPeriods-constraint-rule-7">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1853,7 +1934,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-noSpacedPeriodEllipses-constraint-rule-6">
+            id="mholmes.com-mh-noSpacedPeriodEllipses-constraint-rule-8">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1865,7 +1946,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-noSpacesInHrefs-constraint-rule-7">
+            id="mholmes.com-mh-noSpacesInHrefs-constraint-rule-9">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1876,7 +1957,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-noLinksInLinks-constraint-rule-8">
+            id="mholmes.com-mh-noLinksInLinks-constraint-rule-10">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1887,7 +1968,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-periodsAndCommasOutsideLinks-constraint-rule-9">
+            id="mholmes.com-mh-periodsAndCommasOutsideLinks-constraint-rule-11">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1898,7 +1979,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-useProperEllipsis-constraint-rule-10">
+            id="mholmes.com-mh-useProperEllipsis-constraint-rule-12">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"
@@ -1909,7 +1990,7 @@ Suggested values include: 1] en (English); 2] fr (French); 3] it (Italian); 4] j
       </sch:rule>
    </pattern>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="mholmes.com-mh-idShouldMatchFilename-constraint-rule-11">
+            id="mholmes.com-mh-idShouldMatchFilename-constraint-rule-13">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 xmlns:xh="http://www.w3.org/1999/xhtml"

@@ -148,7 +148,9 @@
                                     </authorExtension>
                                 </field>
                                 <field name="templatesLocations">
-                                    <String-array/>
+                                    <String-array>
+                                        <String>${pd}/templates</String>
+                                    </String-array>
                                 </field>
                                 <field name="xmlCatalogs">
                                     <String-array/>
@@ -166,7 +168,7 @@
                                                 <String>*</String>
                                             </field>
                                             <field name="fileName">
-                                                <String>*</String>
+                                                <String>*.xml,*.html</String>
                                             </field>
                                             <field name="publicID">
                                                 <String>*</String>
