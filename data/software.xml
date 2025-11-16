@@ -8,8 +8,14 @@
       for various platforms. In the early years, I was writing desktop software mostly
       for Windows (although it all runs on Linux under Wine), but in the last few years
       Iʼve been working more on web applications in the realm of digital humanities. 
-      These are some of the software projects Iʼve worked on, along with information 
+      These are some of the desktop software projects Iʼve worked on, along with information 
       on their current status.</p>
+      
+      <p>Some of this software (Hot Potatoes, Quandary, Markin, and TexToys) was originally 
+      commercial, sold by Half-Baked Software and Creative Technology (Microdesign), but 
+      all have been freely usable with no license fee for many years now. They are not 
+      open-source, mostly because of licensing issues around the original commercial 
+      contracts and the use of commercial libraries in the source.</p>
       
       <table>
          <thead>
@@ -22,34 +28,49 @@
          <tbody>
             
             <tr>
-               <td><a href="https://github.com/projectEndings/staticSearch">staticSearch</a></td>
+               <td id="swStaticSearch"><a href="https://github.com/projectEndings/staticSearch">staticSearch</a></td>
                <td>A codebase to support a pure JSON search engine requiring no backend for any XHTML5 document collection.</td>
-               <td>Co-authored with <a href="https://github.com/joeytakeda">Joey Takeda</a>. Actively maintained, used, and developed.</td>
+               <td>Co-authored with <a href="https://github.com/joeytakeda">Joey Takeda</a>. Actively maintained, used, and developed. XSLT and JavaScript.</td>
             </tr>
             <tr>
-               <td><a href="https://github.com/martindholmes.BreezeMap">BreezeMap</a></td>
+               <td id="swBreezeMap"><a href="https://github.com/martindholmes/BreezeMap">BreezeMap</a></td>
                <td>A toolset for building interactive maps using <a href="https://www.tei-c.org/">TEI</a> and <a href="https://openlayers.org">OpenLayers</a>.</td>
-               <td>Actively maintained, used, and developed.</td>
+               <td>Actively maintained, used, and developed. JavaScript.</td>
             </tr>
             <tr>
-               <td><a href="https://github.com/UVicHCMC/BBTI">The British Book Trade Index</a></td>
-               <td>A rescue project, taking the data from a defunct but very valuable database and turning it into a resilient static site.</td>
-               <td><a href="https://hcmc.uvic.ca/project/bbti/">The site is live</a> at the University of Victoria; negotiations on the future of the project are ongoing.</td>
+               <td id="swHotpot"><a href="https://hotpot.uvic.ca/">Hot Potatoes</a></td>
+               <td>A Windows-based authoring tool for creating interactive teaching materials (also runs on Linux under Wine).</td>
+               <td>The last release was some years ago, but this software still has an <a href="https://groups.google.com/g/hotpotatoesusers">active user community</a> and I can still build updated versions if required. Written in Delphi/Object Pascal.</td>
             </tr>
             <tr>
-               <td></td>
-               <td></td>
-               <td></td>
+               <td id="swGerryVocab"><a href="https://www.cpr4esl.com/gerrys_vocab_teacher/">Gerryʼs Vocabulary Teacher</a></td>
+               <td>A vocabulary teaching tool for English learners, with all content provided by my friend Gerry Luton.</td>
+               <td>This is not actively maintained. Written in C++ with Qt.</td>
             </tr>
             <tr>
-               <td></td>
-               <td></td>
-               <td></td>
+               <td id="swTexToys"><a href="https://www.cict.co.uk/textoys/index.php">TexToys</a></td>
+               <td>A Windows-based authoring tool for creating interactive teaching materials (also runs on Linux under Wine). Companion to Hot Potatoes.</td>
+               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
             </tr>
             <tr>
-               <td></td>
-               <td></td>
-               <td></td>
+               <td id="swQuandary"><a href="https://hcmc.uvic.ca/project/quandary/">Quandary</a></td>
+               <td>A Windows-based authoring tool for creating interactive action mazes (also runs on Linux under Wine). Companion to Hot Potatoes.</td>
+               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
+            </tr>
+            <tr>
+               <td id="swMarkin"><a href="https://www.cict.co.uk/markin/index.php">Markin</a></td>
+               <td>Windows software for marking student essays. Also works on Linux under Wine.</td>
+               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
+            </tr>
+            <tr>
+               <td id="swImageMarkupTool"><a href="https://hcmc.uvic.ca/~mholmes/image_markup/">Image Markup Tool</a></td>
+               <td>Windows software for marking up zones on images using TEI XML. Also works on Linux under Wine.</td>
+               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
+            </tr>
+            <tr>
+               <td id="swTransformer"><a href="https://hcmc.uvic.ca/~mholmes/transformer/">Transformer</a></td>
+               <td>Windows software for chaining, testing, and applying sequences of search-replace operations on files. Also works on Linux under Wine.</td>
+               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
             </tr>
             <tr>
                <td></td>

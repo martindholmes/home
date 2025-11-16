@@ -849,6 +849,9 @@
                </elementSpec>
                <elementSpec ident="td" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
                   <desc>A table data cell.</desc>
+                  <classes>
+                     <memberOf key="att.identifiable"/>
+                  </classes>
                   <content>
                      <macroRef key="macro.mhParaContent"/>
                   </content>

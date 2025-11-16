@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.w3.org/1999/xhtml"><!--
-Schema generated from ODD source 2025-10-04T21:13:30Z. 2025. 
+Schema generated from ODD source 2025-11-16T00:32:37Z. 2025. 
 TEI Edition: P5 Version 4.8.1. Last updated on 1st November 2024, revision 0a2bff95a 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/ 
   
@@ -1482,6 +1482,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.8.1/
       <element name="td" ns="http://www.w3.org/1999/xhtml">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">A table data cell.</a:documentation>
          <ref name="xh_macro.mhParaContent"/>
+         <ref name="xh_att.identifiable.attributes"/>
+         <empty/>
       </element>
    </define>
    <define name="xh_button">
