@@ -138,8 +138,8 @@
                   </content>
                   <constraintSpec ident="linkAttCombos1" scheme="schematron">
                      <constraint>
-                        <sch:rule context="xh:link">
-                           <sch:assert test="if (@type) then @sizes and (@sizes eq 'any')"> 
+                        <sch:rule context="xh:link[@type]">
+                           <sch:assert test="@sizes and xs:string(@sizes) eq 'any'"> 
                               If the @type attribute is used, then the @sizes attribute must
                               be set to "any".
                            </sch:assert>
@@ -148,8 +148,8 @@
                   </constraintSpec>
                   <constraintSpec ident="linkAttCombos2" scheme="schematron">
                      <constraint>
-                        <sch:rule context="xh:link">
-                           <sch:assert test="if (@rel eq 'stylesheet') then not(@sizes) and not(@type)"> 
+                        <sch:rule context="xh:link[@rel eq 'stylesheet']">
+                           <sch:assert test="not(@sizes) and not(@type)"> 
                               When linking to a stylesheet, you should not use the @sizes or @type attributes.
                            </sch:assert>
                         </sch:rule>
@@ -234,7 +234,34 @@
                         <elementRef key="aside" minOccurs="0" maxOccurs="1"/>
                         <!-- Finally an optional footer. -->
                         <elementRef key="footer" minOccurs="0" maxOccurs="1"/>
+                        <!-- And we may place a dialog down at the end to keep it out of the way. -->
+                        <elementRef key="dialog" minOccurs="0" maxOccurs="1"/>
                      </sequence>    
+                  </content>
+               </elementSpec>
+               
+               <elementSpec ident="header" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <gloss>The header element, containing some banner content</gloss>
+                  <desc>This will normally contain only the <gi>h1</gi> and optional <gi>h2</gi> headings,
+                     as well as a nav element.</desc>
+                  <content>
+                     <sequence minOccurs="1" maxOccurs="1">
+                        <elementRef key="h1"/>
+                        <elementRef key="h2" minOccurs="0"/>
+                        <elementRef key="nav"/>
+                     </sequence>
+                  </content>
+               </elementSpec>
+               
+               <elementSpec ident="nav" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <gloss>The navigation element, containing a list</gloss>
+                  <desc>This will normally contain only the <gi>ul</gi> element.</desc>
+                  <classes>
+                     <memberOf key="att.identifiable"/>
+                     <memberOf key="att.hasTitle"/>
+                  </classes>
+                  <content>
+                     <elementRef key="ul"/>
                   </content>
                </elementSpec>
                
@@ -253,6 +280,7 @@
                            <elementRef key="div"/>
                            <elementRef key="dialog"/>
                            <elementRef key="article" maxOccurs="unbounded"/>
+                           <elementRef key="p" maxOccurs="unbounded"/>
                         </alternate>
                         <!-- We allow script here for staticSearch overrides. -->
                         <elementRef key="script" minOccurs="0" maxOccurs="unbounded"/>
@@ -333,7 +361,19 @@
                            <macroRef key="macro.mhBlockContent"/>
                         </alternate>
                      </sequence>
-                     
+                  </content>
+               </elementSpec>
+               
+               <elementSpec ident="footer" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <gloss>Page footer</gloss>
+                  <desc>The footer element provides a footer area for bottom-of-the-page information
+                     such as build and edition numbers.</desc>
+                  <classes>
+                     <memberOf key="att.classable"/>
+                     <memberOf key="att.hasTitle"/>
+                  </classes>
+                  <content>
+                     <classRef key="model.mhBlockBody" minOccurs="0" maxOccurs="unbounded"/>
                   </content>
                </elementSpec>
                
@@ -841,6 +881,7 @@
                   </classes>
                   <content>
                      <alternate minOccurs="1" maxOccurs="unbounded">
+                        <elementRef key="button"/>
                         <elementRef key="p"/>
                         <elementRef key="figure"/>
                         <elementRef key="div"/>

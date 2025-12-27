@@ -11,20 +11,19 @@
     <body>
         <header>
             <h1>Martin Holmes</h1>
+            <nav id="mainMenu">
+                <ul>
+                    <!-- This first item is the burger menu that shows up on small-format devices. -->
+                    <!-- <li id="menuBurger"><a href="#mainMenu">☰</a></li> -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hcmc.html">DH work at UVic</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                    <li><a href="software.html">Software / projects</a></li>
+                    <li><a href="site.html">About this site</a></li>
+                </ul>
+            </nav>
         </header>
-        
-        <nav id="mainMenu">
-            <ul>
-                <!-- This first item is the burger menu that shows up on small-format devices. -->
-                <!-- <li id="menuBurger"><a href="#mainMenu">☰</a></li> -->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="hcmc.html">DH work at UVic</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="contact.html">Contact me</a></li>
-                <li><a href="software.html">Software / projects</a></li>
-                <li><a href="site.html">About this site</a></li>
-            </ul>
-        </nav>
         
         <main>
         
@@ -37,14 +36,16 @@
         </main>
         
         <footer>
-            <div id="buildInfo"></div>
-            <div id="credits">
+            <p id="buildInfo"></p>
+            <p id="credits">
                 <a href="https://endings.uvic.ca/"><img id="endingsLogo" src="images/endings_logo_badge_dark.svg" alt="Endings-compliant: see endings.uvic.ca"/></a>
-            </div>
+            </p>
         </footer>
         
         <dialog id="infoPopup">
-            <button class="popupCloser" onclick="document.querySelector('#infoPopup').close();">Close</button>
+            <!--<button class="popupCloser" onclick="document.querySelector('#infoPopup').close();">Close</button>-->
+            <!-- Add click event during hydration. -->
+            <button class="popupCloser">Close</button>
             <div id="infoContent"></div>
         </dialog>
         
