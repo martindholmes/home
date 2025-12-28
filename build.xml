@@ -37,6 +37,16 @@
     <!-- Jing task for validation of XML. -->
     <taskdef name="jing" classname="com.thaiopensource.relaxng.util.JingTask" 
         classpath="${basedir}/lib/jing.jar"/>
+    
+    <!-- Source xml fileset. -->
+    <fileset id="sourceXml" dir="${basedir}">
+        <!-- Data files. -->
+        <include name="data/*.xml"/>
+        <!-- Templates. -->
+        <include name="templates/*.xm_"/>
+        <!-- Boilerplate for the site. -->
+        <include name="boilerplate/page_template.xml"/>
+    </fileset>
   
     
     <target name="preClean">
@@ -100,6 +110,59 @@
         <copy todir="products/js">
             <file file="js/diagnostics.js"/>
         </copy>
+    </target>
+    
+    <target name="rngValidateSource">
+        <description>
+            TARGET rngValidateSource
+            This target validates the content of the content
+            folder, which contains all the site pages and timeline files.
+            These files are validated against the eb11.rng RelaxNG schema.
+        </description>
+        <echo message="${echo.separator}"/>
+        <echo message="Validating the original XML content documents with RelaxNG..."/>
+        <jing compactsyntax="false" rngfile="${basedir}/data/schema/schema.rng" failonerror="true">
+            <fileset refid="sourceXml"/>
+        </jing>
+    </target>
+    
+    <target name="schematronValidateSource">
+        <description>
+            TARGET schematronValidateSource
+            This target validates the content of the data
+            folder, which contains all the article files,
+            using Schematron. It uses the utilities/eb11Schematron.xsl
+            file, which is the set of Schematron rules extracted from the
+            schema and compiled into XSLT. Validation results are generated
+            and parsed in a single operation, avoiding the necessity to
+            output results to a temporary folder and then parse them in a
+            separate operation.
+        </description>
+        <echo message="${echo.separator}"/>
+        <echo message="Validating XML source files with project Schematron..."/>
+        <java fork="true" classname="net.sf.saxon.Transform" 
+            classpath="${saxon}" 
+            failonerror="true">
+            <jvmarg value="-Xmx2048m"/>
+            <arg value="-s:xsl/master_schematron_validation.xsl"/>
+            <arg value="-xsl:xsl/master_schematron_validation.xsl"/>
+            <arg value="xmlToValidateDir=content"/>
+            <arg value="--suppressXsltNamespaceCheck:on"/>
+        </java>
+        <echo message="${echo.separator}"/>
+        <echo message="Schematron validation complete."/>
+    </target>
+    
+    <target name="validateSource">
+        <description>
+            TARGET validateSource
+            This calls the two targets rngValidateSource and 
+            schematronValidateSource.
+        </description>
+        <echo message="${echo.separator}"/>
+        <echo message="Validating XML source files..."/>
+        <antcall target="rngValidateSource"/>
+        <antcall target="schematronValidateSource"/>
     </target>
     
     

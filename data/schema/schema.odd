@@ -280,6 +280,7 @@
                            <elementRef key="div"/>
                            <elementRef key="dialog"/>
                            <elementRef key="article" maxOccurs="unbounded"/>
+                           <elementRef key="section" maxOccurs="unbounded"/>
                            <elementRef key="p" maxOccurs="unbounded"/>
                         </alternate>
                         <!-- We allow script here for staticSearch overrides. -->
