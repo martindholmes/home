@@ -965,9 +965,13 @@
                   <desc>A table data cell.</desc>
                   <classes>
                      <memberOf key="att.identifiable"/>
+                     <memberOf key="att.classable"/>
                   </classes>
                   <content>
-                     <macroRef key="macro.mhParaContent"/>
+                     <alternate minOccurs="0" maxOccurs="unbounded">
+                        <elementRef key="br"/>
+                        <macroRef key="macro.mhParaContent"/>
+                     </alternate>
                   </content>
                </elementSpec>
                <elementSpec ident="button" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
@@ -1040,7 +1044,7 @@
                         <alternate>
                            <elementRef key="tr" minOccurs="1" maxOccurs="unbounded"/>
                            <sequence>
-                              <elementRef key="thead"/>
+                              <elementRef key="thead" minOccurs="0"/>
                               <elementRef key="tbody"/>
                            </sequence>
                         </alternate>
@@ -1262,7 +1266,7 @@
                <constraintSpec ident="mh-spacesAfterPeriods" scheme="schematron">
                   <constraint>
                      <sch:rule context="xh:*[not(self::xh:code or self::xh:pre)][text()]">
-                        <sch:assert test="not(text()[matches(., '[^\.A-Z]\.[A-Z]')])">
+                        <sch:assert test="not(text()[not(starts-with(., 'http')) and matches(., '[^\.A-Z]\.[A-Z]')])">
                            Don't forget to put a space after every period.
                         </sch:assert>
                      </sch:rule>
