@@ -34,6 +34,33 @@
     <!-- Location of Saxon jar. -->
     <property name="saxon" value="${basedir}/lib/saxon-he-12.jar"/>
     
+    <!-- Location of the TEI Stylesheets. -->
+    <property name="teiStylesheets" value="https://raw.githubusercontent.com/TEIC/Stylesheets/refs/heads/released"/>
+    
+    <!-- The ODD file from which all schemas are built. -->
+    <property name="oddFile" value="${basedir}/data/schema/schema.odd"/>
+    
+    <!-- The RELAXNG schema we generate from the ODD file. -->
+    <property name="rngFile" value="${basedir}/data/schema/schema.rng"/>
+    
+    <!-- The Schematron schema we generate from the ODD file. -->
+    <property name="schFile" value="${basedir}/data/schema/schema.sch"/>
+    
+    <!-- The Schematron from the ODD file compiled into XSLT. -->
+    <property name="xslSchematron" value="${basedir}/data/schema/schema.xsl"/>
+    
+    <!--ODD 2 ODD XSLT (from the TEI GitHub repo)-->
+    <property name="odd2odd.xsl" value="${teiStylesheets}/odds/odd2odd.xsl"/>
+    
+    <!--ODD 2 RNG XSLT (from the TEI framework)-->
+    <property name="odd2rng.xsl" value="${teiStylesheets}/profiles/tei/rng/to.xsl"/>
+    
+    <!--ODD 2 Schematron XSLT (from the TEI framework)-->
+    <property name="odd2sch.xsl" value="${teiStylesheets}/odds/extract-isosch.xsl"/>
+    
+    <!-- SchXslt transpiler (1.7 branch) -->
+    <property name="schXslt" value="https://codeberg.org/SchXslt/schxslt2/raw/branch/release-1.7/src/main/resources/content/transpile.xsl"/>
+    
     <!-- Jing task for validation of XML. -->
     <taskdef name="jing" classname="com.thaiopensource.relaxng.util.JingTask" 
         classpath="${basedir}/lib/jing.jar"/>
@@ -88,6 +115,51 @@
         </copy>
     </target>
 
+    <target name="buildSchema">
+        <description>
+            TARGET buildSchema
+            This makes use of the TEI Stylesheets online to build the ODD file into
+            a RNG schema and an XSLT Stylesheet which enacts the Schematron rules 
+            from the ODD file.
+        </description>
+        <!-- First transform the schema. --> 
+        <echo message="Initial processing of ODD file..."/>
+        <echo message="${echo.separator}"/>
+        <java jar="${saxon}" fork="true" failonerror="true">
+            <arg line="-s:${oddFile}"/>
+            <arg line="-o:${oddFile}.processed"/>
+            <arg line="-xsl:'${odd2odd.xsl}'"/>
+        </java>
+        
+        <!-- Now generate the RNG. --> 
+        <echo message="Generating RNG..."/>
+        <echo message="${echo.separator}"/>
+        <java jar="${saxon}" fork="true" failonerror="true">
+            <arg line="-s:${oddFile}.processed"/>
+            <arg line="-o:${rngFile}"/>
+            <arg line="-xsl:'${odd2rng.xsl}'"/>
+        </java>
+        
+        <!-- Next, extract the Schematron. -->
+        <echo message="Extracting Schematron..."/>
+        <echo message="${echo.separator}"/>
+        <java jar="${saxon}" fork="true" failonerror="true">
+            <arg line="-s:${oddFile}.processed"/>
+            <arg line="-o:${schFile}"/>
+            <arg line="-xsl:'${odd2sch.xsl}'"/>
+        </java>
+        
+        <!-- Finally, compile the Schematron. -->
+        <echo message="Compiling Schematron XSLT..."/>
+        <echo message="${echo.separator}"/>
+        <java jar="${saxon}" fork="true" failonerror="true">
+            <arg line="-s:${schFile}"/>
+            <arg line="-o:${xslSchematron}"/>
+            <arg line="-xsl:'${schXslt}'"/>
+            <arg line="?schxslt:debug=true()"/>
+            <arg line="!indent=yes"/>
+        </java>
+    </target>
     
     <target name="diagnostics">
         <description>
