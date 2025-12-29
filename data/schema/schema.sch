@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
    <title>ISO Schematron rules</title>
-   <!-- This file generated 2025-12-29T00:54:49Z by 'extract-isosch.xsl'. -->
+   <!-- This file generated 2025-12-29T23:37:37Z by 'extract-isosch.xsl'. -->
    <!-- ********************* -->
    <!-- namespaces, declared: -->
    <!-- ********************* -->
@@ -85,8 +85,8 @@
    </pattern>
    <pattern id="schematron-constraint-mh-idShouldMatchFilename-13">
       <rule context="xh:article | xh:main | xh:html">
-         <let name="fname" value="concat(@id, '.xml')"/>
-         <assert test="ends-with(document-uri(/), $fname)"> ERROR: The @id of your document (<value-of select="@id"/>) does not match the document file name (<value-of select="document-uri(/)"/>).</assert>
+         <let name="reFName" value="concat(@id, '.xm[l_]$')"/>
+         <assert test="matches(document-uri(/), $reFName)"> ERROR: The @id of your document (<value-of select="@id"/>) does not match the document file name (<value-of select="base-uri(/)"/>).</assert>
       </rule>
    </pattern>
 </schema>

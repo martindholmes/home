@@ -1,5 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head xmlns="http://www.w3.org/1999/xhtml">
+    <head xmlns="http://www.w3.org/1999/xhtml" id="page_template">
         <title>Martin Holmes</title>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="css/style.css"/>

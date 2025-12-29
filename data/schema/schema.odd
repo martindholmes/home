@@ -1325,10 +1325,10 @@
                <constraintSpec ident="mh-idShouldMatchFilename" scheme="schematron">
                   <constraint>
                      <sch:rule context="xh:article | xh:main | xh:html">
-                        <sch:let name="fname" value="concat(@id, '.xml')"/>
-                        <sch:assert test="ends-with(document-uri(/), $fname)">
+                        <sch:let name="reFName" value="concat(@id, '.xm[l_]$')"/>
+                        <sch:assert test="matches(document-uri(/), $reFName)">
                            ERROR: The @id of your document (<sch:value-of select="@id"/>) 
-                           does not match the document file name (<sch:value-of select="document-uri(/)"/>).
+                           does not match the document file name (<sch:value-of select="base-uri(/)"/>).
                         </sch:assert>
                      </sch:rule>
                   </constraint>

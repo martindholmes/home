@@ -22,6 +22,9 @@
     <!-- If we only want to run a single diagnostic. -->
     <property name="runOnly" value=""/>
     
+    <!-- Are we in debug mode? -->
+    <property name="debug" value="no"/>
+    
     <!-- For building only a few documents at one go in the HTML. -->
     <property name="docsToBuild" value=""/>
     
@@ -29,7 +32,11 @@
     <property name="siteDir" value="${basedir}/products"/>
     
     <!--  Some paths, libs and tasks. (May not all be needed.) -->
-    <taskdef resource="net/sf/antcontrib/antcontrib.properties"/>
+    <taskdef resource="net/sf/antcontrib/antcontrib.properties">
+        <classpath>
+            <pathelement location="${basedir}/lib/ant-contrib.jar"/>
+        </classpath>
+    </taskdef>
     
     <!-- Location of Saxon jar. -->
     <property name="saxon" value="${basedir}/lib/saxon-he-12.jar"/>
@@ -74,7 +81,6 @@
         <!-- Boilerplate for the site. -->
         <include name="boilerplate/page_template.xml"/>
     </fileset>
-  
     
     <target name="preClean">
         <description>
@@ -159,6 +165,14 @@
             <arg line="?schxslt:debug=true()"/>
             <arg line="!indent=yes"/>
         </java>
+        
+        <!-- And, if not in debug mode, delete the processed ODD. -->
+        <if>
+            <equals arg1="${debug}" arg2="no"/>
+            <then>
+                <delete file="${oddFile}.processed"/>
+            </then>
+        </if>
     </target>
     
     <target name="diagnostics">
@@ -218,7 +232,6 @@
             <jvmarg value="-Xmx2048m"/>
             <arg value="-s:xsl/master_schematron_validation.xsl"/>
             <arg value="-xsl:xsl/master_schematron_validation.xsl"/>
-            <arg value="xmlToValidateDir=content"/>
             <arg value="--suppressXsltNamespaceCheck:on"/>
         </java>
         <echo message="${echo.separator}"/>

@@ -869,16 +869,16 @@
                </map>
             </variable>
             <for-each select=".">
-               <variable name="fname" select="concat(@id, '.xml')"/>
+               <variable name="reFName" select="concat(@id, '.xm[l_]$')"/>
                <choose>
                   <when test="Q{http://www.w3.org/2005/xpath-functions/map}get($Q{http://dmaus.name/ns/2023/schxslt}severity, 'd4e164') ge Q{http://dmaus.name/ns/2023/schxslt}numeric-severity('info')">
-                     <if test="not(ends-with(document-uri(/), $fname))">
+                     <if test="not(matches(document-uri(/), $reFName))">
                         <variable name="failed-assert" as="element(svrl:failed-assert)">
-                           <svrl:failed-assert test="ends-with(document-uri(/), $fname)"
+                           <svrl:failed-assert test="matches(document-uri(/), $reFName)"
                                                patternId="schematron-constraint-mh-idShouldMatchFilename-13">
                               <attribute name="location"
                                          select="path($Q{http://dmaus.name/ns/2023/schxslt}rule-context)"/>
-                              <svrl:text> ERROR: The @id of your document (<value-of select="@id"/>) does not match the document file name (<value-of select="document-uri(/)"/>).</svrl:text>
+                              <svrl:text> ERROR: The @id of your document (<value-of select="@id"/>) does not match the document file name (<value-of select="base-uri(/)"/>).</svrl:text>
                            </svrl:failed-assert>
                         </variable>
                         <sequence select="$failed-assert"/>
@@ -886,7 +886,7 @@
                   </when>
                   <otherwise>
                      <svrl:skipped-assert severityThreshold="info"
-                                          test="ends-with(document-uri(/), $fname)"
+                                          test="matches(document-uri(/), $reFName)"
                                           patternId="schematron-constraint-mh-idShouldMatchFilename-13">
                         <attribute name="location"
                                    select="path($Q{http://dmaus.name/ns/2023/schxslt}rule-context)"/>
