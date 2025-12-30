@@ -94,6 +94,22 @@
                 <include name="**/*"/>
             </fileset>
         </delete>
+        <delete file="${basedir}/gitHash.txt"/>
+    </target>
+    
+    <target name="gitHashForSuffix">
+        <description>
+            TARGET gitHashForSuffix
+            This simply outputs the first four characters of the 
+            current git commit hash for use by staticSearch as a
+            suffix for versioning.
+        </description>
+        <exec executable="git" dir="${basedir}" outputproperty="gitHash">
+            <arg value="rev-parse"/>
+            <arg value="HEAD"/>
+        </exec>
+        <echo file="${basedir}/gitHash.txt" message="${gitHash}"/>
+        <replaceregexp file="${basedir}/gitHash.txt" match="^(.{4,4}).+$" replace="\1" flags="s"/>
     </target>
     
     <target name="copyWebResources">
@@ -294,6 +310,7 @@
         <echo message="${echo.separator}"/>
         <echo message="Running the site build process..."/>
         <antcall target="preClean"/>
+        <antcall target="gitHashForSuffix"/>
         <antcall target="validateSource"/>
         <antcall target="copyWebResources"/>
         <antcall target="diagnostics"/>
