@@ -313,7 +313,7 @@
         <antcall target="gitHashForSuffix"/>
         <antcall target="validateSource"/>
         <antcall target="copyWebResources"/>
-        <antcall target="diagnostics"/>
+        <!--<antcall target="diagnostics"/>-->
         <antcall target="buildSite"/>
         <antcall target="validateSite"/>
         <echo message="Done!"/>

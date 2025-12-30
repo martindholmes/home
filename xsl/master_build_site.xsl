@@ -17,8 +17,9 @@
     <xd:desc>Include the modules we need.</xd:desc>
   </xd:doc>
   <xsl:include href="module_globals.xsl"/>
+  <xsl:include href="module_site_templates.xsl"/>
   <!--<xsl:include href="module_functions.xsl"/>
-  <xsl:include href="module_templates.xsl"/>-->
+  -->
 
   <xd:doc>
     <xd:desc>Our mode is basically identity transform, since we're going from HTML to
@@ -43,7 +44,7 @@
       <xsl:variable name="currPageId" as="xs:string" select="xs:string(main/@id)"/>
       <xsl:result-document href="{$baseDir}products/{$currPageId}.html">
         <xsl:apply-templates mode="html" select="$sitePageTemplate">
-          <xsl:with-param name="main" as="element(main)" tunnel="yes" select="main"/>
+          <xsl:with-param name="currMain" as="element(main)" tunnel="yes" select="main"/>
           <xsl:with-param name="currPageId" as="xs:string" tunnel="yes" select="$currPageId"/>
         </xsl:apply-templates>
       </xsl:result-document>

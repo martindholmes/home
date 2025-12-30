@@ -16,12 +16,12 @@
                     <!-- This first item is the burger menu that shows up on small-format devices. -->
                     <!-- <li id="menuBurger"><a href="#mainMenu">☰</a></li> -->
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="hcmc.html">DH work at UVic</a></li>
+                    <li><a href="uvic.html">DH work at UVic</a></li>
                     <li><a href="about.html">About me</a></li>
                     <li><a href="cv.html">My CV</a></li>
                     <li><a href="contact.html">Contact me</a></li>
                     <li><a href="software.html">Software / projects</a></li>
-                    <li><a href="site.html">About this site</a></li>
+                    <!--<li><a href="site.html">About this site</a></li>-->
                 </ul>
             </nav>
         </header>
