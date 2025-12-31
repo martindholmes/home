@@ -27,6 +27,26 @@
   </xsl:template>
   
   <xd:doc>
+    <xd:desc>Catch the current page's menu item and unlink it.</xd:desc>
+    
+    <xd:param name="currPageId" as="xs:string" tunnel="yes">The id of the current page.</xd:param>
+  </xd:doc>
+  <xsl:template match="nav/ul/li" mode="html">
+    <xsl:param name="currPageId" as="xs:string" tunnel="yes"/>
+    <xsl:choose>
+      <xsl:when test="a/@href eq $currPageId || '.html'">
+        <xsl:copy>
+          <xsl:attribute name="class" select="'current'"/>
+          <xsl:apply-templates select="a/node()" mode="#current"/>
+        </xsl:copy>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:next-match/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <xd:doc>
     <xd:desc>Replace the main element in the boilerplate with the content
       from the current document.</xd:desc>
     <xd:param name="currMain" as="element(main)" tunnel="yes">The main element from the content document.</xd:param>
@@ -40,5 +60,25 @@
     <xd:desc>Suppress that id when it appears in the main element.</xd:desc>
   </xd:doc>
   <xsl:template match="main/@id" mode="html"/>
+  
+  <xd:doc>
+    <xd:desc>Build info goes into the footer.</xd:desc>
+  </xd:doc>
+  <xsl:template match="p[@id='buildInfo']" mode="html">
+    <xsl:copy>
+      <xsl:apply-templates select="@*" mode="#current"/>
+      <xsl:sequence select="$footerBuildInfo"/>
+    </xsl:copy>
+  </xsl:template>
+  
+  <xd:doc>
+    <xd:desc>Credits info goes into the footer.</xd:desc>
+  </xd:doc>
+  <xsl:template match="p[@id='credits']" mode="html">
+    <xsl:copy>
+      <xsl:apply-templates select="@*" mode="#current"/>
+      <xsl:sequence select="$footerCredits"/>
+    </xsl:copy>
+  </xsl:template>
   
 </xsl:stylesheet>

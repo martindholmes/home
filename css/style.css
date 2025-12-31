@@ -25,10 +25,14 @@
 }
 
 body{
-    font-family: NotoSansVariableNormal;
-    font-weight: 350;
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: NotoSansVariableNormal;
+  font-weight: 350;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  min-height: 98vh;
 }
 
 h1, h2, h3{
@@ -36,7 +40,49 @@ h1, h2, h3{
   font-weight: 600;
 }
 
+nav{
+  margin: auto;
+  max-width: fit-content;
+  &>ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--charcoal-color);
+    margin: auto;
+    padding: 2pt;
+    li{
+      padding: 0.25em;
+      margin: 1pt;
+      border: solid 1pt black;
+      text-align: center;
+      background-color: var(--dark-hi-color);
+      color: white;
+      cursor: pointer;
+      &:hover{
+        color: var(--dark-hi-color);
+        background-color: var(--main-bg-color);
+      }
+      &.current, &.current:hover{
+        background-color: var(--text-color);
+        color: white;
+        cursor: default;
+      }
+      a, a:visited{
+        color: white;
+        text-decoration: none;
+        &:hover{
+          color: var(--dark-hi-color);
+          background-color: var(--main-bg-color);
+        }
+      }
+    }
+  }
+}
+
 main{
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,9 +95,16 @@ a, a:visited{
 }
 
 footer{
+  font-size: 0.8rem;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: auto;
+  padding: 0.5rem;
+  border-top: 1pt solid var(--dark-hi-color);
+  p{
+    margin: 0.1em 1em;
+  }
 }

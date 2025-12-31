@@ -38,9 +38,8 @@
         
         <footer>
             <p id="buildInfo"></p>
-            <p id="credits">
-                <a href="https://endings.uvic.ca/"><img id="endingsLogo" src="images/endings_logo_badge_dark.svg" alt="Endings-compliant: see endings.uvic.ca"/></a>
-            </p>
+            <p id="credits"></p>
+            <p><a href="https://endings.uvic.ca/"><img id="endingsLogo" src="images/endings_logo_badge_dark.svg" alt="Endings-compliant: see endings.uvic.ca"/></a></p>
         </footer>
         
         <dialog id="infoPopup">

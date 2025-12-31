@@ -72,6 +72,13 @@
     select="$siteTitle || ': ' || $nowDate || ', git rev. ' || substring($gitHash, 1, 8)
     || '.' "/>
   
+  <xd:doc>
+    <xd:desc><xd:ref name="footerCredits">footerCredits</xd:ref> just points to the GitHub repo.</xd:desc>
+  </xd:doc>
+  <xsl:variable name="footerCredits" as="element(a)">
+    <a href="https://github.com/martindholmes/home">Source on GitHub.</a>
+  </xsl:variable>
+  
   <!--<xd:doc>
     <xd:desc>The imageDimensions.txt fils is created early in the build process using ImageMagick to 
     parse all images in the data/images folder.</xd:desc>
