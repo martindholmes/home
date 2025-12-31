@@ -6,6 +6,7 @@
   --main-bg-color: #edeef2;
   --light-hi-color: #BEB4AE;
   --dark-hi-color: #80746E;
+  --light-charcoal-color: #6e717d;
   --charcoal-color: #45474F;
   --text-color: #333236;
 }
@@ -33,25 +34,33 @@ body{
   background-color: var(--main-bg-color);
   color: var(--text-color);
   min-height: 98vh;
+  padding: 0;
+  margin: 0;
 }
 
 h1, h2, h3{
   font-family: NotoSansVariableItalic;
   font-weight: 600;
+  padding-left: 1rem;
+}
+
+header{
+  width: 100%;
 }
 
 nav{
   margin: auto;
-  max-width: fit-content;
+  
   &>ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--charcoal-color);
+    /* background-color: var(--charcoal-color); */
+    background: linear-gradient(90deg, var(--charcoal-color), var(--light-charcoal-color), var(--charcoal-color));
     margin: auto;
-    padding: 2pt;
+    padding: 5pt;
     li{
       padding: 0.25em;
       margin: 1pt;
@@ -60,9 +69,14 @@ nav{
       background-color: var(--dark-hi-color);
       color: white;
       cursor: pointer;
+      box-shadow: -1pt -1pt var(--light-hi-color);
       &:hover{
         color: var(--dark-hi-color);
         background-color: var(--main-bg-color);
+        a{
+          color: var(--dark-hi-color);
+          background-color: var(--main-bg-color);
+        }
       }
       &.current, &.current:hover{
         background-color: var(--text-color);
@@ -88,6 +102,7 @@ main{
   align-items: center;
   max-width: 60rem;
   margin: 1rem auto;
+  padding: 0 5rem;
 }
 
 a, a:visited{
@@ -108,3 +123,18 @@ footer{
     margin: 0.1em 1em;
   }
 }
+
+table{
+  border-collapse: collapse;
+  thead{
+    font-weight: 600;
+    font-family: NotoSansVariableItalic;
+  }
+  td{
+    border-style: solid;
+    border-width: 1pt 0;
+    border-color: var(--light-hi-color);
+    padding: 0.25em;
+  }
+}
+
