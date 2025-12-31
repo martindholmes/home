@@ -8,7 +8,7 @@
   --dark-hi-color: #80746E;
   --light-charcoal-color: #6e717d;
   --charcoal-color: #45474F;
-  --text-color: #333236;
+  --text-color: #201f20;
 }
  
 @font-face {
@@ -36,6 +36,8 @@ body{
   min-height: 98vh;
   padding: 0;
   margin: 0;
+  background: url(../images/tree_heavy_fog.jpg) no-repeat center fixed;
+  background-size: cover;
 }
 
 h1, h2, h3{
