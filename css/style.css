@@ -1,0 +1,20 @@
+/*  Styles for the entire site. No need for SCSS or anything like that;
+ *  keep it simple.  */
+ 
+@font-face {
+  font-family: "NotoSansVariableNormal";
+  src: url("../fonts/NotoSansVariableNormal.woff2") format("woff2 supports variations"),
+       url("../fonts/NotoSansVariableNormal.woff2") format("woff2-variations");
+       font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: "NotoSansVariableItalic";
+  src: url("../fonts/NotoSansVariableItalic.woff2") format("woff2 supports variations"),
+       url("../fonts/NotoSansVariableItalic.woff2") format("woff2-variations");
+       font-weight: 100 1000;
+}
+
+body{
+    font-family: NotoSansVariableNormal;
+}

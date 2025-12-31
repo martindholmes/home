@@ -123,9 +123,9 @@
         <copy todir="${basedir}/products/css" preservelastmodified="true">
             <fileset dir="${basedir}/css" includes="*.css"/>
         </copy>
-        <!--<copy todir="${basedir}/site/fonts" preservelastmodified="true">
-            <fileset dir="${basedir}/fonts"/>
-        </copy>-->
+        <copy todir="${basedir}/products/fonts" preservelastmodified="true">
+            <fileset dir="${basedir}/fonts"  includes="*.woff2"/>
+        </copy>
         <copy todir="${basedir}/products/js" preservelastmodified="true">
             <fileset dir="${basedir}/js"/>
         </copy>
