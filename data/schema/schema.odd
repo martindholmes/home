@@ -545,6 +545,7 @@
                   <classes>
                      <memberOf key="model.mhBlockBody"/>
                      <memberOf key="att.classable"/>
+                     <memberOf key="att.identifiable"/>
                   </classes>
                   <content>
                      <elementRef key="li" minOccurs="1" maxOccurs="unbounded"/>

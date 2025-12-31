@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <main xmlns="http://www.w3.org/1999/xhtml" id="cv">
     
-<h2>Martin David Holmes: Curriculum Vitae</h2>
+   <h2>Martin David Holmes: Curriculum Vitae</h2>
 
 
-<p>Last revision: 2026</p>
-
-<div id="contactInfo">
+   <p>Last revision: 2026</p>
+   <div>  
+     <ul id="nav">
+        <li><a href="#contactInfo">Contact info</a></li>
+        <li><a href="#mainQualifications">Qualifications</a></li>
+        <li><a href="#honours">Honours, memberships, and professional activities</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#employment">Employment</a></li>
+        <li><a href="#technicalSkills">Technical skills</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#publications">Publications and presentations</a></li>
+        <li><a href="#interests">Other interests</a></li>
+     </ul>
+   </div>
+   <div id="contactInfo">
     <table class="contact">
         <tbody>
             <tr>
@@ -31,7 +43,7 @@
     </table>
 </div>
 
-<div id="MainQualifications">
+<div id="mainQualifications">
    <h3>Education: Main Qualifications</h3>
    <table class="qualificationTable">
       <thead>
@@ -75,7 +87,7 @@
          </tr>
       </tbody>
    </table>
-</div><div id="OtherTraining">
+</div><div id="otherTraining">
    <h3>Education: Other Training</h3>
    <table class="qualificationTable">
       <thead>
@@ -169,7 +181,7 @@
    </table>
 </div>
 
-<div id="Honours">
+<div id="honours">
    <h3>Honours</h3>
    <ul>
       <li>University of Victoria Presidentʼs Distinguished Service Award, 2008.
@@ -179,7 +191,7 @@
    </ul>
 </div>
 
-<div id="Memberships">
+<div id="memberships">
    <h3>Memberships</h3>
    <ul>
       <li>Text-Encoding Initiative. I served as an elected member of the TEI Technical Council
@@ -191,7 +203,7 @@
    </ul>
 </div>
 
-<div id="Professional">
+<div id="professional">
    <h3>Professional activities</h3>
    <ul>
       <li>Managing Editor of the TEI Journal, 2013-2015.</li>
@@ -210,7 +222,7 @@
 </div>
 
 
-<div id="Teaching">
+<div id="teaching">
    <h3>Recent teaching</h3>
    <ul>
       <li>Introduction to XSLT for Digital Humanists, Digital Humanities Summer Institute, University
@@ -226,7 +238,7 @@
 
 
 
-<div id="Employment">
+<div id="employment">
    <h3>Employment</h3>
    <table class="qualificationTable">
       <thead>
@@ -336,7 +348,7 @@
 </div>
 
 
-<div id="TechnicalSkills">
+<div id="technicalSkills">
    <h3>Key Technical Skills</h3>
    <table class="qualificationTable">
       <thead>
@@ -405,7 +417,7 @@
 </div>
 
 
-<div id="Languages">
+<div id="languages">
    <h3>Languages</h3>
    <table class="qualificationTable">
       <thead>
@@ -455,7 +467,7 @@
 </div>
 
 
-<div id="Publications">
+<div id="publications">
    <h3>Selected Publications and Presentations</h3>
    <ul>
       <li>
@@ -1748,7 +1760,7 @@
 
 
 
-<div id="Interests">
+<div id="interests">
    <h3>Other Interests</h3>
    <p>
       My other interests include music and multitrack recording, travel, snorkelling and

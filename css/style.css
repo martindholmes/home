@@ -140,3 +140,12 @@ table{
   }
 }
 
+div#publications{
+  ul>li{
+    margin-top: 0.5em;
+    span.publicationTitle{
+      font-weight: 600;
+    }
+  }
+}
+
