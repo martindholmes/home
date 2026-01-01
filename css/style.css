@@ -5,7 +5,8 @@
   /* Colours adapted from https://abloomdecor.com/charcoal-color-palette/ with thanks! */
   --main-bg-color: #edeef2;
   --light-hi-color: #BEB4AE;
-  --dark-hi-color: #80746E;
+  --mid-hi-color: #80746E;
+  --dark-hi-color: #5e4c43;
   --light-charcoal-color: #6e717d;
   --charcoal-color: #45474F;
   --text-color: #201f20;
@@ -31,6 +32,8 @@ body{
   align-items: center;
   font-family: NotoSansVariableNormal;
   font-weight: 350;
+  font-stretch: 95%; /* Deprecated in favour of font-width, but the latter is not widely supported yet. */
+  font-width: 95%;
   background-color: var(--main-bg-color);
   color: var(--text-color);
   min-height: 98vh;
@@ -68,16 +71,17 @@ nav{
       margin: 1pt;
       border: solid 1pt black;
       text-align: center;
-      background-color: var(--dark-hi-color);
+      background-color: var(--mid-hi-color);
       color: white;
       cursor: pointer;
       box-shadow: -1pt -1pt var(--light-hi-color);
-      &:hover{
-        color: var(--dark-hi-color);
+      &:hover, &:focus{
+        color: var(--mid-hi-color);
         background-color: var(--main-bg-color);
         a{
-          color: var(--dark-hi-color);
+          color: var(--mid-hi-color);
           background-color: var(--main-bg-color);
+          outline: none;
         }
       }
       &.current, &.current:hover{
@@ -89,7 +93,7 @@ nav{
         color: white;
         text-decoration: none;
         &:hover{
-          color: var(--dark-hi-color);
+          color: var(--mid-hi-color);
           background-color: var(--main-bg-color);
         }
       }
@@ -109,6 +113,12 @@ main{
 
 a, a:visited{
   color: var(--dark-hi-color);
+  padding: 0.2em;
+  &:hover, &:focus{
+    color: var(--text-color);
+    background-color: white;
+    outline: solid 1pt var(--light-charcoal-color);
+  }
 }
 
 footer{
@@ -120,7 +130,7 @@ footer{
   align-items: center;
   margin: auto;
   padding: 0.5rem;
-  border-top: 1pt solid var(--dark-hi-color);
+  border-top: 1pt solid var(--mid-hi-color);
   p{
     margin: 0.1em 1em;
   }
@@ -138,6 +148,10 @@ table{
     border-color: var(--light-hi-color);
     padding: 0.25em;
   }
+}
+
+ul>li>a{
+  letter-spacing: 1px;
 }
 
 div#publications{
