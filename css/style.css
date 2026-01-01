@@ -109,9 +109,11 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 60rem;
-  margin: 1rem auto;
-  padding: 0 5rem;
+  @media (min-width: 40rem){
+    max-width: 60rem;
+    margin: 1rem auto;
+    padding: 0 5rem;
+  }
 }
 
 a, a:visited{
@@ -126,7 +128,9 @@ a, a:visited{
 
 footer{
   font-size: 0.8rem;
-  width: 100%;
+  @media (min-width: 40rem){
+    width: 100%;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,6 +167,17 @@ div#publications{
     span.publicationTitle{
       font-weight: 600;
     }
+  }
+}
+
+/* I know we should be styling mobile-first, and at some point
+   I'll do that, but for now I'm adding overrides for mobile. */
+
+@media (max-width: 40rem) {
+  main{
+    max-width: 38rem;
+    margin: 1rem;
+    padding: 0;
   }
 }
 
