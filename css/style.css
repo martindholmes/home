@@ -82,6 +82,9 @@ nav{
           color: var(--mid-hi-color);
           background-color: var(--main-bg-color);
           outline: none;
+          &:hover, &:focus{
+            outline: none;
+          }
         }
       }
       &.current, &.current:hover{

@@ -2,6 +2,7 @@
     <head xmlns="http://www.w3.org/1999/xhtml">
         <title>Martin Holmes</title>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="icon" href="images/favicon.ico" sizes="48x48" />
         <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml" />

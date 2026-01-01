@@ -99,6 +99,16 @@
                   <content>
                      <empty/>
                   </content>
+                  <constraintSpec ident="fixMetaContentValue" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="xh:meta[@content]">
+                           <sch:assert test="@content eq 'width=device-width, initial-scale=1.0'">
+                             ERROR: The @content value must be:
+                             width=device-width, initial-scale=1.0
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>
+                  </constraintSpec>
                   <attList>
                      <attDef ident="charset" usage="opt">
                         <gloss>Character set (use only UTF-8)</gloss>
@@ -107,6 +117,22 @@
                               <gloss>The only value we use is UTF-8.</gloss>
                            </valItem>
                         </valList>
+                     </attDef>
+                     <attDef ident="name" usage="opt">
+                        <gloss>Should be set to <val>viewport</val></gloss>
+                        <valList type="closed">
+                           <valItem ident="viewport">
+                              <gloss>A meta tag with <att>name</att>=<val>viewport</val>
+                              is used to define viewport-related behaviours using 
+                              <att>content</att>.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="content" usage="opt">
+                        <gloss>Should be set to <val>width=device-width, initial-scale=1.0</val></gloss>
+                        <datatype>
+                           <dataRef key="teidata.text"/>
+                        </datatype>
                      </attDef>
                   </attList>
                </elementSpec>

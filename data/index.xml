@@ -3,8 +3,8 @@
     <h2>Welcome</h2>
     
     <div>
-        <p>Welcome to my site. Iʼm a software developer and digital 
-        humanist, and I work at the University of Victoriaʼs 
+        <p>Welcome to my site. Iʼm a software developer and <a href="https://en.wikipedia.org/wiki/Digital_humanities">digital 
+        humanist</a>, and I work at the University of Victoriaʼs 
         <a href="https://hcmc.uvic.ca/">Humanities Computing and Media Centre</a>.</p>
     </div>
 </main>
