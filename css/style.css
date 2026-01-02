@@ -179,5 +179,37 @@ div#publications{
     margin: 1rem;
     padding: 0;
   }
+  table{
+    max-width: 96%;
+    tr{
+      display: list;
+      list-style-type: none;
+      td{
+        display: list-item;
+        border-style: none;
+        &:first-of-type{
+          border-top-style: solid;
+        }
+        &:last-of-type{
+          border-bottom-style: solid;
+        }
+      }
+    }
+  } 
+}
+
+@media (max-width: 30rem) {
+  main{
+    max-width: 20rem;
+    margin: 0.5rem;
+    h3{
+      background-color: var(--charcoal-color);
+      color: var(--main-bg-color);
+      padding: 0.25em;
+    }
+    div{
+      max-width: 100%;
+    }
+  }
 }
 
