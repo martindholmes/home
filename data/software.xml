@@ -48,8 +48,12 @@
                <td>This is not actively maintained. Written in C++ with Qt.</td>
             </tr>
             <tr>
-               <td id="swTexToys"><a href="https://www.cict.co.uk/textoys/index.php">TexToys</a></td>
-               <td>A Windows-based authoring tool for creating interactive teaching materials (also runs on Linux under Wine). Companion to Hot Potatoes.</td>
+               <td id="swTexToys">TexToys</td>
+               <td>A Windows-based authoring tool for creating interactive teaching materials (also runs on Linux under Wine). Companion to Hot Potatoes. If you would like to use it, you can download the software from <a href="software/texoys31.exe">this link</a>, and use the following registration code:
+                  <br/>
+                  Username: <strong>Free user</strong><br/>
+                  Key: <strong>TJWZHL-177591</strong>
+               </td>
                <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
             </tr>
             <tr>
@@ -58,9 +62,13 @@
                <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
             </tr>
             <tr>
-               <td id="swMarkin"><a href="https://www.cict.co.uk/markin/index.php">Markin</a></td>
-               <td>Windows software for marking student essays. Also works on Linux under Wine.</td>
-               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
+               <td id="swMarkin">>Markin</td>
+               <td>Windows software for marking student essays. Also works on Linux under Wine. If you would like to use it, you can download the software from <a href="software/setup_markin_4311.exe">this link</a>, and use the following registration code:
+                  <br/>
+                  Username: <strong>Free user</strong><br/>
+                  Key: <strong>45534-GGVZX-90178</strong></td>
+               <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.
+               </td>
             </tr>
             <tr>
                <td id="swImageMarkupTool"><a href="https://hcmc.uvic.ca/~mholmes/image_markup/">Image Markup Tool</a></td>

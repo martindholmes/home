@@ -135,6 +135,9 @@
         <copy todir="${basedir}/products/images" preservelastmodified="true">
             <fileset dir="${basedir}/images"/>
         </copy>
+        <copy todir="${basedir}/products/software" preservelastmodified="true">
+            <fileset dir="${basedir}/software"/>
+        </copy>
     </target>
 
     <target name="buildSchema">
