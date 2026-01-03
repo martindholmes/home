@@ -95,4 +95,12 @@
     </xsl:copy>
   </xsl:template>
   
+  <!--<xd:doc>
+    <xd:desc>We need to make sure that long URLs can break when they're displayed
+    on a small-format device.</xd:desc>
+  </xd:doc>
+  <xsl:template match="h[@href and starts-with(., 'http')]/text()" mode="html">
+    <xsl:sequence select="replace(., '([=&amp;])', '$1')"
+  </xsl:template>-->
+  
 </xsl:stylesheet>

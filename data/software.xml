@@ -72,7 +72,7 @@
                <td>Windows software for chaining, testing, and applying sequences of search-replace operations on files. Also works on Linux under Wine.</td>
                <td>No longer maintained, but still functional. Written in Delphi/Object Pascal.</td>
             </tr>
-            <tr>
+            <!--<tr>
                <td></td>
                <td></td>
                <td></td>
@@ -121,7 +121,7 @@
                <td></td>
                <td></td>
                <td></td>
-            </tr>
+            </tr>-->
          </tbody>
       </table>
       
