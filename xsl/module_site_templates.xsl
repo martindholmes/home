@@ -69,6 +69,7 @@
   <xsl:template match="p[@id='buildInfo']" mode="html">
     <xsl:copy>
       <xsl:apply-templates select="@*" mode="#current"/>
+      <img src="images/favicon.svg" class="footerIcon" alt="MH: Martin Holmes"/>
       <xsl:sequence select="$footerBuildInfo"/>
     </xsl:copy>
   </xsl:template>
@@ -79,7 +80,7 @@
   <xsl:template match="p[@id='credits']" mode="html">
     <xsl:copy>
       <xsl:apply-templates select="@*" mode="#current"/>
-      <xsl:sequence select="$footerCredits"/>
+      <span><xsl:sequence select="$footerCredits"/></span>
     </xsl:copy>
   </xsl:template>
   
