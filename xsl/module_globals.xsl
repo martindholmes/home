@@ -149,7 +149,7 @@
       project title, which is used for page titles if no other title is provided.</xd:desc>
   </xd:doc>
   <xsl:variable name="siteTitle" as="xs:string">
-    <xsl:value-of select="concat($siteMainTitle, ': ', $siteSubTitle)"/>
+    <xsl:value-of select="$siteMainTitle"/>
   </xsl:variable>
   
   <!--<xd:doc>
