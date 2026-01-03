@@ -81,4 +81,18 @@
     </xsl:copy>
   </xsl:template>
   
+  <xd:doc>
+    <xd:desc>We want to add title attributes to any table cells in case
+    they need to be displayed as a list on a small-format device.</xd:desc>
+  </xd:doc>
+  <xsl:template match="table[thead]/tbody/tr/td" mode="html">
+    <xsl:variable name="offset" as="xs:integer" select="count(preceding-sibling::td)"/>
+    <xsl:variable name="caption" as="xs:string" select="xs:string(ancestor::table[1]/thead/tr[1]/td[count(preceding-sibling::td) eq $offset])"/>
+    <xsl:copy>
+      <xsl:apply-templates select="@*[not(local-name() eq 'title')]" mode="#current"/>
+      <xsl:attribute name="title" select="$caption"/>
+      <xsl:apply-templates select="node()" mode="#current"/>
+    </xsl:copy>
+  </xsl:template>
+  
 </xsl:stylesheet>
