@@ -90,11 +90,12 @@ nav{
       &.current, &.current:hover{
         background-color: var(--text-color);
         color: white;
-        cursor: default;
+        cursor: text;
       }
-      a, a:visited{
+      a, a:visited, span{
         color: white;
         text-decoration: none;
+        padding: 0.2em;
         &:hover{
           color: var(--mid-hi-color);
           background-color: var(--main-bg-color);
@@ -158,8 +159,8 @@ table{
   }
 }
 
-ul>li>a{
-  letter-spacing: 1px;
+ul>li>a, nav>ul>li>span{
+  letter-spacing: 0.25px;
 }
 
 div#publications{

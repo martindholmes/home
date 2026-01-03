@@ -37,7 +37,9 @@
       <xsl:when test="a/@href eq $currPageId || '.html'">
         <xsl:copy>
           <xsl:attribute name="class" select="'current'"/>
-          <xsl:apply-templates select="a/node()" mode="#current"/>
+          <span>
+            <xsl:apply-templates select="a/node()" mode="#current"/>
+          </span>
         </xsl:copy>
       </xsl:when>
       <xsl:otherwise>
