@@ -7,7 +7,7 @@
         <p>I work at the University of Victoria <a href="https://hcmc.uvic.ca/">Humanities Computing and Media Centre</a>
         as a Programmer/Analyst. I work primarily on digital editions of literary and historical texts, indigenous language
         dictionaries, and other humanities websites and publications, mostly using <a href="https://www.w3.org/TR/xml/">XML</a> 
-            technologies (<a href="https://www.tei-c,org/">TEI</a> XML, <a href="https://www.w3.org/TR/xslt-30/">XSLT</a>, 
+            technologies (<a href="tei.html">TEI</a> XML, <a href="https://www.w3.org/TR/xslt-30/">XSLT</a>, 
             <a href="https://www.w3.org/TR/xquery-30/">XQuery</a>,
             <a href="https://en.wikipedia.org/wiki/XHTML#XHTML5">XHTML5</a>, 
             <a href="https://www.w3.org/TR/xsl/">XSL:FO</a>) as well as 
