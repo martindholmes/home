@@ -158,7 +158,8 @@ footer{
 }
 
 table{
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   thead{
     font-weight: 600;
     font-family: NotoSansVariableItalic;
@@ -181,6 +182,14 @@ div#publications{
     span.publicationTitle{
       font-weight: 600;
     }
+  }
+}
+
+/* Outline things pointed at. */
+*:target{
+  outline: solid 2pt var(--dark-hi-color) !important;
+  &+td{
+    padding-left: 0.5em;
   }
 }
 
