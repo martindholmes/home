@@ -4,7 +4,7 @@
    <h2>Martin David Holmes: Curriculum Vitae</h2>
 
 
-   <p>Last revision: 2026</p>
+   <p>Last revision: <?thisYear?></p>
    <div>  
      <ul id="nav">
         <li><a href="#contactInfo">Contact info</a></li>

@@ -41,6 +41,7 @@ body{
   margin: 0;
   background: url(../images/tree_heavy_fog.jpg) no-repeat center fixed;
   background-size: cover;
+  scroll-margin-top: 1rem;
 }
 
 h1, h2, h3{
@@ -187,7 +188,8 @@ div#publications{
 
 /* Outline things pointed at. */
 *:target{
-  outline: solid 2pt var(--dark-hi-color) !important;
+  outline: solid 2pt var(--dark-hi-color);
+  scroll-margin-top: 1rem;
   &+td{
     padding-left: 0.5em;
   }
@@ -229,6 +231,9 @@ div#publications{
           font-size: 0.9rem;
           display: block;
           font-weight: 650;
+        }
+        &:target+td{
+          padding-left: 0.25em;
         }
       }
     }

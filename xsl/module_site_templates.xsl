@@ -98,6 +98,18 @@
     </xsl:copy>
   </xsl:template>
   
+  <xd:doc>
+    <xd:desc>We don't currently need the dialog box, so we'll just remove it for now.</xd:desc>
+  </xd:doc>
+  <xsl:template match="dialog" mode="html"/>
+  
+  <xd:doc>
+    <xd:desc>We can insert the year automatically using a processing-instruction.</xd:desc>
+  </xd:doc>
+  <xsl:template match="processing-instruction('thisYear')" mode="html">
+    <xsl:value-of select="$thisYear"/>
+  </xsl:template>
+  
   <!--<xd:doc>
     <xd:desc>We need to make sure that long URLs can break when they're displayed
     on a small-format device.</xd:desc>
