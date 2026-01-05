@@ -555,6 +555,16 @@
          [<a href="https://doi.org/10.1353/dic.2023.a915066">https://doi.org/10.1353/dic.2023.a915066</a>].
          
          </li>
+      
+      <li data-monograph="true" data-edited="true" data-solo="false">
+         <span class="publicationTitle">
+            <em>Project Resiliency</em>
+         </span>
+         Special Edition of <em>Digital Humanities Quarterly, 2023 17.1</em>
+         Edited by Martin Holmes, Matt Hukulac, and Janelle Jenstad.
+         [<a href="https://dhq.digitalhumanities.org/vol/17/1/index.html">https://dhq.digitalhumanities.org/vol/17/1/index.html</a>].
+      </li>
+      
       <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>From Tamagotchis to Pet Rocks: On Learning to Love Simplicity through the Endings
@@ -1291,7 +1301,7 @@
          
          October 2006.
          </li>
-      <li data-edited="true" data-article="true" data-solo="false">
+      <li data-edited="true" data-monograph="true" data-solo="false">
          <span class="publicationTitle"><em>Scandinavian-Canadian Studies Journal.</em></span>
          
          (ISSN 0823-1796.)  
@@ -1305,7 +1315,7 @@
          
          2006-2017 (Vol. 15 to 23).
          </li>
-      <li data-presentation="true">
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>The Nxaʔamxcín Online Database.</q> 
             </span>
@@ -1361,7 +1371,7 @@
          
          August 2005.
          </li>
-      <li data-edited="true" data-solo="false">
+      <li data-edited="true" data-monograph="true" data-solo="false">
          <span class="publicationTitle"><em>ACH/ALLC 2005 Conference Abstracts.</em></span>
          
          (ISBN 1-55058-308-5 (printed first edition), ISBN 1-55058-312-3 (online 2nd edition).)  
