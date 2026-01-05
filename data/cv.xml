@@ -470,7 +470,7 @@
 <div id="publications">
    <h3>Selected Publications and Presentations</h3>
    <ul>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Dispatches from the TEIʼs GIS Working Group.</q> 
             </span>
@@ -483,7 +483,7 @@
          [<a href="https://zenodo.org/records/17220760">https://zenodo.org/records/17220760</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Differentiating ODDs.</q> 
             </span>
@@ -497,7 +497,7 @@
          [<a href="https://zenodo.org/records/17151428">https://zenodo.org/records/17151428</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Eye Rhyme in the Digital Victorian Periodical Poetry Project.</q> 
             </span>
@@ -510,7 +510,7 @@
          [<a href="https://zenodo.org/records/17151736">https://zenodo.org/records/17151736</a>].
          
          </li>
-      <li>
+      <li data-chapter="true" data-solo="false">
          <span class="publicationTitle">
             <q>Browse, search and serendipity: building approachable digital editions.</q> 
             </span>
@@ -528,7 +528,7 @@
          
          2025.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Set in Stone: Building a Monument from a DH Resource.</q> 
             </span>
@@ -538,7 +538,7 @@
          Digital Humanities 2024 Conference, Arlington, Virginia.
          07/08/2024.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Modern Wendat Lexicography:Using XML to Reflect the Grammar and Lexicon of an Iroquoian
             Language.</q> 
@@ -555,7 +555,7 @@
          [<a href="https://doi.org/10.1353/dic.2023.a915066">https://doi.org/10.1353/dic.2023.a915066</a>].
          
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>From Tamagotchis to Pet Rocks: On Learning to Love Simplicity through the Endings
             Principles.</q> 
@@ -571,7 +571,7 @@
          [<a href="http://www.digitalhumanities.org/dhq/vol/17/1/000668/000668.html">http://www.digitalhumanities.org/dhq/vol/17/1/000668/000668.html</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Encoding sonic devices: what is it good for?</q> 
             </span>
@@ -584,7 +584,7 @@
          [<a href="https://zenodo.org/record/7089666">https://zenodo.org/record/7089666</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Serverless Searching with XSLT and JavaScript.</q> 
             </span>
@@ -594,7 +594,7 @@
          With Joey Takeda. Balisage 2022 Conference.
          01/08/2022.
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Getting Along with Relational Databases.</q> 
             </span>
@@ -608,7 +608,7 @@
          [<a href="https://journals.openedition.org/jtei/3874">https://journals.openedition.org/jtei/3874</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>How big can a static site be? Staticizing a census database.</q> 
             </span>
@@ -618,7 +618,7 @@
          With Greg Newton. Digital Humanities 2022 Conference, Tokyo (online).
          28/07/2022.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>What the Book Got Right, or, Lots of Static Copies Keep Stuff Safe.</q> 
             </span>
@@ -628,7 +628,7 @@
          With Janelle Jenstad. Conference of the Bibliographical Society of Canada.
          17/05/2022.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Are the TEI Stylesheets really broken beyond repair?</q> 
             </span>
@@ -638,7 +638,7 @@
          Text Encoding Initiative Conference 2021 (online).
          25/10/2021.
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Using ODD for HTML.</q> 
             </span>
@@ -652,7 +652,7 @@
          [<a href="https://journals.openedition.org/jtei/3106">https://journals.openedition.org/jtei/3106</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Using open-source, sustainable tools for language reclamation: Preliminary findings
             from building a digital corpus of Wendat.</q> 
@@ -671,7 +671,7 @@
          
          04/03/2021.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Nine Projects, One Codebase: A Static Search Engine for Digital Editions.</q> 
             </span>
@@ -686,7 +686,7 @@
          
          31/10/2020.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Static Search: An Archivable and Sustainable Search Engine for the Digital Humanities.</q> 
             </span>
@@ -700,7 +700,7 @@
          
          06/06/2020.
          </li>
-      <li>
+      <li data-edited="true" data-article="true" data-solo="false">
          <span class="publicationTitle"><em>Journal of the Text Encoding Initiative: Selected Papers from the 2017 TEI Conference.</em></span>
          
          (jTEI Issue 12.)  
@@ -712,7 +712,7 @@
          [<a href="http://journals.openedition.org/jtei/1076">http://journals.openedition.org/jtei/1076</a>].
          
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Getting Along with Relational Databases.</q> 
             </span>
@@ -726,7 +726,7 @@
          
          20/09/2019.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>How we tripled our encoding speed in the Digital Victorian Periodical Poetry project.</q> 
             </span>
@@ -741,7 +741,7 @@
          
          19/09/2019.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>The Prefabricated Website: Who needs a server anyway?</q> 
             </span>
@@ -755,7 +755,7 @@
          
          19/09/2019.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Clearing the Air for Maintenance and Repair: Strategies, Experiences, Full Disclosure;
             Paper Three: Ruthless Principles for Digital Longevity</q> 
@@ -771,7 +771,7 @@
          
          12/07/2019.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Project Endings: Early Impressions From Our Recent Survey On Project Longevity In
             DH</q> 
@@ -787,7 +787,7 @@
          
          10/07/2019.
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Encoding Cryptic Crossword Clues with TEI.</q> 
             </span>
@@ -801,7 +801,7 @@
          [<a href="http://journals.openedition.org/jtei/2222">http://journals.openedition.org/jtei/2222</a>].
          
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Beyond Validation: Using Programmed Diagnostics to Learn About, Monitor, and Successfully
             Complete Your DH Project.</q> 
@@ -816,7 +816,7 @@
          [<a href="http://dx.doi.org/10.1093/llc/fqz011">http://dx.doi.org/10.1093/llc/fqz011</a>].
          
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Algorithmic Determination of Japanese Ethnic Identity Based on Name.</q> 
             </span>
@@ -831,7 +831,7 @@
          
          2018.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Encoding GeoJSON Geometries in TEI.</q> 
             </span>
@@ -843,7 +843,7 @@
          
          13/09/2018.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Using ODD for HTML.</q> 
             </span>
@@ -855,7 +855,7 @@
          
          13/09/2018.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Confronting Challenges in Marking Up Pre-modern East Asian Documents.</q> 
             </span>
@@ -868,7 +868,7 @@
          
          11/09/2018.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Why do I need four search engines?</q> 
             </span>
@@ -882,7 +882,7 @@
          
          11/09/2018.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Encoding Cryptic Crossword Clues with TEI.</q> 
             </span>
@@ -896,7 +896,7 @@
          
          14/11/2017.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Beyond Validation: Using Programmed Diagnostics to Learn About, Monitor, and Successfully
             Complete Your DH Project.</q> 
@@ -911,7 +911,7 @@
          
          11/08/2017.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Archiving form and function: preserving a 2003 digital project.</q> 
             </span>
@@ -924,7 +924,7 @@
          
          14/06/2017.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Selecting Technologies for Long-Term Survival.</q> 
             </span>
@@ -938,7 +938,7 @@
          
          10/06/2017.
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Whatever happened to interchange?</q> 
             </span>
@@ -955,7 +955,7 @@
          
          2016.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>How To Edit a Map in TEI.</q> 
             </span>
@@ -970,7 +970,7 @@
          
          03/07/2015.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Whatever Happened to Interchange?</q> 
             </span>
@@ -984,7 +984,7 @@
          
          02/07/2015.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>First steps in integrating diverse data sources to tell a fuller story of the treatment
             of Japanese Canadians in WW2.</q> 
@@ -998,7 +998,7 @@
          
          02/06/2015.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Landscapes of Injustice: Preliminary Returns of Partnered Research.</q> 
             </span>
@@ -1012,7 +1012,7 @@
          
          08/05/2015.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>CodeSharing: a simple API for disseminating our TEI encoding.</q> 
             </span>
@@ -1026,7 +1026,7 @@
          
          22/10/2014.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Using TEI for an Endangered Language Lexical Resource: The Nxaʔamxcín Database-Dictionary
             Project.</q> 
@@ -1044,7 +1044,7 @@
          
          2014.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Encoding historical dates correctly: is it practical, and is it worth it?</q> 
             </span>
@@ -1058,7 +1058,7 @@
          
          19/07/2013.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Practical Interoperability: The Map of Early Modern London and the Internet Shakespeare
             Editions.</q> 
@@ -1073,7 +1073,7 @@
          
          17/07/2013.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Interoperability in Practice: The
             Nxa’amxcín Dictionary.</q> 
@@ -1089,7 +1089,7 @@
          
          05/06/2013.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Technology in documentation: TEI and the
             Nxa’amxcín Dictionary.</q> 
@@ -1107,7 +1107,7 @@
          
          02/03/2013.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Image Markup Tool 2.0.</q> 
             </span>
@@ -1121,7 +1121,7 @@
          
          22/06/2011.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>The Colonial Despatches of Vancouver Island and British Columbia: a Digital Edition
             of a Large-Scale Document Collection.</q> 
@@ -1136,7 +1136,7 @@
          
          20/06/2011.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>Using the Universal Similarity Metric to Map Correspondences between
             Witnesses.</q> 
@@ -1151,7 +1151,7 @@
          
          08/07/2010.
          </li>
-      <li>
+      <li data-chapter="true" data-solo="false">
          <span class="publicationTitle">
             <q>Encoding models for scholarly literature.</q> 
             </span>
@@ -1166,7 +1166,7 @@
          
          2010.
          </li>
-      <li>
+      <li data-software="true" data-solo="true">
          <span class="publicationTitle"><em>Markin version 4.1.</em></span>
          
          (Software program.)  
@@ -1178,20 +1178,20 @@
          
          Current release June 2010; previous versions dating back to 2007.
          </li>
-      <li>
-         <span class="publicationTitle"><em>Hot Potatoes version 6.3.</em></span>
+      <li data-solo="true" data-software="true">
+         <span class="publicationTitle"><em>Hot Potatoes version 7.0.</em></span>
          
          (Software application suite.)  
          
-         Version 6.3/Windows; authoring suite for creating interactive teaching exercises for
+         Version 7.0.3.0/Windows; authoring suite for creating interactive teaching exercises for
          the WWW.
          Half-Baked Software Inc
          
          [<a href="http://hotpot.uvic.ca/">http://hotpot.uvic.ca/</a>].
          
-         Current release June 2010; previous versions dating from 1997.
+         Current release March 2022; previous versions dating from 1997.
          </li>
-      <li>
+      <li data-solo="true" data-software="true">
          <span class="publicationTitle"><em>Image Markup Tool 1.8.</em></span>
          
          (Software application.)  
@@ -1199,11 +1199,11 @@
          Tool for annotating images using TEI P5 XML.
          Martin Holmes / UVic Humanities Computing and Media Centre
          
-         [<a href="http://www.tapor.uvic.ca/~mholmes/image_markup/">http://www.tapor.uvic.ca/~mholmes/image_markup/</a>].
+         [<a href="https://hcmc.uvic.ca/~mholmes/image_markup/">https://hcmc.uvic.ca/~mholmes/image_markup/</a>].
          
-         Current release January 2010; previous versions dating back to 2006.
+         Current release June 2012; previous versions dating back to 2006.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Rescuing old data: case studies, tools and techniques .</q> 
             </span>
@@ -1217,7 +1217,7 @@
          
          27 June 2008.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Domestic strife in early modern Europe: images and texts in a virtual anthology.</q> 
             </span>
@@ -1231,7 +1231,7 @@
          
          26 June 2008.
          </li>
-      <li>
+      <li data-chapter="true" data-solo="false">
          <span class="publicationTitle">
             <q>Hot Potatoes: Taking an academic software project into the commercial domain.</q> 
             </span>
@@ -1248,7 +1248,7 @@
          
          2008.
          </li>
-      <li>
+      <li data-software="true" data-solo="true">
          <span class="publicationTitle"><em>Transformer 2.0.</em></span>
          
          (Software application.)  
@@ -1256,11 +1256,11 @@
          Tool for complex sequential search-and-replace operations on Unicode text files.
          Martin Holmes / UVic Humanities Computing and Media Centre
          
-         [<a href="http://www.tapor.uvic.ca/~mholmes/transformer/">http://www.tapor.uvic.ca/~mholmes/transformer/</a>].
+         [<a href="https://hcmc.uvic.ca/~mholmes/transformer/">https://hcmc.uvic.ca/~mholmes/transformer/</a>].
          
          Current release May 2008; previous versions dating back to 2006.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>teiJournal: Online and print journals through XML.</q> 
             </span>
@@ -1274,7 +1274,7 @@
          
          July 2007.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>No More HTML: Using Cascading Style Sheets (CSS) to present XML for the Web.</q> 
             </span>
@@ -1291,19 +1291,21 @@
          
          October 2006.
          </li>
-      <li>
+      <li data-edited="true" data-article="true" data-solo="false">
          <span class="publicationTitle"><em>Scandinavian-Canadian Studies Journal.</em></span>
          
          (ISSN 0823-1796.)  
          
-         I am Technical Editor on the project to produce volumes 15 onwards,
-         University of Victoria Humanities Computing and Media Centre
+         I was Technical Editor on the project for volumea 15 through 29,
+         after which the editorship moved from the 
+         University of Victoria Humanities Computing and Media Centre to 
+         the University of Alberta.
          
-         [<a href="http://scancan.net">http://scancan.net</a>].
+         [Archive of UVic site: <a href="https://hcmc.uvic.ca/~scancan/articles.htm">https://hcmc.uvic.ca/~scancan/articles.htm</a>].
          
          2006-2017 (Vol. 15 to 23).
          </li>
-      <li>
+      <li data-presentation="true">
          <span class="publicationTitle">
             <q>The Nxaʔamxcín Online Database.</q> 
             </span>
@@ -1316,7 +1318,7 @@
          
          August 2006.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Problems with Marriage: Annotating Seventeenth-century French Engravings with TEI
             and SVG.</q> 
@@ -1332,19 +1334,19 @@
          
          [<a href="http://www.allc-ach2006.colloques.paris-sorbonne.fr/DHs.pdf">http://www.allc-ach2006.colloques.paris-sorbonne.fr/DHs.pdf</a>]. July 2006.
          </li>
-      <li>
-         <span class="publicationTitle"><em>Quandary version 2.3.</em></span>
+      <li data-software="true" data-solo="true">
+         <span class="publicationTitle"><em>Quandary version 3.0.</em></span>
          
-         (Software application suite.)  
+         (Software program.)  
          
-         Version 2.3/Windows; authoring suite for creating action mazes for the WWW.
+         Version 3.0.0.5/Windows; authoring suite for creating action mazes for the WWW.
          Half-Baked Software Inc
          
-         [<a href="http://www.halfbakedsoftware.com/quandary.php">http://www.halfbakedsoftware.com/quandary.php</a>].
+         [<a href="https://hcmc.uvic.ca/project/quandary/">https://hcmc.uvic.ca/project/quandary/</a>].
          
-         Current release November 2007; previous versions dating from September 2000.
+         Current release January 2020; previous versions dating from September 2000.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Hacking Hot Potatoes: An introduction to customizing your exercises (second iteration,
             expanded format).</q> 
@@ -1359,7 +1361,7 @@
          
          August 2005.
          </li>
-      <li>
+      <li data-edited="true" data-solo="false">
          <span class="publicationTitle"><em>ACH/ALLC 2005 Conference Abstracts.</em></span>
          
          (ISBN 1-55058-308-5 (printed first edition), ISBN 1-55058-312-3 (online 2nd edition).)  
@@ -1367,11 +1369,11 @@
          I was programmer/editor/designer on the project to produce this book.
          University of Victoria Humanities Computing and Media Centre
          
-         [<a href="http://web.uvic.ca/hrd/achallc2005/abstracts.htm">http://web.uvic.ca/hrd/achallc2005/abstracts.htm</a>].
+         [<a href="https://hcmc.uvic.ca/eol/ach.allc.2005/ach_allc_2005_abstracts_2nd_edition.pdf">https://hcmc.uvic.ca/eol/ach.allc.2005/ach_allc_2005_abstracts_2nd_edition.pdf</a>].
          
          June 2005.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="true">
          <span class="publicationTitle">
             <q>I want my widgets! Using new XML technologies to build reusable GUI components.</q> 
             </span>
@@ -1385,7 +1387,7 @@
          
          May 2005.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>&lt;teiPublisher&gt;: A Repository Management System for TEI Documents.</q>
             </span>
@@ -1400,7 +1402,7 @@
          
          March 2005.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>&lt;teiPublisher&gt;: Bridging the Gap Between a Simple Set of Structured Documents and
             a Functional Digital Library.</q>
@@ -1414,7 +1416,7 @@
          
          September 2004.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>User in control: A highly-configurable instructional Website.</q> 
             </span>
@@ -1428,7 +1430,7 @@
          
          September 2004.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Hacking Hot Potatoes: An introduction to customizing your exercises.</q> 
             </span>
@@ -1442,7 +1444,7 @@
          
          September 2004.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>&lt;teiPublisher&gt;:a repository management system for TEI documents.</q>
             </span>
@@ -1459,7 +1461,7 @@
          
          June 15, 2004.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Hacking in Hot Potatoes: A little knowledge brings a lot of power.</q> 
             </span>
@@ -1473,7 +1475,7 @@
          
          January 2004.
          </li>
-      <li>
+      <li data-software="true" data-solo="false">
          <span class="publicationTitle"><em>Gerryʼs Vocabulary Teacher version 2.0.</em></span>
          
          (Software application suite.)  
@@ -1486,7 +1488,7 @@
          
          June 2011; previous versions dating from 2003.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Old English, New Techniques: Bringing OE Texts Alive With XML and XSLT.</q> 
             </span>
@@ -1501,7 +1503,7 @@
          
          May 2003.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Unicode and Software Development: Hot Potatoes Goes Multilingual.</q> 
             </span>
@@ -1516,7 +1518,7 @@
          
          May 2003.
          </li>
-      <li>
+      <li data-chapter="true" data-solo="false">
          <span class="publicationTitle">
             <q>Servers, Clients, Testing and Teaching.</q> 
             </span>
@@ -1530,7 +1532,7 @@
          
          2003.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>The Development of Hot Potatoes.</q> 
             </span>
@@ -1542,11 +1544,11 @@
          
          January 2002.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">XML and Beyond: Markup, Display and the University of Victoria Lydgate MS and Robert
             Gravesʼ Diaries.</span> 
          
-         (Poster session.)  
+         (Conference poster presentation.)  
          
          With Undine Bruckner. The Humanities Computing Curriculum / The Computing Curriculum
          in the Arts and Humanities conference.
@@ -1556,7 +1558,7 @@
          
          November 2001.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Hot Potatoes, History and Future.</q> 
             </span>
@@ -1570,7 +1572,7 @@
          
          August 2001.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>The Future of the Exercise.</q> 
             </span>
@@ -1584,7 +1586,7 @@
          
          August 2001.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">Extracts from the Diary of Robert Graves.</span> 
          
          (Web-based presentation.)  
@@ -1597,7 +1599,7 @@
          
          August 2001.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">De Casu Cizaris Dutis Regis Iabin.</span>
          
          (Web-based presentation.)  
@@ -1610,7 +1612,7 @@
          
          July 2001.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>The Ethical Exploitation of Academic Property.</q> 
             </span>
@@ -1623,7 +1625,7 @@
          
          May 2000.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Quandary: Building and Using Web-based Action Mazes.</q> 
             </span>
@@ -1636,7 +1638,7 @@
          
          May 2000.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Put a Hot Potato on your Internet Menu.</q> 
             </span>
@@ -1648,7 +1650,7 @@
          
          January/February 2000.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Juggling hot potatoes: Decisions and compromises in creating authoring tools for the
             Web.</q> 
@@ -1663,7 +1665,7 @@
          
          September 1999.
          </li>
-      <li>
+      <li data-presentation="true" data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>A Multimedia Approach to Learning Phonetic Transcription.</q> 
             </span>
@@ -1677,7 +1679,7 @@
          
          1999.
          </li>
-      <li>
+      <li data-presentation="true" data-solo="false">
          <span class="publicationTitle">
             <q>Hot Potatoes: Free Tools for Creating Interactive Language Exercises for the World
             Wide Web.</q> 
@@ -1691,7 +1693,7 @@
          
          September 1998.
          </li>
-      <li>
+      <li data-presentation="true" data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Approaches to Marking Electronic Texts.</q> 
             </span>
@@ -1703,12 +1705,12 @@
          
          1997; 1999.
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Marking Student Work on the Computer</q> 
             </span>
          
-         (Article.)  
+         (Journal article.)  
          
          <span class="publicationTitle"><em>The Internet TESL Journal (ITESLJ)</em></span>, Vol. II No. 9.
          
@@ -1716,7 +1718,7 @@
          
          September 1996.
          </li>
-      <li>
+      <li data-software="true" data-solo="true">
          <span class="publicationTitle"><em>TexToys version 3.1.</em></span>
          
          (Software program.)  
@@ -1729,7 +1731,7 @@
          
          1999-present.
          </li>
-      <li>
+      <li data-article="true" data-solo="true">
          <span class="publicationTitle">
             <q>Creating and Implementing an Online Writing Course.</q> 
             </span>
@@ -1741,7 +1743,7 @@
          
          December 1997.
          </li>
-      <li>
+      <li data-article="true" data-solo="false">
          <span class="publicationTitle">
             <q>Some notes on the structure of acronyms.</q> 
             </span>
