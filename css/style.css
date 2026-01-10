@@ -195,6 +195,17 @@ div#publications{
   }
 }
 
+/* Form controls in the CV. */
+div.filters{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25em;
+  padding: 1em;
+}
+
 /* I know we should be styling mobile-first, and at some point
    I'll do that, but for now I'm adding overrides for mobile. */
 

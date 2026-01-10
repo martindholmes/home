@@ -382,7 +382,7 @@
                   <content>
                      <sequence>
                         <elementRef key="h3" minOccurs="0" maxOccurs="1"/>
-                        <alternate minOccurs="1" maxOccurs="1">
+                        <alternate minOccurs="1" maxOccurs="unbounded">
                            <elementRef key="p"/>
                            <elementRef key="div"/>
                            <macroRef key="macro.mhBlockContent"/>
@@ -1193,6 +1193,15 @@
                         </sch:rule>
                      </constraint>
                   </constraintSpec>
+                  <constraintSpec ident="checkedInputsMustBeRadioOrCheckbox" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="xh:input[@checked]">
+                           <sch:assert test="xs:string(@type) = ('radio', 'checkbox')"> 
+                              The checked attribute is only available if the input type is radio or checkbox.
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>
+                  </constraintSpec>
                   <attList>
                      <attDef ident="type" usage="req">
                         <gloss>The type of control</gloss>
@@ -1205,6 +1214,14 @@
                            </valItem>
                            <valItem ident="checkbox">
                               <gloss>A checkbox element.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="checked" usage="opt">
+                        <gloss>In the case of a checkbox or a radio button, whether it defaults to checked or not.</gloss>
+                        <valList type="closed">
+                           <valItem ident="checked">
+                              <gloss>The item is checked.</gloss>
                            </valItem>
                         </valList>
                      </attDef>

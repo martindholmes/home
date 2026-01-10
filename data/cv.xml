@@ -470,15 +470,32 @@
 <div id="publications">
    <h3>Selected Publications and Presentations</h3>
    
-   <fieldset>
-      <legend>Authorship</legend>
-      <input type="radio" name="authorship" id="authorshipAll" value="all"/>
-      <label for="authorshipAll">all</label><br/>
-      <input type="radio" name="authorship" id="authorshipSolo" value="solo"/>
-      <label for="authorshipSolo">Solo only</label><br/>
-      <input type="radio" name="authorship" id="authorshipCo" value="co"/>
-      <label for="authorshipCo">Co-authored only</label><br/>
-   </fieldset>
+   <div class="filters">
+      <fieldset>
+         <legend>Type</legend>
+         <input type="radio" name="pubType" id="pubTypeAll" value="all" checked="checked"/>
+         <label for="pubTypeAll">all</label><br/>
+         <input type="radio" name="pubType" id="pubTypeArticle" value="article"/>
+         <label for="pubTypeArticle">articles</label><br/>
+         <input type="radio" name="pubType" id="pubTypeChapter" value="chapter"/>
+         <label for="pubTypeChapter">book chapters</label><br/>
+         <input type="radio" name="pubType" id="pubTypeMonograph" value="monograph"/>
+         <label for="pubTypeMonograph">monographs</label><br/>
+         <input type="radio" name="pubType" id="pubTypePresentation" value="presentation"/>
+         <label for="pubTypePresentation">presentations/workshops</label><br/>
+         <input type="radio" name="pubType" id="pubTypeSoftware" value="software"/>
+         <label for="pubTypeSoftware">software programs</label><br/>
+      </fieldset>
+      <fieldset>
+         <legend>Authorship</legend>
+         <input type="radio" name="authorship" id="authorshipAll" value="all" checked="checked"/>
+         <label for="authorshipAll">all</label><br/>
+         <input type="radio" name="authorship" id="authorshipSolo" value="solo"/>
+         <label for="authorshipSolo">Solo only</label><br/>
+         <input type="radio" name="authorship" id="authorshipCo" value="co"/>
+         <label for="authorshipCo">Co-authored only</label><br/>
+      </fieldset>
+   </div>
    
    <ul>
    <li data-presentation="true">
