@@ -611,6 +611,72 @@
                         <elementRef key="br"/>
                      </alternate>
                   </content>
+                  <attList>
+                     <attDef ident="data-presentation" usage="opt">
+                        <gloss>Whether the item in the list is a presentation or workshop.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is a presentation or workshop.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-article" usage="opt">
+                        <gloss>Whether the item in the list is an article.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is an article.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-chapter" usage="opt">
+                        <gloss>Whether the item in the list is a chapter in a book.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is a book chapter.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-monograph" usage="opt">
+                        <gloss>Whether the item in the list is a monograph.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is a monograph.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-solo" usage="opt">
+                        <gloss>Whether the item in the list is authored alone (not co-authored).</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is a solo work.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-peer-reviewed" usage="opt">
+                        <gloss>Whether the item in the list is peer-reviewed.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is a peer-reviewed item.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-software" usage="opt">
+                        <gloss>Whether the item in the list is a piece of software.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this is a piece of software.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="data-edited" usage="opt">
+                        <gloss>Whether the item in the list was edited rather than authored.</gloss>
+                        <valList type="closed">
+                           <valItem ident="true">
+                              <gloss>Yes, this was edited rather than authored.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                  </attList>
                </elementSpec>
                <elementSpec ident="pre" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
                   <desc>Preformatted text which is to be presented exactly as written in the HTML file.</desc>
@@ -1079,6 +1145,108 @@
                      </sequence>
                   </content>
                </elementSpec>
+               
+               <elementSpec ident="fieldset" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <desc>A bracketing element, usually intended to contain
+                     form controls.</desc>
+                  <classes>
+                     <memberOf key="att.classable"/>
+                     <memberOf key="model.mhBlockBody"/>
+                  </classes>
+                  <content>
+                     <sequence>
+                        <elementRef key="legend"/>
+                        <alternate minOccurs="1" maxOccurs="unbounded">
+                           <elementRef key="input"/>
+                           <elementRef key="label"/>
+                           <elementRef key="button"/>
+                           <elementRef key="br"/>
+                        </alternate>
+                     </sequence>
+                  </content>
+               </elementSpec>
+               
+               <elementSpec ident="legend" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <desc>The element providing the caption for a fieldset.</desc>
+                  <content>
+                     <macroRef key="macro.mhParaContent"/>
+                  </content>
+               </elementSpec>
+               
+               <elementSpec ident="input" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <desc>There are several types of input element, distinguished by their
+                     <att>type</att> attribute.</desc>
+                  <classes>
+                     <memberOf key="att.classable"/>
+                     <memberOf key="att.identifiable"/>
+                     <memberOf key="att.hasTabindex"/>
+                  </classes>
+                  <content>
+                     <empty/>
+                  </content>
+                  <constraintSpec ident="radioInputsMustHaveName" scheme="schematron">
+                     <constraint>
+                        <sch:rule context="xh:input[@type='radio']">
+                           <sch:assert test="@name"> 
+                              A radio button must have a name attribute.
+                           </sch:assert>
+                        </sch:rule>
+                     </constraint>
+                  </constraintSpec>
+                  <attList>
+                     <attDef ident="type" usage="req">
+                        <gloss>The type of control</gloss>
+                        <valList type="closed">
+                           <valItem ident="text">
+                              <gloss>A text box for typed input.</gloss>
+                           </valItem>
+                           <valItem ident="radio">
+                              <gloss>A radio button, one of a set with the same <att>name</att> attribute.</gloss>
+                           </valItem>
+                           <valItem ident="checkbox">
+                              <gloss>A checkbox element.</gloss>
+                           </valItem>
+                        </valList>
+                     </attDef>
+                     <attDef ident="name" usage="opt">
+                        <gloss>The name attribute is used to group 
+                           radio buttons together.</gloss>
+                        <datatype>
+                           <dataRef key="teidata.name"/>
+                        </datatype>
+                     </attDef>
+                     <attDef ident="value" usage="req">
+                        <gloss>The text value of the control.</gloss>
+                        <datatype>
+                           <dataRef key="teidata.text"/>
+                        </datatype>
+                     </attDef>
+                  </attList>
+                  <remarks>
+                     <p>The <att>name</att> attribute must be present 
+                        when the <att>type</att>=<val>radio</val>.</p>
+                  </remarks>
+               </elementSpec>
+               
+               <elementSpec ident="label" ns="http://www.w3.org/1999/xhtml" module="mholmes.com">
+                  <desc>A label element provides the label for a form control.</desc>
+                  <classes>
+                     <memberOf key="att.classable"/>
+                  </classes>
+                  <content>
+                     <macroRef key="macro.mhParaContent"/>
+                  </content>
+                  <attList>
+                     <attDef ident="for">
+                        <gloss>The for attribute contains the id of a form control
+                           for which the label provides the caption.</gloss>
+                        <datatype>
+                           <dataRef key="teidata.name"/>
+                        </datatype>
+                     </attDef>
+                  </attList>
+               </elementSpec>
+               
                <macroSpec ident="macro.mhParaContent" module="mholmes.com">
                   <desc>Content model for paragraph-type containers such as paragraphs, list items, and
                      so on.</desc>
