@@ -200,10 +200,36 @@ div.filters{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 0.25em;
   padding: 1em;
+}
+
+/* Now the code to make the hiding and showing work. It's 
+   actually just hiding. */
+/* Authorship. */
+div:has(input[id='authorshipSolo']:checked) ul>li:not([data-solo]){
+  display: none;
+}
+div:has(input[id='authorshipCo']:checked) ul>li[data-solo]{
+  display: none;
+}
+/* Publication type. */
+div:has(input[id='pubTypeArticle']:checked) ul>li:not([data-article]){
+  display: none;
+}
+div:has(input[id='pubTypeChapter']:checked) ul>li:not([data-chapter]){
+  display: none;
+}
+div:has(input[id='pubTypeMonograph']:checked) ul>li:not([data-monograph]){
+  display: none;
+}
+div:has(input[id='pubTypePresentation']:checked) ul>li:not([data-presentation]){
+  display: none;
+}
+div:has(input[id='pubTypeSoftware']:checked) ul>li:not([data-software]){
+  display: none;
 }
 
 /* I know we should be styling mobile-first, and at some point
