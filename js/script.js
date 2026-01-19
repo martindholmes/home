@@ -20,20 +20,25 @@ function countShowingItems(list){
  *
  * @function    setUpItemCount
  * @description Finds the correct context and adds a box containing a caption
- *              and an associated count.
+ *              and an associated count container, then runs the initial count.
  * @returns {Boolean} True if successful, false if not.
  */
 function setUpItemCount(){
     try{
-        let details = document.createElement('details');
-        let legend = document.createElement('legend').appendChild(document.createTextNode('Total'));
-        let count = document.createElement('span').addAttribute('id', 'itemCount');
-        details.appendChild(legend);
-        details.appendChild(count);
-        document.querySelector('div/filters').appendChild(details);
+        let fs = document.createElement('fieldset');
+        let legend = document.createElement('legend');
+        legend.appendChild(document.createTextNode('Total'));
+        let count = document.createElement('span');
+        count.setAttribute('id', 'itemCount');
+        fs.appendChild(legend);
+        fs.appendChild(count);
+        document.querySelector('div.filters').appendChild(fs);
+        showItemCount();
+        let inputs = document.querySelector('div.filters').querySelectorAll('input');
+        inputs.forEach((inp) => inp.addEventListener('change', function(){showItemCount();}));
     }
-    catch{
-        console.log('Item count setup failed.')
+    catch(error){
+        console.log('Item count setup failed:' + error)
         return false;
     } 
     return true;
@@ -51,3 +56,6 @@ function showItemCount(){
     let count = countShowingItems(list);
     document.getElementById('itemCount').innerHTML = count;
 }
+
+/* Run the setup at load time. */
+window.addEventListener('load', function(){setUpItemCount();})
