@@ -194,8 +194,7 @@
 <div id="memberships">
    <h3>Memberships</h3>
    <ul>
-      <li>Text-Encoding Initiative. I served as an elected member of the TEI Technical Council
-         for six years (2010-2011,  2012-2013, and 2014-2015).</li>
+      <li>Text-Encoding Initiative</li>
       <li>Association for Literary and Linguistic Computing (ALLC)</li>
       <li>Association for Computing in the Humanities (ACH)</li>
       <li>Canadian Society for Digital Humanities / Société canadienne des humanités numériques
@@ -253,7 +252,7 @@
       </thead>
       <tbody>
          <tr>
-            <td>Programmer / Consultant</td>
+            <td>Programmer / Analyst (formerly Programmer / Consultant)</td>
             <td>University of Victoria Humanities Computing and Media Centre (formerly the Language
                Centre)</td>
             <td>01-04-1998</td>
@@ -264,7 +263,9 @@
             <td>Developing standalone and Web-based software and materials to support teaching and
                research within the Humanities (see the Publications section for examples); setting
                up and administering large Windows network (several servers and 60 workstations) for
-               computerized language laboratories.</td>
+               computerized language laboratories; hiring, training, and mentoring workstudy
+               students and research assistants.
+            </td>
          </tr>
          <tr>
             <td>Founder, Director, Secretary/Treasurer</td>
@@ -358,7 +359,7 @@
       </thead>
       <tbody>
          <tr>
-            <td>JavaScript / HTML / XML / CSS / XSLT / XSL:FO / XQuery / mySQL / PHP</td>
+            <td>JavaScript / HTML / XML / CSS / XSLT / XSL:FO / XQuery / mySQL / PHP / LaTeX</td>
             <td>Web</td>
             <td>Creating interactive Web applications and online database systems; digitizing/marking
                up academic texts using XML, and rendering as dynamic Websites using XSL, JavaScript
