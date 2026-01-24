@@ -494,10 +494,19 @@
          <input type="radio" name="authorship" id="authorshipCo" value="co"/>
          <label for="authorshipCo">Co-authored only</label><br/>
       </fieldset>
+      <fieldset>
+         <legend>Peer-review</legend>
+         <input type="radio" name="peerReview" id="peerReviewAll" value="all" checked="checked"/>
+         <label for="peerReviewAll">all</label><br/>
+         <input type="radio" name="peerReview" id="peerReviewYes" value="yes"/>
+         <label for="peerReviewYes">Peer-reviewed only</label><br/>
+         <input type="radio" name="peerReview" id="peerReviewNo" value="no"/>
+         <label for="peerReviewNo">Non-peer-reviewed only</label><br/>
+      </fieldset>
    </div>
    
    <ul>
-   <li data-presentation="true">
+      <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Dispatches from the TEIʼs GIS Working Group.</q> 
          </span>
@@ -510,7 +519,7 @@
       [<a href="https://zenodo.org/records/17220760">https://zenodo.org/records/17220760</a>].
       
       </li>
-   <li data-presentation="true">
+      <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Differentiating ODDs.</q> 
          </span>
@@ -524,7 +533,7 @@
       [<a href="https://zenodo.org/records/17151428">https://zenodo.org/records/17151428</a>].
       
       </li>
-   <li data-presentation="true" data-solo="true">
+      <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Eye Rhyme in the Digital Victorian Periodical Poetry Project.</q> 
          </span>
@@ -537,7 +546,7 @@
       [<a href="https://zenodo.org/records/17151736">https://zenodo.org/records/17151736</a>].
       
       </li>
-   <li data-chapter="true">
+      <li data-chapter="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Browse, search and serendipity: building approachable digital editions.</q> 
          </span>
@@ -555,7 +564,7 @@
       
       2025.
       </li>
-   <li data-presentation="true" data-solo="true">
+      <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Set in Stone: Building a Monument from a DH Resource.</q> 
          </span>
@@ -565,7 +574,7 @@
       Digital Humanities 2024 Conference, Arlington, Virginia.
       07/08/2024.
       </li>
-   <li data-article="true">
+      <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Modern Wendat Lexicography:Using XML to Reflect the Grammar and Lexicon of an Iroquoian
          Language.</q> 
@@ -583,7 +592,7 @@
       
       </li>
    
-   <li data-monograph="true" data-edited="true">
+      <li data-monograph="true" data-edited="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <em>Project Resiliency</em>
       </span>
@@ -592,7 +601,7 @@
       [<a href="https://dhq.digitalhumanities.org/vol/17/1/index.html">https://dhq.digitalhumanities.org/vol/17/1/index.html</a>].
    </li>
    
-   <li data-article="true">
+      <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>From Tamagotchis to Pet Rocks: On Learning to Love Simplicity through the Endings
          Principles.</q> 
@@ -608,7 +617,7 @@
       [<a href="http://www.digitalhumanities.org/dhq/vol/17/1/000668/000668.html">http://www.digitalhumanities.org/dhq/vol/17/1/000668/000668.html</a>].
       
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Encoding sonic devices: what is it good for?</q> 
          </span>
@@ -621,7 +630,7 @@
       [<a href="https://zenodo.org/record/7089666">https://zenodo.org/record/7089666</a>].
       
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Serverless Searching with XSLT and JavaScript.</q> 
          </span>
@@ -645,7 +654,7 @@
       [<a href="https://journals.openedition.org/jtei/3874">https://journals.openedition.org/jtei/3874</a>].
       
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>How big can a static site be? Staticizing a census database.</q> 
          </span>
@@ -655,7 +664,7 @@
       With Greg Newton. Digital Humanities 2022 Conference, Tokyo (online).
       28/07/2022.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>What the Book Got Right, or, Lots of Static Copies Keep Stuff Safe.</q> 
          </span>
@@ -665,7 +674,7 @@
       With Janelle Jenstad. Conference of the Bibliographical Society of Canada.
       17/05/2022.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Are the TEI Stylesheets really broken beyond repair?</q> 
          </span>
@@ -675,7 +684,7 @@
       Text Encoding Initiative Conference 2021 (online).
       25/10/2021.
       </li>
-   <li data-article="true" data-solo="true">
+   <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Using ODD for HTML.</q> 
          </span>
@@ -689,7 +698,7 @@
       [<a href="https://journals.openedition.org/jtei/3106">https://journals.openedition.org/jtei/3106</a>].
       
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Using open-source, sustainable tools for language reclamation: Preliminary findings
          from building a digital corpus of Wendat.</q> 
@@ -708,7 +717,7 @@
       
       04/03/2021.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Nine Projects, One Codebase: A Static Search Engine for Digital Editions.</q> 
          </span>
@@ -737,7 +746,7 @@
       
       06/06/2020.
       </li>
-   <li data-edited="true" data-article="true">
+   <li data-edited="true" data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle"><em>Journal of the Text Encoding Initiative: Selected Papers from the 2017 TEI Conference.</em></span>
       
       (jTEI Issue 12.)  
@@ -749,7 +758,7 @@
       [<a href="http://journals.openedition.org/jtei/1076">http://journals.openedition.org/jtei/1076</a>].
       
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Getting Along with Relational Databases.</q> 
          </span>
@@ -763,7 +772,7 @@
       
       20/09/2019.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>How we tripled our encoding speed in the Digital Victorian Periodical Poetry project.</q> 
          </span>
@@ -778,7 +787,7 @@
       
       19/09/2019.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>The Prefabricated Website: Who needs a server anyway?</q> 
          </span>
@@ -792,7 +801,7 @@
       
       19/09/2019.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Clearing the Air for Maintenance and Repair: Strategies, Experiences, Full Disclosure;
          Paper Three: Ruthless Principles for Digital Longevity</q> 
@@ -808,7 +817,7 @@
       
       12/07/2019.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Project Endings: Early Impressions From Our Recent Survey On Project Longevity In
          DH</q> 
@@ -824,7 +833,7 @@
       
       10/07/2019.
       </li>
-   <li data-article="true" data-solo="true">
+   <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Encoding Cryptic Crossword Clues with TEI.</q> 
          </span>
@@ -838,7 +847,7 @@
       [<a href="http://journals.openedition.org/jtei/2222">http://journals.openedition.org/jtei/2222</a>].
       
       </li>
-   <li data-article="true">
+   <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Beyond Validation: Using Programmed Diagnostics to Learn About, Monitor, and Successfully
          Complete Your DH Project.</q> 
@@ -853,7 +862,7 @@
       [<a href="http://dx.doi.org/10.1093/llc/fqz011">http://dx.doi.org/10.1093/llc/fqz011</a>].
       
       </li>
-   <li data-article="true" data-solo="true">
+   <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Algorithmic Determination of Japanese Ethnic Identity Based on Name.</q> 
          </span>
@@ -868,7 +877,7 @@
       
       2018.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Encoding GeoJSON Geometries in TEI.</q> 
          </span>
@@ -880,7 +889,7 @@
       
       13/09/2018.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Using ODD for HTML.</q> 
          </span>
@@ -892,7 +901,7 @@
       
       13/09/2018.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Confronting Challenges in Marking Up Pre-modern East Asian Documents.</q> 
          </span>
@@ -905,7 +914,7 @@
       
       11/09/2018.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Why do I need four search engines?</q> 
          </span>
@@ -919,7 +928,7 @@
       
       11/09/2018.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Encoding Cryptic Crossword Clues with TEI.</q> 
          </span>
@@ -933,7 +942,7 @@
       
       14/11/2017.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Beyond Validation: Using Programmed Diagnostics to Learn About, Monitor, and Successfully
          Complete Your DH Project.</q> 
@@ -948,7 +957,7 @@
       
       11/08/2017.
       </li>
-   <li data-presentation="true">
+      <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Archiving form and function: preserving a 2003 digital project.</q> 
          </span>
@@ -961,7 +970,7 @@
       
       14/06/2017.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Selecting Technologies for Long-Term Survival.</q> 
          </span>
@@ -975,7 +984,7 @@
       
       10/06/2017.
       </li>
-   <li data-article="true" data-solo="true">
+   <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Whatever happened to interchange?</q> 
          </span>
@@ -992,7 +1001,7 @@
       
       2016.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>How To Edit a Map in TEI.</q> 
          </span>
@@ -1007,7 +1016,7 @@
       
       03/07/2015.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Whatever Happened to Interchange?</q> 
          </span>
@@ -1021,7 +1030,7 @@
       
       02/07/2015.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>First steps in integrating diverse data sources to tell a fuller story of the treatment
          of Japanese Canadians in WW2.</q> 
@@ -1035,7 +1044,7 @@
       
       02/06/2015.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Landscapes of Injustice: Preliminary Returns of Partnered Research.</q> 
          </span>
@@ -1049,7 +1058,7 @@
       
       08/05/2015.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>CodeSharing: a simple API for disseminating our TEI encoding.</q> 
          </span>
@@ -1063,7 +1072,7 @@
       
       22/10/2014.
       </li>
-   <li data-article="true">
+   <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Using TEI for an Endangered Language Lexical Resource: The Nxaʔamxcín Database-Dictionary
          Project.</q> 
@@ -1081,7 +1090,7 @@
       
       2014.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Encoding historical dates correctly: is it practical, and is it worth it?</q> 
          </span>
@@ -1095,7 +1104,7 @@
       
       19/07/2013.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Practical Interoperability: The Map of Early Modern London and the Internet Shakespeare
          Editions.</q> 
@@ -1110,7 +1119,7 @@
       
       17/07/2013.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Interoperability in Practice: The
          Nxa’amxcín Dictionary.</q> 
@@ -1126,7 +1135,7 @@
       
       05/06/2013.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true"                  >
       <span class="publicationTitle">
          <q>Technology in documentation: TEI and the
          Nxa’amxcín Dictionary.</q> 
@@ -1144,7 +1153,7 @@
       
       02/03/2013.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Image Markup Tool 2.0.</q> 
          </span>
@@ -1158,7 +1167,7 @@
       
       22/06/2011.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>The Colonial Despatches of Vancouver Island and British Columbia: a Digital Edition
          of a Large-Scale Document Collection.</q> 
@@ -1173,7 +1182,7 @@
       
       20/06/2011.
       </li>
-   <li data-presentation="true" data-solo="true">
+   <li data-presentation="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Using the Universal Similarity Metric to Map Correspondences between
          Witnesses.</q> 
@@ -1188,7 +1197,7 @@
       
       08/07/2010.
       </li>
-   <li data-chapter="true">
+   <li data-chapter="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Encoding models for scholarly literature.</q> 
          </span>
@@ -1254,7 +1263,7 @@
       
       27 June 2008.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Domestic strife in early modern Europe: images and texts in a virtual anthology.</q> 
          </span>
@@ -1268,7 +1277,7 @@
       
       26 June 2008.
       </li>
-   <li data-chapter="true">
+   <li data-chapter="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Hot Potatoes: Taking an academic software project into the commercial domain.</q> 
          </span>
@@ -1311,7 +1320,7 @@
       
       July 2007.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>No More HTML: Using Cascading Style Sheets (CSS) to present XML for the Web.</q> 
          </span>
@@ -1342,7 +1351,7 @@
       
       2006-2017 (Vol. 15 to 23).
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>The Nxaʔamxcín Online Database.</q> 
          </span>
@@ -1355,7 +1364,7 @@
       
       August 2006.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Problems with Marriage: Annotating Seventeenth-century French Engravings with TEI
          and SVG.</q> 
@@ -1383,7 +1392,7 @@
       
       Current release January 2020; previous versions dating from September 2000.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Hacking Hot Potatoes: An introduction to customizing your exercises (second iteration,
          expanded format).</q> 
@@ -1424,7 +1433,7 @@
       
       May 2005.
       </li>
-   <li data-article="true">
+      <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>&lt;teiPublisher&gt;: A Repository Management System for TEI Documents.</q>
          </span>
@@ -1439,7 +1448,7 @@
       
       March 2005.
       </li>
-   <li data-article="true">
+   <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>&lt;teiPublisher&gt;: Bridging the Gap Between a Simple Set of Structured Documents and
          a Functional Digital Library.</q>
@@ -1453,7 +1462,7 @@
       
       September 2004.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>User in control: A highly-configurable instructional Website.</q> 
          </span>
@@ -1467,7 +1476,7 @@
       
       September 2004.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Hacking Hot Potatoes: An introduction to customizing your exercises.</q> 
          </span>
@@ -1481,7 +1490,7 @@
       
       September 2004.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>&lt;teiPublisher&gt;:a repository management system for TEI documents.</q>
          </span>
@@ -1525,7 +1534,7 @@
       
       June 2011; previous versions dating from 2003.
       </li>
-   <li data-presentation="true">
+      <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Old English, New Techniques: Bringing OE Texts Alive With XML and XSLT.</q> 
          </span>
@@ -1540,7 +1549,7 @@
       
       May 2003.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Unicode and Software Development: Hot Potatoes Goes Multilingual.</q> 
          </span>
@@ -1555,7 +1564,7 @@
       
       May 2003.
       </li>
-   <li data-chapter="true">
+   <li data-chapter="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Servers, Clients, Testing and Teaching.</q> 
          </span>
@@ -1595,7 +1604,7 @@
       
       November 2001.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Hot Potatoes, History and Future.</q> 
          </span>
@@ -1609,7 +1618,7 @@
       
       August 2001.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>The Future of the Exercise.</q> 
          </span>
@@ -1649,7 +1658,7 @@
       
       July 2001.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>The Ethical Exploitation of Academic Property.</q> 
          </span>
@@ -1687,7 +1696,7 @@
       
       January/February 2000.
       </li>
-   <li data-article="true">
+   <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Juggling hot potatoes: Decisions and compromises in creating authoring tools for the
          Web.</q> 
@@ -1702,7 +1711,7 @@
       
       September 1999.
       </li>
-   <li data-presentation="true" data-article="true">
+   <li data-presentation="true" data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>A Multimedia Approach to Learning Phonetic Transcription.</q> 
          </span>
@@ -1716,7 +1725,7 @@
       
       1999.
       </li>
-   <li data-presentation="true">
+   <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Hot Potatoes: Free Tools for Creating Interactive Language Exercises for the World
          Wide Web.</q> 
@@ -1730,7 +1739,7 @@
       
       September 1998.
       </li>
-   <li data-presentation="true" data-article="true" data-solo="true">
+   <li data-presentation="true" data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Approaches to Marking Electronic Texts.</q> 
          </span>
@@ -1742,7 +1751,7 @@
       
       1997; 1999.
       </li>
-   <li data-article="true" data-solo="true">
+   <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Marking Student Work on the Computer</q> 
          </span>
@@ -1768,7 +1777,7 @@
       
       1999-present.
       </li>
-   <li data-article="true" data-solo="true">
+   <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Creating and Implementing an Online Writing Course.</q> 
          </span>
@@ -1780,7 +1789,7 @@
       
       December 1997.
       </li>
-   <li data-article="true">
+   <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Some notes on the structure of acronyms.</q> 
          </span>

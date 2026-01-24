@@ -231,6 +231,9 @@ div:has(input[id='pubTypePresentation']:checked) ul>li:not([data-presentation]){
 div:has(input[id='pubTypeSoftware']:checked) ul>li:not([data-software]){
   display: none;
 }
+iv:has(input[id='peerReviewYes']:checked) ul>li:not([data-peer-review]){
+  display: none;
+}
 
 /* I know we should be styling mobile-first, and at some point
    I'll do that, but for now I'm adding overrides for mobile. */
