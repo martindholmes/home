@@ -640,7 +640,7 @@
       With Joey Takeda. Balisage 2022 Conference.
       01/08/2022.
       </li>
-   <li data-article="true" data-solo="true">
+      <li data-article="true" data-solo="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Getting Along with Relational Databases.</q> 
          </span>
@@ -732,7 +732,7 @@
       
       31/10/2020.
       </li>
-   <li data-presentation="true">
+      <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Static Search: An Archivable and Sustainable Search Engine for the Digital Humanities.</q> 
          </span>
@@ -1249,7 +1249,7 @@
       
       Current release June 2012; previous versions dating back to 2006.
       </li>
-   <li data-presentation="true">
+      <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Rescuing old data: case studies, tools and techniques .</q> 
          </span>

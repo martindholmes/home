@@ -116,6 +116,9 @@ main{
     margin: 1rem auto;
     padding: 0 5rem;
   }
+  &>div{
+    min-width: 100%;
+  }
 }
 
 a, a:visited{
@@ -231,7 +234,10 @@ div:has(input[id='pubTypePresentation']:checked) ul>li:not([data-presentation]){
 div:has(input[id='pubTypeSoftware']:checked) ul>li:not([data-software]){
   display: none;
 }
-div:has(input[id='peerReviewYes']:checked) ul>li:not([data-peer-review]){
+div:has(input[id='peerReviewYes']:checked) ul>li:not([data-peer-reviewed]){
+  display: none;
+}
+div:has(input[id='peerReviewNo']:checked) ul>li[data-peer-reviewed]{
   display: none;
 }
 
