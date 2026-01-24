@@ -231,7 +231,7 @@ div:has(input[id='pubTypePresentation']:checked) ul>li:not([data-presentation]){
 div:has(input[id='pubTypeSoftware']:checked) ul>li:not([data-software]){
   display: none;
 }
-iv:has(input[id='peerReviewYes']:checked) ul>li:not([data-peer-review]){
+div:has(input[id='peerReviewYes']:checked) ul>li:not([data-peer-review]){
   display: none;
 }
 
