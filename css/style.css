@@ -253,6 +253,11 @@ div:has(input[id='peerReviewNo']:checked) ul>li[data-peer-reviewed]{
   ul{
     padding-left: 0.2em;
   }
+  div:target{
+    ul{
+      list-style-type: none;
+    }
+  }
   table{
     max-width: 96%;
     thead{
