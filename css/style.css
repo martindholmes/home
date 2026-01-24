@@ -118,6 +118,9 @@ main{
   }
   &>div{
     min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -193,6 +196,7 @@ div#publications{
 *:target{
   outline: solid 2pt var(--dark-hi-color);
   scroll-margin-top: 1rem;
+  margin-top: 1rem;
   &+td{
     padding-left: 0.5em;
   }
