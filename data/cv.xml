@@ -8,13 +8,13 @@
    <div>  
      <ul id="nav">
         <li><a href="#contactInfo">Contact info</a></li>
+        <li><a href="#publications">Publications and presentations</a></li>
         <li><a href="#mainQualifications">Qualifications</a></li>
         <li><a href="#honours">Honours, memberships, and professional activities</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#employment">Employment</a></li>
         <li><a href="#technicalSkills">Technical skills</a></li>
         <li><a href="#languages">Languages</a></li>
-        <li><a href="#publications">Publications and presentations</a></li>
         <li><a href="#interests">Other interests</a></li>
      </ul>
    </div>
@@ -42,430 +42,6 @@
         </tbody>
     </table>
 </div>
-
-<div id="mainQualifications">
-   <h3>Education: Main Qualifications</h3>
-   <table class="qualificationTable">
-      <thead>
-         <tr>
-            <td>Degree / Qualification</td>
-            <td>Grade</td>
-            <td>Institution</td>
-            <td>Address</td>
-            <td>Date awarded</td>
-            <td>Comments</td>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>RSA Dip. TEFLA (Royal Society of Arts/University of Cambridge Local Examination Syndicate
-               Diploma in the Teaching of English as a Foreign Language to Adults)</td>
-            <td>Distinction (written)</td>
-            <td>Bell College</td>
-            <td>Saffron Walden, UK</td>
-            <td>June 1994</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>MPhil (English Phonology)</td>
-            <td></td>
-            <td>University of Manchester</td>
-            <td>Manchester, UK</td>
-            <td>1986</td>
-            <td>Thesis title: Approaches to Syllable Structure in English</td>
-         </tr>
-         <tr>
-            <td>B.A. (Hons) (English Language and Literature)</td>
-            <td>1st Class</td>
-            <td>University of Manchester</td>
-            <td>Manchester, UK</td>
-            <td>1984</td>
-            <td>Courses taken include Old English, Middle English and Modern English Language and
-               Literature, The History of the English Language, The Structure of Modern English,
-               English Historical Linguistics, George Eliot (special author), Shakespeare, and a
-               subsidiary drama course. Dissertation Title: The Five Senses in Anglo-Saxon Poetry.</td>
-         </tr>
-      </tbody>
-   </table>
-</div><div id="otherTraining">
-   <h3>Education: Other Training</h3>
-   <table class="qualificationTable">
-      <thead>
-         <tr>
-            <td>Course</td>
-            <td>Institution</td>
-            <td>Address</td>
-            <td>Date</td>
-            <td>Comments</td>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>Natural Language Processing</td>
-            <td>Coursera</td>
-            <td>https://www.coursera.org/course/nlp</td>
-            <td>May 2012</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Interpersonal Communication in the Workplace</td>
-            <td>University of Victoria</td>
-            <td>Victoria, BC, Canada</td>
-            <td>November/December 2003</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Leadership Strategies</td>
-            <td>University of Victoria</td>
-            <td>Victoria, BC, Canada</td>
-            <td>November 2003</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Productive Business Meetings</td>
-            <td>Saudi Aramco Management Training</td>
-            <td>Dhahran, Saudi Arabia</td>
-            <td>August 1993</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Classroom Management</td>
-            <td>Saudi Aramco Management Training</td>
-            <td>Dhahran, Saudi Arabia</td>
-            <td>March 1993</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Workshops and presentations on a variety of topics</td>
-            <td>Saudi Aramco Annual In-Service Training Days</td>
-            <td>Dhahran, Saudi Arabia</td>
-            <td>Autumn 1991 &amp; 1992</td>
-            <td>In 1991 I gave one of the presentations, on creating reading exercises.</td>
-         </tr>
-         <tr>
-            <td>Presentation Skills</td>
-            <td>Saudi Aramco Management Training</td>
-            <td>Dhahran, Saudi Arabia</td>
-            <td>September 1991</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Teaching Listening Skills</td>
-            <td>British Council</td>
-            <td>Jambi, Indonesia</td>
-            <td>March 1990</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Language Laboratories; Course Design</td>
-            <td>British Council</td>
-            <td>Aceh, Indonesia</td>
-            <td>November 1989</td>
-            <td></td>
-         </tr>
-         <tr>
-            <td>Indonesian Language</td>
-            <td>WISMA Realino</td>
-            <td>Yogyakarta, Indonesia</td>
-            <td>Autumn 1987</td>
-            <td>6-week intensive Indonesian language course</td>
-         </tr>
-         <tr>
-            <td>ELT Training Course</td>
-            <td>VSO (Voluntary Service Overseas)</td>
-            <td>Bristol, UK</td>
-            <td>Summer 1987</td>
-            <td>Pre-departure training course for Indonesia posting</td>
-         </tr>
-      </tbody>
-   </table>
-</div>
-
-<div id="honours">
-   <h3>Honours</h3>
-   <ul>
-      <li>University of Victoria Presidentʼs Distinguished Service Award, 2008.
-         
-         [<a href="http://web.uvic.ca/hr/pdsa/2008pdsawinners.html">http://web.uvic.ca/hr/pdsa/2008pdsawinners.html</a>].
-         </li>
-   </ul>
-</div>
-
-<div id="memberships">
-   <h3>Memberships</h3>
-   <ul>
-      <li>Text-Encoding Initiative</li>
-      <li>Association for Literary and Linguistic Computing (ALLC)</li>
-      <li>Association for Computing in the Humanities (ACH)</li>
-      <li>Canadian Society for Digital Humanities / Société canadienne des humanités numériques
-         (CSDH/SCHN)</li>
-   </ul>
-</div>
-
-<div id="professional">
-   <h3>Professional activities</h3>
-   <ul>
-      <li>Managing Editor of the TEI Journal, 2013-2015.</li>
-      <li>Text-Encoding Initiative. I have served as an elected member of the TEI Technical Council
-         four times (2010-2011,  2012-2013, 2014-2015, and 2025-2027).
-         [<a href="http://www.tei-c.org/Activities/Council/">http://www.tei-c.org/Activities/Council/</a>].
-         </li>
-      <li>Abstract reviewer for Digital Humanities conference.</li>
-      <li>Abstract reviewer for the conference of the Text-Encoding Initiative.</li>
-      <li>Abstract reviewer for the conference of the Canadian Society for 
-         Digital Humanities (CSDH/SCHN).</li>
-      <li>University of Victoria Presidentʼs Distinguished Service Awards committee, 2010 and
-         2011.</li>
-      <li>University of Victoria Humanities Dean Search Committee, 2009-2010.</li>
-   </ul>
-</div>
-
-
-<div id="teaching">
-   <h3>Teaching</h3>
-   <ul>
-      <li>Introduction to XSLT for Digital Humanists, Digital Humanities Summer Institute, University
-         of Victoria, 2011, 2012, 2013 and 2017. With Syd Bauman.</li>
-      <li>Introduction to XSLT for Digital Humanists, Digital Humanities@Oxford Summer School,
-         University of Oxford, 2013. With Alex Dutton.</li>
-      <li>Introduction to TEI Encoding, University of Victoria HCMC, 2012.</li>
-      <li>Text Encoding Fundamentals, Digital Humanities Summer Institute, 2010. With Julia
-         Flanders and Syd Bauman.</li>
-   </ul>
-</div>
-
-
-
-
-<div id="employment">
-   <h3>Employment</h3>
-   <table class="qualificationTable">
-      <thead>
-         <tr>
-            <td>Job title</td>
-            <td>Employer</td>
-            <td>From</td>
-            <td>To</td>
-            <td>Location</td>
-            <td>Duties</td>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>Programmer / Analyst (formerly Programmer / Consultant)</td>
-            <td>University of Victoria Humanities Computing and Media Centre (formerly the Language
-               Centre)</td>
-            <td>01-04-1998</td>
-            <td>present</td>
-            <td>PO Box 3045 STN CSC, 
-               Victoria, B.C., 
-               V8W 3P4, Canada</td>
-            <td>Developing standalone and Web-based software and materials to support teaching and
-               research within the Humanities (see the Publications section for examples); setting
-               up and administering large Windows network (several servers and 60 workstations) for
-               computerized language laboratories; hiring, training, and mentoring workstudy
-               students and research assistants.
-            </td>
-         </tr>
-         <tr>
-            <td>Founder, Director, Secretary/Treasurer</td>
-            <td>Half-Baked Software Inc.</td>
-            <td>01-05-1999</td>
-            <td>2023</td>
-            <td>Half-Baked Software ceased trading in 2023.</td>
-            <td>Half-Baked Software was a company formed by Stewart Arneil, myself, and the University
-               of Victoria to develop the commercial potential of software created at the Humanities
-               Computing and Media Centre. After 24 years, Stewart and I wound the company up, and 
-               all the software has been freely available since 2009.
-            </td>
-         </tr>
-         <tr>
-            <td>ESL Instructor / Materials Developer</td>
-            <td>University of Victoria English Language Centre</td>
-            <td>03-04-1995</td>
-            <td>31-03-1998</td>
-            <td>Box 1700 MS 8452, 
-               Victoria, B.C.,  V8W 2Y2, 
-               Canada</td>
-            <td>I developed and taught the University Admissions Preparation Course, for students
-               moving from the ESL program into regular classes. I also developed and taught the
-               Online Writing Course, one of the Universityʼs first Web-based courses, as well as
-               teaching a range of regular ESL classes from lower-intermediate to advanced level.</td>
-         </tr>
-         <tr>
-            <td>Instructor (English Literature)</td>
-            <td>Department of English, Camosun College</td>
-            <td>02-05-1995</td>
-            <td>21-07-1995</td>
-            <td>Lansdowne Campus, 
-               3100 Foul Bay Road, 
-               Victoria, B.C.,  V8P 5J2, 
-               Canada</td>
-            <td>Part-time term appointment teaching English 084E literature course, a basic introduction
-               to English literature with a multi-cultural slant for students intending to enter
-               credit courses.</td>
-         </tr>
-         <tr>
-            <td>Advanced English Teacher</td>
-            <td>Saudi Aramco (Saudi Arabian Oil Company)</td>
-            <td>01-02-1991</td>
-            <td>08-12-1994</td>
-            <td>Rahima Academic Training Center, Saudi Aramco, 
-               Ras Tanura 31311, 
-               Saudi Arabia</td>
-            <td>Teaching all levels of English, but mainly intermediate and advanced English to apprentices
-               and company employees. Chairman of the English Reading and English Writing courses
-               for employees. Production of supplementary materials for the Academic Curriculum Unit
-               as well as in-house tests. In charge of test administration and  scoring teams. Handled
-               a variety of bureaucratic duties, including administering student records.</td>
-         </tr>
-         <tr>
-            <td>Lecturer in English (Voluntary Service Overseas development agency posting)</td>
-            <td>University of Jambi, Sumatra, Indonesia</td>
-            <td>01-11-1987</td>
-            <td>01-04-1990</td>
-            <td>Telanaipura, 
-               Jambi, 
-               Sumatra, 
-               Indonesia</td>
-            <td>Solely responsible for organizing and teaching English courses for lecturers preparing
-               for Masters courses in-country and abroad, including EAP, study skills and TOEFL preparation.
-               Collating information about scholarships, assisting with applications and research
-               proposals. ELT teacher-training both for lecturers and students in the Education Faculty.
-               Supervision and grading of teaching practice in a Senior High School.</td>
-         </tr>
-         <tr>
-            <td>Monbusho British English Teacher (Japanese Government BETS Programme)</td>
-            <td>Kurayoshi West Senior High School</td>
-            <td>01-09-1984</td>
-            <td>01-09-1985</td>
-            <td>Kurayoshi-shi, Tottori-ken, Japan.</td>
-            <td>Teaching English in Junior and Senior High Schools.</td>
-         </tr>
-      </tbody>
-   </table>
-</div>
-
-
-<div id="technicalSkills">
-   <h3>Key Technical Skills</h3>
-   <table class="qualificationTable">
-      <thead>
-         <tr>
-            <td>Application / Language</td>
-            <td>Platform</td>
-            <td>Tasks</td>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>JavaScript / HTML / XML / CSS / XSLT / XSL:FO / XQuery / mySQL / PHP / LaTeX</td>
-            <td>Web</td>
-            <td>Creating interactive Web applications and online database systems; digitizing/marking
-               up academic texts using XML, and rendering as dynamic Websites using XSL, JavaScript
-               and CSS; producing print publications based on XML sources</td>
-         </tr>
-         <tr>
-            <td>Ubuntu server maintenance</td>
-            <td>Linux</td>
-            <td>Setting up and running two Continuous Integration servers using Jenkins on Ubuntu,
-               starting in 2012.</td>
-         </tr>
-         <tr>
-            <td>TEI XML</td>
-            <td>Any</td>
-            <td>Designing and implementing schemas for TEI XML projects, serving on the TEI Technical
-               Council,
-               working on the TEI infrastructure, build process, and Guidelines.</td>
-         </tr>
-         <tr>
-            <td>Windows networking</td>
-            <td>Windows</td>
-            <td>Setting up and maintaining a Windows network including 60 workstations and 7 servers
-               (2001-4)</td>
-         </tr>
-         <tr>
-            <td>Borland Delphi v2, v5, v2005 and v2009</td>
-            <td>Windows</td>
-            <td>Building in-house and commercial authoring tools for creating interactive Web pages,
-               marking up text, and other teaching and research tools</td>
-         </tr>
-         <tr>
-            <td>Intuit Quickbooks v6-2010</td>
-            <td>Windows</td>
-            <td>Accounting for small business (Half-Baked Software)</td>
-         </tr>
-         <tr>
-            <td>Adobe Photoshop &amp; Illustrator; The Gimp and Inkscape</td>
-            <td>Windows, OSX, Linux</td>
-            <td>Basic graphics manipulation</td>
-         </tr>
-         <tr>
-            <td>Range of audio/video digital editors</td>
-            <td>Windows, Linux</td>
-            <td>Digitizing/preparing multimedia content for the Web</td>
-         </tr>
-         <tr>
-            <td>OpenLayers</td>
-            <td>Web</td>
-            <td>Building maps and other geographic and tile-based resources 
-               using the OpenLayers JavaScript library.</td>
-         </tr>
-      </tbody>
-   </table>
-</div>
-
-
-<div id="languages">
-   <h3>Languages</h3>
-   <table class="qualificationTable">
-      <thead>
-         <tr>
-            <td>Language</td>
-            <td>Speaking / Listening</td>
-            <td>Reading / Writing</td>
-            <td>Comments</td>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>English</td>
-            <td>Native</td>
-            <td>Native</td>
-            <td>Native language</td>
-         </tr>
-         <tr>
-            <td>French</td>
-            <td>Good</td>
-            <td>Fair</td>
-            <td>My spoken French is a little rusty through lack of use, but I read and listen in the
-               language regularly.</td>
-         </tr>
-         <tr>
-            <td>Indonesian</td>
-            <td>Good</td>
-            <td>Good</td>
-            <td>I lived in an isolated area of Indonesia for two and a half years, and during that
-               time I did a great deal of translation work, mainly academic documents, both Indonesian-English
-               and English-Indonesian. A few years ago, I also worked on the University of Victoriaʼs
-               Indonesian 100 Website, so I have had some practice with the language, and I regularly
-               listen to podcasts in Indonesian.</td>
-         </tr>
-         <tr>
-            <td>Japanese</td>
-            <td>Fair</td>
-            <td>Fair</td>
-            <td>After many years of neglecting my Japanese, I began studying seriously again in 2016.
-               In December 2017 I passed the Japanese Language Proficiency Test at level N4, in December
-               2018 at level N3. and in December 2019 at level N2. I listen to a lot of Japanese
-               podcasts, watch Japanese TV shows regularly, and Iʼm now able to read novels, albeit
-               slowly.</td>
-         </tr>
-      </tbody>
-   </table>
-</div>
-
-
 <div id="publications">
    <h3>Selected Publications and Presentations</h3>
    
@@ -574,6 +150,21 @@
       Digital Humanities 2024 Conference, Arlington, Virginia.
       07/08/2024.
       </li>
+      
+      <li data-article="true"  data-peer-reviewed="true">
+         <span class="publicationTitle">
+            <q>ATOP: Another TEI ODD Processor.</q> 
+         </span>
+         
+         (Journal article.)  
+         
+         With Syd Bauman, Helena Bermúdez Sabel, and David Maus. In <span class="publicationTitle"><em>The Journal of the Text Encoding Initiative.</em></span> 
+         Text Encoding Initiative Consortium. 
+         2024. Issue 17 | 2024: Selected Papers from the 202 TEI Conference.
+         
+         [<a href="https://journals.openedition.org/jtei/5138">https://journals.openedition.org/jtei/5138</a>].
+      </li>
+      
       <li data-article="true" data-peer-reviewed="true">
       <span class="publicationTitle">
          <q>Modern Wendat Lexicography:Using XML to Reflect the Grammar and Lexicon of an Iroquoian
@@ -591,6 +182,7 @@
       [<a href="https://doi.org/10.1353/dic.2023.a915066">https://doi.org/10.1353/dic.2023.a915066</a>].
       
       </li>
+      
    
       <li data-monograph="true" data-edited="true" data-peer-reviewed="true">
       <span class="publicationTitle">
@@ -629,6 +221,19 @@
       
       [<a href="https://zenodo.org/record/7089666">https://zenodo.org/record/7089666</a>].
       
+      </li>
+      <li data-presentation="true" data-peer-reviewed="true">
+         <span class="publicationTitle">
+            <q>atop: another TEI ODD processor</q> 
+         </span>
+         
+         (Conference presentation.)  
+         
+         With Syd Bauman, Helena Bermúdez Sabel, and David Maus. Text Encoding Initiative Conference 2022, Newcastle, UK.
+         14/09/2022.
+         
+         [<a href="https://zenodo.org/records/7071026/files/TEI2022_Conference_Book.pdf"></a>].
+         
       </li>
    <li data-presentation="true" data-peer-reviewed="true">
       <span class="publicationTitle">
@@ -1808,6 +1413,430 @@
    
    
 </div>
+
+<div id="mainQualifications">
+   <h3>Education: Main Qualifications</h3>
+   <table class="qualificationTable">
+      <thead>
+         <tr>
+            <td>Degree / Qualification</td>
+            <td>Grade</td>
+            <td>Institution</td>
+            <td>Address</td>
+            <td>Date awarded</td>
+            <td>Comments</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>RSA Dip. TEFLA (Royal Society of Arts/University of Cambridge Local Examination Syndicate
+               Diploma in the Teaching of English as a Foreign Language to Adults)</td>
+            <td>Distinction (written)</td>
+            <td>Bell College</td>
+            <td>Saffron Walden, UK</td>
+            <td>June 1994</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>MPhil (English Phonology)</td>
+            <td></td>
+            <td>University of Manchester</td>
+            <td>Manchester, UK</td>
+            <td>1986</td>
+            <td>Thesis title: Approaches to Syllable Structure in English</td>
+         </tr>
+         <tr>
+            <td>B.A. (Hons) (English Language and Literature)</td>
+            <td>1st Class</td>
+            <td>University of Manchester</td>
+            <td>Manchester, UK</td>
+            <td>1984</td>
+            <td>Courses taken include Old English, Middle English and Modern English Language and
+               Literature, The History of the English Language, The Structure of Modern English,
+               English Historical Linguistics, George Eliot (special author), Shakespeare, and a
+               subsidiary drama course. Dissertation Title: The Five Senses in Anglo-Saxon Poetry.</td>
+         </tr>
+      </tbody>
+   </table>
+</div><div id="otherTraining">
+   <h3>Education: Other Training</h3>
+   <table class="qualificationTable">
+      <thead>
+         <tr>
+            <td>Course</td>
+            <td>Institution</td>
+            <td>Address</td>
+            <td>Date</td>
+            <td>Comments</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Natural Language Processing</td>
+            <td>Coursera</td>
+            <td>https://www.coursera.org/course/nlp</td>
+            <td>May 2012</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Interpersonal Communication in the Workplace</td>
+            <td>University of Victoria</td>
+            <td>Victoria, BC, Canada</td>
+            <td>November/December 2003</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Leadership Strategies</td>
+            <td>University of Victoria</td>
+            <td>Victoria, BC, Canada</td>
+            <td>November 2003</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Productive Business Meetings</td>
+            <td>Saudi Aramco Management Training</td>
+            <td>Dhahran, Saudi Arabia</td>
+            <td>August 1993</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Classroom Management</td>
+            <td>Saudi Aramco Management Training</td>
+            <td>Dhahran, Saudi Arabia</td>
+            <td>March 1993</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Workshops and presentations on a variety of topics</td>
+            <td>Saudi Aramco Annual In-Service Training Days</td>
+            <td>Dhahran, Saudi Arabia</td>
+            <td>Autumn 1991 &amp; 1992</td>
+            <td>In 1991 I gave one of the presentations, on creating reading exercises.</td>
+         </tr>
+         <tr>
+            <td>Presentation Skills</td>
+            <td>Saudi Aramco Management Training</td>
+            <td>Dhahran, Saudi Arabia</td>
+            <td>September 1991</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Teaching Listening Skills</td>
+            <td>British Council</td>
+            <td>Jambi, Indonesia</td>
+            <td>March 1990</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Language Laboratories; Course Design</td>
+            <td>British Council</td>
+            <td>Aceh, Indonesia</td>
+            <td>November 1989</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td>Indonesian Language</td>
+            <td>WISMA Realino</td>
+            <td>Yogyakarta, Indonesia</td>
+            <td>Autumn 1987</td>
+            <td>6-week intensive Indonesian language course</td>
+         </tr>
+         <tr>
+            <td>ELT Training Course</td>
+            <td>VSO (Voluntary Service Overseas)</td>
+            <td>Bristol, UK</td>
+            <td>Summer 1987</td>
+            <td>Pre-departure training course for Indonesia posting</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+<div id="honours">
+   <h3>Honours</h3>
+   <ul>
+      <li>University of Victoria Presidentʼs Distinguished Service Award, 2008.
+         
+         [<a href="http://web.uvic.ca/hr/pdsa/2008pdsawinners.html">http://web.uvic.ca/hr/pdsa/2008pdsawinners.html</a>].
+         </li>
+   </ul>
+</div>
+
+<div id="memberships">
+   <h3>Memberships</h3>
+   <ul>
+      <li>Text-Encoding Initiative</li>
+      <li>Association for Literary and Linguistic Computing (ALLC)</li>
+      <li>Association for Computing in the Humanities (ACH)</li>
+      <li>Canadian Society for Digital Humanities / Société canadienne des humanités numériques
+         (CSDH/SCHN)</li>
+   </ul>
+</div>
+
+<div id="professional">
+   <h3>Professional activities</h3>
+   <ul>
+      <li>Managing Editor of the TEI Journal, 2013-2015.</li>
+      <li>Text-Encoding Initiative. I have served as an elected member of the TEI Technical Council
+         four times (2010-2011,  2012-2013, 2014-2015, and 2025-2027).
+         [<a href="http://www.tei-c.org/Activities/Council/">http://www.tei-c.org/Activities/Council/</a>].
+         </li>
+      <li>Abstract reviewer for Digital Humanities conference.</li>
+      <li>Abstract reviewer for the conference of the Text-Encoding Initiative.</li>
+      <li>Abstract reviewer for the conference of the Canadian Society for 
+         Digital Humanities (CSDH/SCHN).</li>
+      <li>University of Victoria Presidentʼs Distinguished Service Awards committee, 2010 and
+         2011.</li>
+      <li>University of Victoria Humanities Dean Search Committee, 2009-2010.</li>
+   </ul>
+</div>
+
+
+<div id="teaching">
+   <h3>Teaching</h3>
+   <ul>
+      <li>Introduction to XSLT for Digital Humanists, Digital Humanities Summer Institute, University
+         of Victoria, 2011, 2012, 2013 and 2017. With Syd Bauman.</li>
+      <li>Introduction to XSLT for Digital Humanists, Digital Humanities@Oxford Summer School,
+         University of Oxford, 2013. With Alex Dutton.</li>
+      <li>Introduction to TEI Encoding, University of Victoria HCMC, 2012.</li>
+      <li>Text Encoding Fundamentals, Digital Humanities Summer Institute, 2010. With Julia
+         Flanders and Syd Bauman.</li>
+   </ul>
+</div>
+
+
+
+
+<div id="employment">
+   <h3>Employment</h3>
+   <table class="qualificationTable">
+      <thead>
+         <tr>
+            <td>Job title</td>
+            <td>Employer</td>
+            <td>From</td>
+            <td>To</td>
+            <td>Location</td>
+            <td>Duties</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Programmer / Analyst (formerly Programmer / Consultant)</td>
+            <td>University of Victoria Humanities Computing and Media Centre (formerly the Language
+               Centre)</td>
+            <td>01-04-1998</td>
+            <td>present</td>
+            <td>PO Box 3045 STN CSC, 
+               Victoria, B.C., 
+               V8W 3P4, Canada</td>
+            <td>Developing standalone and Web-based software and materials to support teaching and
+               research within the Humanities (see the Publications section for examples); setting
+               up and administering large Windows network (several servers and 60 workstations) for
+               computerized language laboratories; hiring, training, and mentoring workstudy
+               students and research assistants.
+            </td>
+         </tr>
+         <tr>
+            <td>Founder, Director, Secretary/Treasurer</td>
+            <td>Half-Baked Software Inc.</td>
+            <td>01-05-1999</td>
+            <td>2023</td>
+            <td>Half-Baked Software ceased trading in 2023.</td>
+            <td>Half-Baked Software was a company formed by Stewart Arneil, myself, and the University
+               of Victoria to develop the commercial potential of software created at the Humanities
+               Computing and Media Centre. After 24 years, Stewart and I wound the company up, and 
+               all the software has been freely available since 2009.
+            </td>
+         </tr>
+         <tr>
+            <td>ESL Instructor / Materials Developer</td>
+            <td>University of Victoria English Language Centre</td>
+            <td>03-04-1995</td>
+            <td>31-03-1998</td>
+            <td>Box 1700 MS 8452, 
+               Victoria, B.C.,  V8W 2Y2, 
+               Canada</td>
+            <td>I developed and taught the University Admissions Preparation Course, for students
+               moving from the ESL program into regular classes. I also developed and taught the
+               Online Writing Course, one of the Universityʼs first Web-based courses, as well as
+               teaching a range of regular ESL classes from lower-intermediate to advanced level.</td>
+         </tr>
+         <tr>
+            <td>Instructor (English Literature)</td>
+            <td>Department of English, Camosun College</td>
+            <td>02-05-1995</td>
+            <td>21-07-1995</td>
+            <td>Lansdowne Campus, 
+               3100 Foul Bay Road, 
+               Victoria, B.C.,  V8P 5J2, 
+               Canada</td>
+            <td>Part-time term appointment teaching English 084E literature course, a basic introduction
+               to English literature with a multi-cultural slant for students intending to enter
+               credit courses.</td>
+         </tr>
+         <tr>
+            <td>Advanced English Teacher</td>
+            <td>Saudi Aramco (Saudi Arabian Oil Company)</td>
+            <td>01-02-1991</td>
+            <td>08-12-1994</td>
+            <td>Rahima Academic Training Center, Saudi Aramco, 
+               Ras Tanura 31311, 
+               Saudi Arabia</td>
+            <td>Teaching all levels of English, but mainly intermediate and advanced English to apprentices
+               and company employees. Chairman of the English Reading and English Writing courses
+               for employees. Production of supplementary materials for the Academic Curriculum Unit
+               as well as in-house tests. In charge of test administration and  scoring teams. Handled
+               a variety of bureaucratic duties, including administering student records.</td>
+         </tr>
+         <tr>
+            <td>Lecturer in English (Voluntary Service Overseas development agency posting)</td>
+            <td>University of Jambi, Sumatra, Indonesia</td>
+            <td>01-11-1987</td>
+            <td>01-04-1990</td>
+            <td>Telanaipura, 
+               Jambi, 
+               Sumatra, 
+               Indonesia</td>
+            <td>Solely responsible for organizing and teaching English courses for lecturers preparing
+               for Masters courses in-country and abroad, including EAP, study skills and TOEFL preparation.
+               Collating information about scholarships, assisting with applications and research
+               proposals. ELT teacher-training both for lecturers and students in the Education Faculty.
+               Supervision and grading of teaching practice in a Senior High School.</td>
+         </tr>
+         <tr>
+            <td>Monbusho British English Teacher (Japanese Government BETS Programme)</td>
+            <td>Kurayoshi West Senior High School</td>
+            <td>01-09-1984</td>
+            <td>01-09-1985</td>
+            <td>Kurayoshi-shi, Tottori-ken, Japan.</td>
+            <td>Teaching English in Junior and Senior High Schools.</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+
+<div id="technicalSkills">
+   <h3>Key Technical Skills</h3>
+   <table class="qualificationTable">
+      <thead>
+         <tr>
+            <td>Application / Language</td>
+            <td>Platform</td>
+            <td>Tasks</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>JavaScript / HTML / XML / CSS / XSLT / XSL:FO / XQuery / mySQL / PHP / LaTeX</td>
+            <td>Web</td>
+            <td>Creating interactive Web applications and online database systems; digitizing/marking
+               up academic texts using XML, and rendering as dynamic Websites using XSL, JavaScript
+               and CSS; producing print publications based on XML sources</td>
+         </tr>
+         <tr>
+            <td>Ubuntu server maintenance</td>
+            <td>Linux</td>
+            <td>Setting up and running two Continuous Integration servers using Jenkins on Ubuntu,
+               starting in 2012.</td>
+         </tr>
+         <tr>
+            <td>TEI XML</td>
+            <td>Any</td>
+            <td>Designing and implementing schemas for TEI XML projects, serving on the TEI Technical
+               Council,
+               working on the TEI infrastructure, build process, and Guidelines.</td>
+         </tr>
+         <tr>
+            <td>Windows networking</td>
+            <td>Windows</td>
+            <td>Setting up and maintaining a Windows network including 60 workstations and 7 servers
+               (2001-4)</td>
+         </tr>
+         <tr>
+            <td>Borland Delphi v2, v5, v2005 and v2009</td>
+            <td>Windows</td>
+            <td>Building in-house and commercial authoring tools for creating interactive Web pages,
+               marking up text, and other teaching and research tools</td>
+         </tr>
+         <tr>
+            <td>Intuit Quickbooks v6-2010</td>
+            <td>Windows</td>
+            <td>Accounting for small business (Half-Baked Software)</td>
+         </tr>
+         <tr>
+            <td>Adobe Photoshop &amp; Illustrator; The Gimp and Inkscape</td>
+            <td>Windows, OSX, Linux</td>
+            <td>Basic graphics manipulation</td>
+         </tr>
+         <tr>
+            <td>Range of audio/video digital editors</td>
+            <td>Windows, Linux</td>
+            <td>Digitizing/preparing multimedia content for the Web</td>
+         </tr>
+         <tr>
+            <td>OpenLayers</td>
+            <td>Web</td>
+            <td>Building maps and other geographic and tile-based resources 
+               using the OpenLayers JavaScript library.</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+
+<div id="languages">
+   <h3>Languages</h3>
+   <table class="qualificationTable">
+      <thead>
+         <tr>
+            <td>Language</td>
+            <td>Speaking / Listening</td>
+            <td>Reading / Writing</td>
+            <td>Comments</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>English</td>
+            <td>Native</td>
+            <td>Native</td>
+            <td>Native language</td>
+         </tr>
+         <tr>
+            <td>French</td>
+            <td>Good</td>
+            <td>Fair</td>
+            <td>My spoken French is a little rusty through lack of use, but I read and listen in the
+               language regularly.</td>
+         </tr>
+         <tr>
+            <td>Indonesian</td>
+            <td>Good</td>
+            <td>Good</td>
+            <td>I lived in an isolated area of Indonesia for two and a half years, and during that
+               time I did a great deal of translation work, mainly academic documents, both Indonesian-English
+               and English-Indonesian. A few years ago, I also worked on the University of Victoriaʼs
+               Indonesian 100 Website, so I have had some practice with the language, and I regularly
+               listen to podcasts in Indonesian.</td>
+         </tr>
+         <tr>
+            <td>Japanese</td>
+            <td>Fair</td>
+            <td>Fair</td>
+            <td>After many years of neglecting my Japanese, I began studying seriously again in 2016.
+               In December 2017 I passed the Japanese Language Proficiency Test at level N4, in December
+               2018 at level N3. and in December 2019 at level N2. I listen to a lot of Japanese
+               podcasts, watch Japanese TV shows regularly, and Iʼm now able to read novels, albeit
+               slowly.</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+
 
 
 
